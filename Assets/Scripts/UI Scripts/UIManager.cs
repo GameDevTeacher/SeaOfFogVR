@@ -34,8 +34,7 @@ public class UIManager : MonoBehaviour
             isPaused = true;
             Time.timeScale = 0;
         }
-        
-        if (Keyboard.current[pauseKey].wasPressedThisFrame && isPaused) 
+        else if (Keyboard.current[pauseKey].wasPressedThisFrame && isPaused) 
         {
             pauseMenu.SetActive(false);
             isPaused = false;
