@@ -1,3 +1,4 @@
+using System;
 using UnityEngine;
 
 public class OarScript : MonoBehaviour
@@ -10,9 +11,19 @@ public class OarScript : MonoBehaviour
 
     private float _maxDistance;
 
+    private bool _touchingWater;
+
+    
+    private MeshRenderer _meshRenderer;
+    [SerializeField] private Material _waterMaterial;
+    [SerializeField] private Material _dryMaterial;
+    
+    
+    
     private void Start()
     {
         _maxDistance = _targetOrientation.magnitude;
+        _meshRenderer = GetComponentInChildren<MeshRenderer>();
     }
     
     
@@ -24,5 +35,29 @@ public class OarScript : MonoBehaviour
         c *= _maxDistance;
         
         _handleTransform.position = transform.position + c;
+
+        if (_touchingWater)
+        {
+            _meshRenderer.material = _waterMaterial;
+        } else if (!_touchingWater)
+        {
+            _meshRenderer.material = _dryMaterial;
+        }
+    }
+
+    private void OnTriggerEnter(Collider other)
+    {
+        if(other.gameObject.layer == LayerMask.NameToLayer("Water"))
+        {
+            _touchingWater = true;
+        }
+    }
+
+    private void OnTriggerExit(Collider other)
+    {
+        if(other.gameObject.layer == LayerMask.NameToLayer("Water"))
+        {
+            _touchingWater = false;
+        }
     }
 }
