@@ -28,7 +28,7 @@ public class BoatMovement : MonoBehaviour
     private void Update()
     {
         
-        _rb.AddForce(_moveVector() * Time.deltaTime, ForceMode.VelocityChange);
+        _rb.AddForce((200 * _moveVector()) * Time.deltaTime, ForceMode.Impulse);
         Debug.Log(_rb.linearVelocity.magnitude);
         _oarVectors.Clear();
         foreach (var oar in _oarScripts)
