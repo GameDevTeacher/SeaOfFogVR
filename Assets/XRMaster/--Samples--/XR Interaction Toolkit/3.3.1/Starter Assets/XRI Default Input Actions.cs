@@ -977,7 +977,7 @@ public partial class @XRIDefaultInputActions: IInputActionCollection2, IDisposab
                     ""name"": ""Activate"",
                     ""type"": ""Button"",
                     ""id"": ""0c0991c5-d329-4afc-8892-1076b440477c"",
-                    ""expectedControlType"": ""Button"",
+                    ""expectedControlType"": """",
                     ""processors"": """",
                     ""interactions"": """",
                     ""initialStateCheck"": false
@@ -1062,6 +1062,15 @@ public partial class @XRIDefaultInputActions: IInputActionCollection2, IDisposab
                     ""processors"": """",
                     ""interactions"": """",
                     ""initialStateCheck"": true
+                },
+                {
+                    ""name"": ""Pause"",
+                    ""type"": ""Button"",
+                    ""id"": ""e6da2f42-ad29-425d-b119-dcb196e0f229"",
+                    ""expectedControlType"": """",
+                    ""processors"": """",
+                    ""interactions"": """",
+                    ""initialStateCheck"": false
                 }
             ],
             ""bindings"": [
@@ -1370,6 +1379,17 @@ public partial class @XRIDefaultInputActions: IInputActionCollection2, IDisposab
                     ""processors"": ""ScaleVector2(x=0),StickDeadzone"",
                     ""groups"": """",
                     ""action"": ""Translate Manipulation"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": false
+                },
+                {
+                    ""name"": """",
+                    ""id"": ""a7e89a6c-58e6-479d-a6f0-bb7d212b8897"",
+                    ""path"": ""<OculusTouchController>/menu"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": """",
+                    ""action"": ""Pause"",
                     ""isComposite"": false,
                     ""isPartOfComposite"": false
                 }
@@ -3528,6 +3548,7 @@ public partial class @XRIDefaultInputActions: IInputActionCollection2, IDisposab
         m_XRILeftInteraction_Manipulation = m_XRILeftInteraction.FindAction("Manipulation", throwIfNotFound: true);
         m_XRILeftInteraction_ScaleToggle = m_XRILeftInteraction.FindAction("Scale Toggle", throwIfNotFound: true);
         m_XRILeftInteraction_ScaleOverTime = m_XRILeftInteraction.FindAction("Scale Over Time", throwIfNotFound: true);
+        m_XRILeftInteraction_Pause = m_XRILeftInteraction.FindAction("Pause", throwIfNotFound: true);
         // XRI Left Locomotion
         m_XRILeftLocomotion = asset.FindActionMap("XRI Left Locomotion", throwIfNotFound: true);
         m_XRILeftLocomotion_TeleportMode = m_XRILeftLocomotion.FindAction("Teleport Mode", throwIfNotFound: true);
@@ -4110,6 +4131,7 @@ public partial class @XRIDefaultInputActions: IInputActionCollection2, IDisposab
     private readonly InputAction m_XRILeftInteraction_Manipulation;
     private readonly InputAction m_XRILeftInteraction_ScaleToggle;
     private readonly InputAction m_XRILeftInteraction_ScaleOverTime;
+    private readonly InputAction m_XRILeftInteraction_Pause;
     /// <summary>
     /// Provides access to input actions defined in input action map "XRI Left Interaction".
     /// </summary>
@@ -4169,6 +4191,10 @@ public partial class @XRIDefaultInputActions: IInputActionCollection2, IDisposab
         /// Provides access to the underlying input action "XRILeftInteraction/ScaleOverTime".
         /// </summary>
         public InputAction @ScaleOverTime => m_Wrapper.m_XRILeftInteraction_ScaleOverTime;
+        /// <summary>
+        /// Provides access to the underlying input action "XRILeftInteraction/Pause".
+        /// </summary>
+        public InputAction @Pause => m_Wrapper.m_XRILeftInteraction_Pause;
         /// <summary>
         /// Provides access to the underlying input action map instance.
         /// </summary>
@@ -4231,6 +4257,9 @@ public partial class @XRIDefaultInputActions: IInputActionCollection2, IDisposab
             @ScaleOverTime.started += instance.OnScaleOverTime;
             @ScaleOverTime.performed += instance.OnScaleOverTime;
             @ScaleOverTime.canceled += instance.OnScaleOverTime;
+            @Pause.started += instance.OnPause;
+            @Pause.performed += instance.OnPause;
+            @Pause.canceled += instance.OnPause;
         }
 
         /// <summary>
@@ -4278,6 +4307,9 @@ public partial class @XRIDefaultInputActions: IInputActionCollection2, IDisposab
             @ScaleOverTime.started -= instance.OnScaleOverTime;
             @ScaleOverTime.performed -= instance.OnScaleOverTime;
             @ScaleOverTime.canceled -= instance.OnScaleOverTime;
+            @Pause.started -= instance.OnPause;
+            @Pause.performed -= instance.OnPause;
+            @Pause.canceled -= instance.OnPause;
         }
 
         /// <summary>
@@ -5720,6 +5752,13 @@ public partial class @XRIDefaultInputActions: IInputActionCollection2, IDisposab
         /// <seealso cref="UnityEngine.InputSystem.InputAction.performed" />
         /// <seealso cref="UnityEngine.InputSystem.InputAction.canceled" />
         void OnScaleOverTime(InputAction.CallbackContext context);
+        /// <summary>
+        /// Method invoked when associated input action "Pause" is either <see cref="UnityEngine.InputSystem.InputAction.started" />, <see cref="UnityEngine.InputSystem.InputAction.performed" /> or <see cref="UnityEngine.InputSystem.InputAction.canceled" />.
+        /// </summary>
+        /// <seealso cref="UnityEngine.InputSystem.InputAction.started" />
+        /// <seealso cref="UnityEngine.InputSystem.InputAction.performed" />
+        /// <seealso cref="UnityEngine.InputSystem.InputAction.canceled" />
+        void OnPause(InputAction.CallbackContext context);
     }
     /// <summary>
     /// Interface to implement callback methods for all input action callbacks associated with input actions defined by "XRI Left Locomotion" which allows adding and removing callbacks.
