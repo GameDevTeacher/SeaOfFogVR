@@ -10,8 +10,8 @@ public class OarScript : MonoBehaviour
     }
 
     private float _maxDistance;
-
-    private bool _touchingWater;
+    private OarTip _oarTip;
+    public Vector3 OarVector = Vector3.zero;
 
     
     private MeshRenderer _meshRenderer;
@@ -24,6 +24,7 @@ public class OarScript : MonoBehaviour
     {
         _maxDistance = _targetOrientation.magnitude;
         _meshRenderer = GetComponentInChildren<MeshRenderer>();
+        _oarTip = GetComponentInChildren<OarTip>();
     }
     
     
@@ -36,28 +37,16 @@ public class OarScript : MonoBehaviour
         
         _handleTransform.position = transform.position + c;
 
-        if (_touchingWater)
+        if (_oarTip._touchingWater)
         {
             _meshRenderer.material = _waterMaterial;
-        } else if (!_touchingWater)
+            var OarTip = gameObject.GetComponentInChildren<OarTip>();
+            OarVector = OarTip.RowingVector;
+        } else if (!_oarTip._touchingWater)
         {
             _meshRenderer.material = _dryMaterial;
+            OarVector = Vector3.zero;
         }
     }
 
-    private void OnTriggerEnter(Collider other)
-    {
-        if(other.gameObject.layer == LayerMask.NameToLayer("Water"))
-        {
-            _touchingWater = true;
-        }
-    }
-
-    private void OnTriggerExit(Collider other)
-    {
-        if(other.gameObject.layer == LayerMask.NameToLayer("Water"))
-        {
-            _touchingWater = false;
-        }
-    }
 }

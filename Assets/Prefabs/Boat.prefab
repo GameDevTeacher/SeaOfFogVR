@@ -12,7 +12,7 @@ GameObject:
   - component: {fileID: 1631463951399476885}
   - component: {fileID: 4652708762649943414}
   - component: {fileID: 5148755748930982302}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: seat Main
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -121,7 +121,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 3509362175408703589}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Exit handle R
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -157,7 +157,7 @@ GameObject:
   - component: {fileID: 103124847399599558}
   - component: {fileID: 1782409157172432430}
   - component: {fileID: 2471149929353882246}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Cube (1)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -269,7 +269,7 @@ GameObject:
   - component: {fileID: 7382035664186583170}
   - component: {fileID: 6091911127214486562}
   - component: {fileID: 2362934258515290003}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Cube (3)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -381,7 +381,7 @@ GameObject:
   - component: {fileID: 5449026452601669249}
   - component: {fileID: 5950700092748447831}
   - component: {fileID: 8404199141312365836}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Cube
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -493,7 +493,7 @@ GameObject:
   - component: {fileID: 5352200626346738876}
   - component: {fileID: 3049315498533944387}
   - component: {fileID: 5097999116436846560}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Seat Front
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -604,7 +604,7 @@ GameObject:
   - component: {fileID: 5718169796123255987}
   - component: {fileID: 1152473149136984214}
   - component: {fileID: 907823659388485394}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Text (TMP)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -791,7 +791,7 @@ GameObject:
   - component: {fileID: 7718415492193065158}
   - component: {fileID: 210829660950786330}
   - component: {fileID: 2919844863515078288}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Seat Back
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -902,7 +902,7 @@ GameObject:
   - component: {fileID: 4183904522491112325}
   - component: {fileID: 5878127550500136445}
   - component: {fileID: 3774866659805554608}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Text (TMP) (1)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1083,7 +1083,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1683327304841975511}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Sitting Pos
   m_TagString: Untagged
   m_Icon: {fileID: 5132851093641282708, guid: 0000000000000000d000000000000000, type: 0}
@@ -1118,7 +1118,7 @@ GameObject:
   - component: {fileID: 8963851605978684870}
   - component: {fileID: 7164050056284253371}
   - component: {fileID: 1637773325274277781}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Cube (4)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1229,7 +1229,7 @@ GameObject:
   - component: {fileID: 4674499965354032685}
   - component: {fileID: 2576973884897766571}
   - component: {fileID: 8460871107177522215}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Exit Handle L
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1320,7 +1320,7 @@ GameObject:
   - component: {fileID: 5085489051838001997}
   - component: {fileID: 5100785498954609444}
   - component: {fileID: 45722541200457834}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Exit Collider
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1429,7 +1429,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1105739632952350570}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Exit handle
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1466,7 +1466,7 @@ GameObject:
   - component: {fileID: 3826798051782553285}
   - component: {fileID: 2806790733139689540}
   - component: {fileID: 1616947098422974748}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Cube (2)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1576,7 +1576,8 @@ GameObject:
   m_Component:
   - component: {fileID: 4853476456019342702}
   - component: {fileID: 371127318746726992}
-  m_Layer: 0
+  - component: {fileID: 6162740789015686313}
+  m_Layer: 6
   m_Name: Boat
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1633,11 +1634,24 @@ Rigidbody:
     m_Bits: 0
   m_ImplicitCom: 1
   m_ImplicitTensor: 1
-  m_UseGravity: 1
+  m_UseGravity: 0
   m_IsKinematic: 0
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 0
+--- !u!114 &6162740789015686313
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8158373560312026196}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 32d4e37f9e040924a93bbd0f78d4f410, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::BoatMovement
+  _oarVectors: []
 --- !u!1 &8559149871179550841
 GameObject:
   m_ObjectHideFlags: 0
@@ -1649,7 +1663,7 @@ GameObject:
   - component: {fileID: 7956258143120887104}
   - component: {fileID: 4418984412136870435}
   - component: {fileID: 4993186730951615620}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Exit Handle L
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1740,7 +1754,7 @@ GameObject:
   - component: {fileID: 2524162102314097650}
   - component: {fileID: 7107106833708170723}
   - component: {fileID: 429241917919269575}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Exit Collider
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1848,9 +1862,37 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 4853476456019342702}
     m_Modifications:
+    - target: {fileID: 517640209207530166, guid: 70a5043126a04124f8b7e798e8ead208, type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 519688689532048896, guid: 70a5043126a04124f8b7e798e8ead208, type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 745343985369645499, guid: 70a5043126a04124f8b7e798e8ead208, type: 3}
+      propertyPath: m_IsKinematic
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3341019473157326304, guid: 70a5043126a04124f8b7e798e8ead208, type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 4218279278503866291, guid: 70a5043126a04124f8b7e798e8ead208, type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 7465522659563643536, guid: 70a5043126a04124f8b7e798e8ead208, type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
     - target: {fileID: 8759481881617710388, guid: 70a5043126a04124f8b7e798e8ead208, type: 3}
       propertyPath: m_Name
       value: Oar (1)
+      objectReference: {fileID: 0}
+    - target: {fileID: 8759481881617710388, guid: 70a5043126a04124f8b7e798e8ead208, type: 3}
+      propertyPath: m_Layer
+      value: 6
       objectReference: {fileID: 0}
     - target: {fileID: 8804544064682084804, guid: 70a5043126a04124f8b7e798e8ead208, type: 3}
       propertyPath: m_LocalPosition.x
@@ -1892,11 +1934,56 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 3727387326477929158, guid: 70a5043126a04124f8b7e798e8ead208, type: 3}
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 519688689532048896, guid: 70a5043126a04124f8b7e798e8ead208, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 8478381036398856921}
+    - targetCorrespondingSourceObject: {fileID: 519688689532048896, guid: 70a5043126a04124f8b7e798e8ead208, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 3894406757164550204}
   m_SourcePrefab: {fileID: 100100000, guid: 70a5043126a04124f8b7e798e8ead208, type: 3}
+--- !u!1 &3565925553696247133 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 519688689532048896, guid: 70a5043126a04124f8b7e798e8ead208, type: 3}
+  m_PrefabInstance: {fileID: 3912212429040589661}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &8478381036398856921
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3565925553696247133}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 77d1f0d77015e1840a391020985be642, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::OarTip
+--- !u!135 &3894406757164550204
+SphereCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3565925553696247133}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Radius: 0.05
+  m_Center: {x: 0, y: 0, z: 0}
 --- !u!4 &5510996732356547225 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 8804544064682084804, guid: 70a5043126a04124f8b7e798e8ead208, type: 3}
@@ -1910,9 +1997,37 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 4853476456019342702}
     m_Modifications:
+    - target: {fileID: 517640209207530166, guid: 70a5043126a04124f8b7e798e8ead208, type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 519688689532048896, guid: 70a5043126a04124f8b7e798e8ead208, type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 3341019473157326304, guid: 70a5043126a04124f8b7e798e8ead208, type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 3727387326477929158, guid: 70a5043126a04124f8b7e798e8ead208, type: 3}
+      propertyPath: m_IsTrigger
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4218279278503866291, guid: 70a5043126a04124f8b7e798e8ead208, type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 7465522659563643536, guid: 70a5043126a04124f8b7e798e8ead208, type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
     - target: {fileID: 8759481881617710388, guid: 70a5043126a04124f8b7e798e8ead208, type: 3}
       propertyPath: m_Name
       value: Oar
+      objectReference: {fileID: 0}
+    - target: {fileID: 8759481881617710388, guid: 70a5043126a04124f8b7e798e8ead208, type: 3}
+      propertyPath: m_Layer
+      value: 6
       objectReference: {fileID: 0}
     - target: {fileID: 8804544064682084804, guid: 70a5043126a04124f8b7e798e8ead208, type: 3}
       propertyPath: m_LocalPosition.x
@@ -1957,10 +2072,30 @@ PrefabInstance:
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 519688689532048896, guid: 70a5043126a04124f8b7e798e8ead208, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 5347062467973993056}
   m_SourcePrefab: {fileID: 100100000, guid: 70a5043126a04124f8b7e798e8ead208, type: 3}
 --- !u!4 &2059834383102141582 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 8804544064682084804, guid: 70a5043126a04124f8b7e798e8ead208, type: 3}
   m_PrefabInstance: {fileID: 7396606415518182730}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &7030198477385546570 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 519688689532048896, guid: 70a5043126a04124f8b7e798e8ead208, type: 3}
+  m_PrefabInstance: {fileID: 7396606415518182730}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &5347062467973993056
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7030198477385546570}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 77d1f0d77015e1840a391020985be642, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::OarTip
