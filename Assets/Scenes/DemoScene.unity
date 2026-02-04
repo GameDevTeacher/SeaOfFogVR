@@ -3815,6 +3815,10 @@ PrefabInstance:
       value: GazeActivationZone
       objectReference: {fileID: 0}
     - target: {fileID: 6684695113594104826, guid: 4f7b6e4d9c721834e97d07d4cd95bf74, type: 3}
+      propertyPath: m_EnableOnEntry
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6684695113594104826, guid: 4f7b6e4d9c721834e97d07d4cd95bf74, type: 3}
       propertyPath: m_ActivationObject
       value: 
       objectReference: {fileID: 331616097}
