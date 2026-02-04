@@ -10,18 +10,14 @@ public class Test_input : MonoBehaviour
       {
          StoryEventsController.current.InteractWithObject();
       }
-      if (Keyboard.current.yKey.wasPressedThisFrame)
-      {
-         var countDownSeconds = 10f;
-         StoryEventsController.current.CountDownEvent(countDownSeconds);
-            
-      }
 
       if (Keyboard.current.rKey.wasPressedThisFrame)
       {
          var id = 1;
          StoryEventsController.current.EchoInteraction(id);
       }
+
+      
    }
    
 }

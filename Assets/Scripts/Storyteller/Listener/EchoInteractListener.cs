@@ -6,7 +6,7 @@ public class EchoInteractListener : MonoBehaviour
     [SerializeField] private int _objectId;
     private void Start()
     {
-        StoryEventsController.current.onEchoInteraction += PlayEcho;
+        //StoryEventsController.current.onEchoInteraction += PlayEcho;
     }
 
     private void PlayEcho(int id)
