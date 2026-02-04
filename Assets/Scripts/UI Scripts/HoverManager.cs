@@ -5,22 +5,21 @@ using UnityEngine.SceneManagement;
 public class HoverManager : MonoBehaviour
 {
     public Material yesMat, noMat;
-    public MeshRenderer trapDoorRenderer;
     public SceneAsset sceneToLoad;
     
-    public void FeelTheHover()
+    public void FeelTheHover(MeshRenderer thisMesh)
     {
         print("Currently feeling the energy of the player");
-        trapDoorRenderer.material = yesMat;
+        thisMesh.material = yesMat;
     }
 
-    public void UnfeelTheHover()
+    public void UnfeelTheHover(MeshRenderer thisMesh)
     {
         print("Unfeeling the energy of the player");
-        trapDoorRenderer.material = noMat;
+        thisMesh.material = noMat;
     }
 
-    public void StartGame(bool shouldSceneBeLoaded)
+    public void StartGame(bool shouldSceneBeLoaded, Animator animator, AnimationClip animationClip)
     {
         if (shouldSceneBeLoaded)
         {
@@ -28,7 +27,14 @@ public class HoverManager : MonoBehaviour
         }
         else
         {
+            animator.Play(animationClip.name);
             print("Scene not loaded.");
         }
+    }
+
+    public void InteractWithHatch(SkinnedMeshRenderer thisMesh)
+    {
+        print("Interacting with hatch");
+        thisMesh.material = noMat;
     }
 }
