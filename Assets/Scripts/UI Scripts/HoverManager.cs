@@ -6,6 +6,8 @@ public class HoverManager : MonoBehaviour
 {
     public Material yesMat, noMat;
     public SceneAsset sceneToLoad;
+    public Animator animator;
+    public AnimationClip clip;
     
     public void FeelTheHover(MeshRenderer thisMesh)
     {
@@ -19,7 +21,7 @@ public class HoverManager : MonoBehaviour
         thisMesh.material = noMat;
     }
 
-    public void StartGame(bool shouldSceneBeLoaded, Animator animator, AnimationClip animationClip)
+    public void StartGame(bool shouldSceneBeLoaded)
     {
         if (shouldSceneBeLoaded)
         {
@@ -27,14 +29,8 @@ public class HoverManager : MonoBehaviour
         }
         else
         {
-            animator.Play(animationClip.name);
+            animator.Play(clip.name);
             print("Scene not loaded.");
         }
-    }
-
-    public void InteractWithHatch(SkinnedMeshRenderer thisMesh)
-    {
-        print("Interacting with hatch");
-        thisMesh.material = noMat;
     }
 }
