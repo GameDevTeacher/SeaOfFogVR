@@ -17,6 +17,7 @@ public class OarScript : MonoBehaviour
     private MeshRenderer _meshRenderer;
     [SerializeField] private Material _waterMaterial;
     [SerializeField] private Material _dryMaterial;
+
     
     
     
@@ -47,6 +48,7 @@ public class OarScript : MonoBehaviour
             _meshRenderer.material = _dryMaterial;
             OarVector = Vector3.zero;
         }
+        
     }
 
 }

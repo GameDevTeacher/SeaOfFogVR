@@ -5,35 +5,28 @@ using UnityEngine;
 public class BoatMovement : MonoBehaviour
 {
     private Rigidbody _rb;
-    private List<OarScript> _oarScripts;
+    [SerializeField] private List<OarScript> _oarScripts;
     [SerializeField] private List<Vector3> _oarVectors;
+
+    [SerializeField] private List<Transform> _oarAnchors;
 
     private void Awake()
     {
-        _oarScripts = GetComponentsInChildren<OarScript>().ToList();
-        
+        //_oarScripts = GetComponentsInChildren<OarScript>().ToList();
         _rb = gameObject.GetComponent<Rigidbody>();
-    }
-    
-    private Vector3 _moveVector()
-    {
-        Vector3 V3 = Vector3.zero;
-        foreach (var vector in _oarVectors)
-        {
-            V3 += vector;
-        }
-        return V3;
     }
 
     private void Update()
     {
         
-        _rb.AddForce((200 * _moveVector()) * Time.deltaTime, ForceMode.Impulse);
+        //_rb.AddForce((200 * _moveVector()) * Time.deltaTime, ForceMode.Impulse);
         Debug.Log(_rb.linearVelocity.magnitude);
         _oarVectors.Clear();
         foreach (var oar in _oarScripts)
         {
             _oarVectors.Add(oar.OarVector);
         }
+        _rb.AddForceAtPosition(_oarVectors[0], _oarAnchors[0].position, ForceMode.Impulse);
+        _rb.AddForceAtPosition(_oarVectors[1], _oarAnchors[1].position, ForceMode.Impulse);
     }
 }
