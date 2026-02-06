@@ -301,6 +301,9 @@ MonoBehaviour:
   text: {fileID: 778168576}
   lever: {fileID: 1123619730}
   leverRigidbody: {fileID: 1123619732}
+  leverTransform: {fileID: 1123619729}
+  maxLimit: 75
+  minLimit: -75
 --- !u!1 &212420436
 GameObject:
   m_ObjectHideFlags: 0
