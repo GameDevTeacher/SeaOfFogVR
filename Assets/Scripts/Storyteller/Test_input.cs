@@ -10,7 +10,6 @@ public class Test_input : MonoBehaviour
 
       if (Keyboard.current.rKey.wasPressedThisFrame)
       {
-         var id = 1;
          StoryEventsController.current.EchoInteraction();
       }
 

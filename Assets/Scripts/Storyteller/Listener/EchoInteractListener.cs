@@ -5,13 +5,14 @@ using UnityEngine;
 public class EchoInteractListener : MonoBehaviour
 {
     [SerializeField] private string EchoFileName;
-    public string[] echoes; 
+    public string[] echoes;
+    private Material _materialColour;
     
     public void Start()
     {
         StoryEventsController.current.onEchoInteraction += PlayEcho;
         echoes = new []{"Test_echo_1",  "Test_echo_2", "Test_echo_3"};
-        
+        _materialColour = GetComponent<MeshRenderer>().material;
     }
 
     
@@ -23,6 +24,8 @@ public class EchoInteractListener : MonoBehaviour
             {
                 //Replace with audio later
                 Debug.Log("Echo: " + echo);
+                _materialColour.color = Color.chartreuse;
+                
             }
         }
     }
