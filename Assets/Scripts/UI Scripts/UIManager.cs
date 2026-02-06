@@ -6,7 +6,7 @@ using UnityEngine.SceneManagement;
 public class UIManager : MonoBehaviour
 {
     [Header("Start Game")]
-    [SerializeField] private SceneAsset sceneToLoad;
+    //[SerializeField] private SceneAsset sceneToLoad;
     
     [Header("Pausing")]
     [SerializeField] private GameObject pauseMenu;
@@ -45,7 +45,7 @@ public class UIManager : MonoBehaviour
     }
     
     // Starting with something simple, a system that loads a specific scene, without having to write a string name
-    public void StartGame(bool shouldSceneBeLoaded)
+   /* public void StartGame(bool shouldSceneBeLoaded)
     {
         if (shouldSceneBeLoaded)
         {
@@ -56,7 +56,7 @@ public class UIManager : MonoBehaviour
             print("Scene not loaded.");
         }
         
-    }
+    }*/
 
     public void Quit()
     {

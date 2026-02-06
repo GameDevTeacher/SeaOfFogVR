@@ -5,7 +5,7 @@ using UnityEngine.SceneManagement;
 public class HoverManager : MonoBehaviour
 {
     public Material yesMat, noMat;
-    public SceneAsset sceneToLoad;
+    //public SceneAsset sceneToLoad;
     public Animator animator;
     public AnimationClip clip;
     
@@ -21,7 +21,7 @@ public class HoverManager : MonoBehaviour
         thisMesh.material = noMat;
     }
 
-    public void StartGame(bool shouldSceneBeLoaded)
+    /*public void StartGame(bool shouldSceneBeLoaded)
     {
         if (shouldSceneBeLoaded)
         {
@@ -32,5 +32,5 @@ public class HoverManager : MonoBehaviour
             animator.Play(clip.name);
             print("Scene not loaded.");
         }
-    }
+    }*/
 }
