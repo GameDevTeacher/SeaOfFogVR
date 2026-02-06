@@ -64,7 +64,7 @@ Material:
     - _Peak: 1.07
     - _Peak_1: 0.93
     - _Peak_2: 0.5
-    - _QueueControl: 0
+    - _QueueControl: 1
     - _QueueOffset: 0
     - _Smoothness: 0.364
     - _Speed: 0.8
