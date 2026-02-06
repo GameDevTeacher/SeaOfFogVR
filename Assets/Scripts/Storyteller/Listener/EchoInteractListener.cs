@@ -14,12 +14,14 @@ public class EchoInteractListener : MonoBehaviour
         
     }
 
+    
     public void PlayEcho()
     {
         foreach (var echo in echoes)
         {
             if (echo.Equals(EchoFileName, StringComparison.OrdinalIgnoreCase))
             {
+                //Replace with audio later
                 Debug.Log("Echo: " + echo);
             }
         }
