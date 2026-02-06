@@ -10,22 +10,11 @@ public class StoryEventsController : MonoBehaviour
     current = this;
     
   }
-
-
-  public void InteractWithObject()
-  {
-    
-  }
   
-    public void MoveFog(float seconds)
+  public Action onEchoInteraction;
+  public void EchoInteraction()
   {
-    
-  }
-
-
-  public void EchoInteraction(int id)
-  {
-    
+    onEchoInteraction.Invoke();
   }
   
   

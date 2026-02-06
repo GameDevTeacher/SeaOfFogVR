@@ -1,23 +1,29 @@
 using System;
+using System.Collections.Generic;
 using UnityEngine;
 
 public class EchoInteractListener : MonoBehaviour
 {
-    [SerializeField] private int _objectId;
-    private void Start()
+    [SerializeField] private string EchoFileName;
+    public string[] echoes; 
+    
+    public void Start()
     {
-        //StoryEventsController.current.onEchoInteraction += PlayEcho;
+        StoryEventsController.current.onEchoInteraction += PlayEcho;
+        echoes = new []{"Test_echo_1",  "Test_echo_2", "Test_echo_3"};
+        
     }
 
-    private void PlayEcho(int id)
+    public void PlayEcho()
     {
-        if (_objectId == id)
+        foreach (var echo in echoes)
         {
-            Debug.Log("Echo 1");
-        }
-        else if (_objectId == id - 1)
-        {
-            Debug.Log("Echo");
+            if (echo.Equals(EchoFileName, StringComparison.OrdinalIgnoreCase))
+            {
+                Debug.Log("Echo: " + echo);
+            }
         }
     }
+
+    
 }
