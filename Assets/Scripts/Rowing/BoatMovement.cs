@@ -10,7 +10,7 @@ public class BoatMovement : MonoBehaviour
 
     [SerializeField] private List<Transform> _oarAnchors;
 
-    [SerializeField] private float _sensitivity;
+    [SerializeField] private float _sensitivity = 5;
 
     private void Awake()
     {
