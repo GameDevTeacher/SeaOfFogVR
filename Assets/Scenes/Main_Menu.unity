@@ -3619,11 +3619,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 475e5ead4b72f9842be4e41af1f26ef9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::MainMenuManager
-  fadeSpeed: 0
-  fadeMat: {fileID: 0}
-  hoverMat: {fileID: 0}
-  animator: {fileID: 0}
-  clip: {fileID: 0}
+  fadeSpeed: 1
+  overlayRenderer: {fileID: 0}
+  hoveringRenderer: {fileID: 0}
+  animator: {fileID: 243652828}
+  clip: {fileID: 7400000, guid: 6641d1637652f52438ce8ddf91712d09, type: 2}
   shouldSceneBeLoaded: 0
 --- !u!4 &1487533092
 Transform:
