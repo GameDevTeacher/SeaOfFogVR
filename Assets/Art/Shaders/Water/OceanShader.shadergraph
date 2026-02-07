@@ -2934,7 +2934,7 @@
     "m_PerRendererData": false,
     "m_customAttributes": [],
     "m_Value": {
-        "m_SerializedTexture": "{\"texture\":{\"fileID\":2800000,\"guid\":\"38f573058d4591546af8ab7ebae97093\",\"type\":3}}",
+        "m_SerializedTexture": "{\"texture\":{\"fileID\":2800000,\"guid\":\"d0e26af7eb5d5f249b0d48442bdbee1e\",\"type\":3}}",
         "m_Guid": ""
     },
     "isMainTexture": false,
@@ -3118,7 +3118,7 @@
     "m_Title": "Normal 3",
     "m_Position": {
         "x": -1516.0,
-        "y": 2823.20068359375
+        "y": 2823.199951171875
     }
 }
 
@@ -4516,7 +4516,7 @@
     "m_Title": "Normal 1",
     "m_Position": {
         "x": -1520.0,
-        "y": 1505.5999755859375
+        "y": 1505.599853515625
     }
 }
 
@@ -4685,7 +4685,7 @@
     "m_Title": "Fresnel Effect",
     "m_Position": {
         "x": 896.0001220703125,
-        "y": 690.4000854492188
+        "y": 690.4000244140625
     }
 }
 
@@ -4854,7 +4854,7 @@
     "m_ObjectId": "5d321f1c0225494f806ebeaf2e32be91",
     "m_Title": "Normal 2",
     "m_Position": {
-        "x": -1517.60009765625,
+        "x": -1517.5999755859375,
         "y": 2176.0
     }
 }
@@ -8834,8 +8834,8 @@
     "m_ObjectId": "b628c68e29f94589b61771fc34e2c784",
     "m_Title": "Wave3",
     "m_Position": {
-        "x": -732.8001098632813,
-        "y": -73.60005187988281
+        "x": -732.7999877929688,
+        "y": -73.5999755859375
     }
 }
 
@@ -9782,7 +9782,7 @@
     "m_ObjectId": "cbaea835a9f347d993b8042e4ed0a8c9",
     "m_Title": "Wave1",
     "m_Position": {
-        "x": -812.8001098632813,
+        "x": -812.7999877929688,
         "y": -1141.60009765625
     }
 }
@@ -10994,7 +10994,7 @@
     "m_PerRendererData": false,
     "m_customAttributes": [],
     "m_Value": {
-        "m_SerializedTexture": "{\"texture\":{\"fileID\":2800000,\"guid\":\"39148b51cfd5bf34c8d59674726acb04\",\"type\":3}}",
+        "m_SerializedTexture": "{\"texture\":{\"fileID\":2800000,\"guid\":\"d0e26af7eb5d5f249b0d48442bdbee1e\",\"type\":3}}",
         "m_Guid": ""
     },
     "isMainTexture": false,
@@ -11010,8 +11010,8 @@
     "m_ObjectId": "e67fe9f44d6e49189475e0f2219ae61d",
     "m_Title": "Wave2",
     "m_Position": {
-        "x": -715.2000732421875,
-        "y": -583.2000732421875
+        "x": -715.199951171875,
+        "y": -583.2000122070313
     }
 }
 
@@ -11484,8 +11484,8 @@
     "m_ObjectId": "ed171e6e405946bc82d7cf4fe77944c1",
     "m_Title": "Water Color",
     "m_Position": {
-        "x": 573.6001586914063,
-        "y": 171.2000274658203
+        "x": 573.5999755859375,
+        "y": 171.1999969482422
     }
 }
 
