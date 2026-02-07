@@ -1,13 +1,18 @@
 using UnityEngine;
-using UnityEditor;
 using UnityEngine.SceneManagement;
 
 public class HoverManager : MonoBehaviour
 {
-    public Material yesMat, noMat;
-    public SceneAsset sceneToLoad;
-    public Animator animator;
-    public AnimationClip clip;
+    [Header("Scene Loading")]
+    [SerializeField] private bool shouldSceneBeLoaded;
+    
+    [Header("Animation")]
+    [SerializeField] private Animator animator;
+    [SerializeField] private AnimationClip clip;
+    
+    [Header("Testing")]
+    [SerializeField] private Material yesMat;
+    [SerializeField] private Material noMat;
     
     public void FeelTheHover(MeshRenderer thisMesh)
     {
@@ -21,11 +26,11 @@ public class HoverManager : MonoBehaviour
         thisMesh.material = noMat;
     }
 
-    public void StartGame(bool shouldSceneBeLoaded)
+    public void StartGame(string sceneName)
     {
         if (shouldSceneBeLoaded)
         {
-            SceneManager.LoadScene(sceneToLoad.name);
+            SceneManager.LoadScene(sceneName);
         }
         else
         {

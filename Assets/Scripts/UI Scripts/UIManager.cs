@@ -1,13 +1,8 @@
-using UnityEditor;
 using UnityEngine;
 using UnityEngine.InputSystem;
-using UnityEngine.SceneManagement;
 
 public class UIManager : MonoBehaviour
 {
-    [Header("Start Game")]
-    [SerializeField] private SceneAsset sceneToLoad;
-    
     [Header("Pausing")]
     [SerializeField] private GameObject pauseMenu;
     [SerializeField] private bool isPaused;
@@ -42,20 +37,6 @@ public class UIManager : MonoBehaviour
             isPaused = false;
             Time.timeScale = 1;
         }
-    }
-    
-    // Starting with something simple, a system that loads a specific scene, without having to write a string name
-    public void StartGame(bool shouldSceneBeLoaded)
-    {
-        if (shouldSceneBeLoaded)
-        {
-            SceneManager.LoadScene(sceneToLoad.name);
-        }
-        else
-        {
-            print("Scene not loaded.");
-        }
-        
     }
 
     public void Quit()
