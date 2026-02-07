@@ -578,8 +578,8 @@
     "m_ObjectId": "06694a169cd944da93bb367826144d2d",
     "m_Title": "Fresnel",
     "m_Position": {
-        "x": -1052.0,
-        "y": 185.60006713867188
+        "x": -1051.9998779296875,
+        "y": 185.60009765625
     }
 }
 
@@ -3807,7 +3807,7 @@
     "m_LiteralFloatMode": false,
     "m_RangeValues": {
         "x": 0.0,
-        "y": 0.30000001192092898
+        "y": 1.0
     },
     "m_SliderType": 0,
     "m_SliderPower": 3.0,
