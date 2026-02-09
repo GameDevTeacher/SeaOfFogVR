@@ -12,21 +12,12 @@ public class MainMenuManager : MonoBehaviour
     [SerializeField] private Renderer overlayRenderer;
     private Material _fadeMat; // The material used when fading to the next scene.
     
-    [Header("Hovering")]
-    [SerializeField] private Renderer hoveringRenderer;
-    [SerializeField] private float hoveringSpeed;
-    private Material _hoverMat; // The material used when the player hovers over an object.
-    
     [Header("Trapdoor")]
     [SerializeField] private Animator animator;
     [SerializeField] private AnimationClip clip;
     [SerializeField] private bool shouldSceneBeLoaded = false;
 
-    private void Awake()
-    {
-        _fadeMat = overlayRenderer.material;
-        _hoverMat = hoveringRenderer.materials[1];
-    }
+    private void Awake() => _fadeMat = overlayRenderer.material;
     
     public void StartGame(string sceneName)
     {
@@ -41,21 +32,6 @@ public class MainMenuManager : MonoBehaviour
             print("Scene not loaded.");
         }
     }
-
-    public void Highlight(float targetHighlight)
-    {
-        var highlightStrength = Mathf.MoveTowards(_hoverMat.GetFloat("_Transparency"), targetHighlight, 
-            Time.deltaTime * hoveringSpeed);
-        _hoverMat.SetFloat("_Transparency", highlightStrength);
-    }
-
-    public void WibbleWobble(float targetWobble)
-    {
-        var highlightStrength = Mathf.MoveTowards(_hoverMat.GetFloat("_VertexOffset"), targetWobble, 
-            Time.deltaTime * hoveringSpeed);
-        _hoverMat.SetFloat("_VertexOffset", highlightStrength);
-    }
-    
 
     public void CameraFade(float targetAlpha)
     {
