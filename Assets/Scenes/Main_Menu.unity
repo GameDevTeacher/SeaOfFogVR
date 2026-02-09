@@ -1882,10 +1882,34 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 2527215978752845833, guid: f6336ac4ac8b4d34bc5072418cdc62a0, type: 3}
+      propertyPath: fadeInSpeed
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2527215978752845833, guid: f6336ac4ac8b4d34bc5072418cdc62a0, type: 3}
+      propertyPath: fadeOutSpeed
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 2527215978752845833, guid: f6336ac4ac8b4d34bc5072418cdc62a0, type: 3}
+      propertyPath: sphereCheckSize
+      value: 0.01
+      objectReference: {fileID: 0}
     - target: {fileID: 2734315883792958320, guid: f6336ac4ac8b4d34bc5072418cdc62a0, type: 3}
       propertyPath: m_InteractionManager
       value: 
       objectReference: {fileID: 1429704528}
+    - target: {fileID: 9005267169892344134, guid: f6336ac4ac8b4d34bc5072418cdc62a0, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 0.6
+      objectReference: {fileID: 0}
+    - target: {fileID: 9005267169892344134, guid: f6336ac4ac8b4d34bc5072418cdc62a0, type: 3}
+      propertyPath: m_LocalScale.y
+      value: 0.6
+      objectReference: {fileID: 0}
+    - target: {fileID: 9005267169892344134, guid: f6336ac4ac8b4d34bc5072418cdc62a0, type: 3}
+      propertyPath: m_LocalScale.z
+      value: 0.6
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -1906,6 +1930,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1273340382}
   - component: {fileID: 1273340383}
+  - component: {fileID: 1273340384}
   m_Layer: 0
   m_Name: GazeObject
   m_TagString: Untagged
@@ -1959,28 +1984,52 @@ MonoBehaviour:
   m_FirstHoverEntered:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 212420437}
-        m_TargetAssemblyTypeName: HoverManager, Assembly-CSharp
-        m_MethodName: FeelTheHover
-        m_Mode: 2
+      - m_Target: {fileID: 1273340384}
+        m_TargetAssemblyTypeName: UIElementsInteract, Assembly-CSharp
+        m_MethodName: Highlight
+        m_Mode: 4
         m_Arguments:
-          m_ObjectArgument: {fileID: 1712403126}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.MeshRenderer, UnityEngine
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
           m_IntArgument: 0
-          m_FloatArgument: 0
+          m_FloatArgument: 1
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 1273340384}
+        m_TargetAssemblyTypeName: UIElementsInteract, Assembly-CSharp
+        m_MethodName: WibbleWobble
+        m_Mode: 4
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0.05
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
   m_LastHoverExited:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 212420437}
-        m_TargetAssemblyTypeName: HoverManager, Assembly-CSharp
-        m_MethodName: UnfeelTheHover
-        m_Mode: 2
+      - m_Target: {fileID: 1273340384}
+        m_TargetAssemblyTypeName: UIElementsInteract, Assembly-CSharp
+        m_MethodName: Highlight
+        m_Mode: 4
         m_Arguments:
-          m_ObjectArgument: {fileID: 1712403126}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.MeshRenderer, UnityEngine
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 1273340384}
+        m_TargetAssemblyTypeName: UIElementsInteract, Assembly-CSharp
+        m_MethodName: WibbleWobble
+        m_Mode: 4
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
           m_IntArgument: 0
           m_FloatArgument: 0
           m_StringArgument: 
@@ -2039,6 +2088,19 @@ MonoBehaviour:
   m_StartingInteractionStrengthFilters: []
   m_AutoFindParentInteractableInHierarchy: 0
   m_ParentInteractableObject: {fileID: 0}
+--- !u!114 &1273340384
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1273340381}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 153a57f37d23edf49bb93035b5c71fd0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::UIElementsInteract
+  hoveringRenderer: {fileID: 1712403126}
 --- !u!1 &1286490778
 GameObject:
   m_ObjectHideFlags: 0
@@ -3164,6 +3226,7 @@ MeshRenderer:
   m_RendererPriority: 0
   m_Materials:
   - {fileID: 2100000, guid: 31321ba15b8f8eb4c954353edc038b1d, type: 2}
+  - {fileID: 2100000, guid: 1dad0767ebc276041b0136415611659d, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -3844,6 +3907,10 @@ PrefabInstance:
       propertyPath: m_SelectEntered.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
       objectReference: {fileID: 1487533091}
+    - target: {fileID: 6796577875485204203, guid: 9442454fb59c56a4aa132f430d1ed8f2, type: 3}
+      propertyPath: m_FirstHoverEntered.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_FloatArgument
+      value: 0.5
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
