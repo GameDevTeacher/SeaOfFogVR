@@ -103,15 +103,6 @@ MonoBehaviour:
     - model: {fileID: 8926484042661614539}
       id: 0
       isStickyNote: 0
-    - model: {fileID: 0}
-      id: 0
-      isStickyNote: 0
-    - model: {fileID: 8926484042661614553}
-      id: 0
-      isStickyNote: 0
-    - model: {fileID: 8926484042661614651}
-      id: 0
-      isStickyNote: 0
   - title: Bezier Curve
     position:
       serializedVersion: 2
@@ -901,7 +892,7 @@ MonoBehaviour:
       m_Type:
         m_SerializableType: UnityEngine.Mesh, UnityEngine.CoreModule, Version=0.0.0.0,
           Culture=neutral, PublicKeyToken=null
-      m_SerializableObject: '{"obj":{"fileID":-3649817834751959958,"guid":"5fe77afa245499541afcd81ad9f213c2","type":3}}'
+      m_SerializableObject: '{"obj":{"fileID":-3649817834751959958,"guid":"c9a40627b4dfd6847af0e8ac8d7d4930","type":3}}'
     m_Space: -1
   m_Property:
     name: mesh
