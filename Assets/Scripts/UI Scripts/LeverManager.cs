@@ -36,16 +36,16 @@ public class LeverManager : MonoBehaviour
         if (leverRigidbody.angularVelocity != Vector3.zero)
         {
             var value = Mathf.Clamp(lever.angle, minLimit, maxLimit);
-            print("The current value is: " + value);
-            print("When regulated, that value becomes: " + ScaleRegulator(value));
+            // print("The current value is: " + value);
+            // print("When regulated, that value becomes: " + ScaleRegulator(value));
             text.text = "Value: " + Mathf.Round(ScaleRegulator(value));
-            print(Mathf.Round(lever.angle));
+            // print(Mathf.Round(lever.angle));
         }
     }
 
     private float ScaleRegulator(float value)
     {
-        print("value is" + value);
+        // print("value is" + value);
         return (value + 75) * 2 / 3;
     }
 }
