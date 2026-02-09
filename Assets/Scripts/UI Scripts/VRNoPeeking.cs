@@ -10,7 +10,13 @@ public class VRNoPeeking : MonoBehaviour
     private Material _cameraFadeMat;
     private bool _isCameraFadedOut = false;
     
-    private void Awake() => _cameraFadeMat = GetComponent<Renderer>().material;
+    private MainMenuManager _mainMenuManager;
+
+    private void Start()
+    { 
+        _mainMenuManager = MainMenuManager.Instance;
+        _cameraFadeMat = GetComponent<Renderer>().material;
+    } 
 
     private void Update()
     {
@@ -18,6 +24,10 @@ public class VRNoPeeking : MonoBehaviour
         {
             CameraFade(1f);
             _isCameraFadedOut = true;
+        }
+        else if (_mainMenuManager.shouldCameraFade && !_isCameraFadedOut)
+        {
+            CameraFade(1f);
         }
         else
         {
@@ -29,9 +39,10 @@ public class VRNoPeeking : MonoBehaviour
 
     public void CameraFade(float targetAlpha)
     {
-        var fadeValue = Mathf.MoveTowards(_cameraFadeMat.GetFloat("_AlphaValue"), targetAlpha, 
+        var alphaName = Shader.PropertyToID("_AlphaValue");
+        var fadeValue = Mathf.MoveTowards(_cameraFadeMat.GetFloat(alphaName), targetAlpha, 
             Time.deltaTime * fadeSpeed);
-        _cameraFadeMat.SetFloat("_AlphaValue", fadeValue);
+        _cameraFadeMat.SetFloat(alphaName, fadeValue);
         
         if (fadeValue <= 0.01f)
             _isCameraFadedOut = false;

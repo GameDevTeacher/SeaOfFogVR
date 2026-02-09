@@ -7,17 +7,15 @@ using UnityEngine.SceneManagement;
 /// </summary>
 public class MainMenuManager : MonoBehaviour
 {
-    [Header("Fading")]
-    [SerializeField] private float fadeSpeed; // The speed at which the camera fades to black.
-    [SerializeField] private Renderer overlayRenderer;
-    private Material _fadeMat; // The material used when fading to the next scene.
+    public static MainMenuManager Instance;
     
     [Header("Trapdoor")]
     [SerializeField] private Animator animator;
     [SerializeField] private AnimationClip clip;
     [SerializeField] private bool shouldSceneBeLoaded = false;
+    public bool shouldCameraFade = false;
 
-    private void Awake() => _fadeMat = overlayRenderer.material;
+    private void Awake() => Instance = this;
     
     public void StartGame(string sceneName)
     {
@@ -28,15 +26,8 @@ public class MainMenuManager : MonoBehaviour
         else
         {
             animator.Play(clip.name);
-            CameraFade(1f);
+            shouldCameraFade = true;
             print("Scene not loaded.");
         }
-    }
-
-    public void CameraFade(float targetAlpha)
-    {
-        var fadeValue = Mathf.MoveTowards(_fadeMat.GetFloat("_AlphaValue"), targetAlpha, 
-            Time.deltaTime * fadeSpeed);
-        _fadeMat.SetFloat("_AlphaValue", fadeValue);
     }
 }
