@@ -10,17 +10,23 @@ public class EchoInteractListener : MonoBehaviour
     
     public void Start()
     {
+        /*This enables testing using the custom event system,
+          can be triggered in XR interactable
+          Select event instead*/
         StoryEventsController.current.onEchoInteraction += PlayEcho;
+        
         echoes = new []{"Test_echo_1",  "Test_echo_2", "Test_echo_3"};
         _materialColour = GetComponent<MeshRenderer>().material;
     }
 
+    
     public void PlayEcho()
     {
         foreach (var echo in echoes)
         {
             if (echo.Equals(EchoFileName, StringComparison.OrdinalIgnoreCase))
             {
+                //Replace with audio later
                 Debug.Log("Echo: " + echo);
                 _materialColour.color = Color.chartreuse;
                 
