@@ -19,6 +19,7 @@ public class Teleporter : MonoBehaviour, IInteractable
     {
         player = GameObject.FindWithTag("Player");
         _xrOrigin = player.gameObject.GetComponent<XROrigin>();
+        defaultYOffset = _xrOrigin.CameraYOffset;
         if (player == null) Debug.LogError("Player not found");
     }
     
@@ -48,7 +49,7 @@ public class Teleporter : MonoBehaviour, IInteractable
     {
         locomotion.SetActive(true);
         teleportation.SetActive(true);
-        _xrOrigin.RequestedTrackingOriginMode = XROrigin.TrackingOriginMode.Floor;
+        _xrOrigin.RequestedTrackingOriginMode = XROrigin.TrackingOriginMode.Device;
         _xrOrigin.CameraYOffset = defaultYOffset;
     }
     
