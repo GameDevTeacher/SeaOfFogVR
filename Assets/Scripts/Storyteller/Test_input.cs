@@ -12,6 +12,15 @@ public class Test_input : MonoBehaviour
       {
          StoryEventsController.current.EchoInteraction();
       }
+      if (Keyboard.current.dKey.wasPressedThisFrame)
+      {
+         StoryEventsController.current.TimedTriggerStart(3f);
+      }
+      if (Keyboard.current.fKey.wasPressedThisFrame)
+      {
+         StoryEventsController.current.TimeTriggerStop();
+      }
+      
 
       
    }

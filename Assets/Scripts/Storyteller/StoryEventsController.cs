@@ -28,6 +28,18 @@ public class StoryEventsController : MonoBehaviour
     onTriggerExited.Invoke();
   }
   
+  public Action<float> onTimedTriggerStart;
+
+  public void TimedTriggerStart(float duration)
+  {
+    onTimedTriggerStart.Invoke(duration);
+  }
+  public Action onTimedTriggerStop;
+
+  public void TimeTriggerStop()
+  {
+    onTimedTriggerStop.Invoke();
+  }
   
 
 
