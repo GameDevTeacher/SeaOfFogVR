@@ -1102,7 +1102,7 @@ GameObject:
   - component: {fileID: 1767192439}
   - component: {fileID: 1767192437}
   - component: {fileID: 6232745470614056083}
-  - component: {fileID: 882400329814443301}
+  - component: {fileID: 4563010551976437524}
   m_Layer: 0
   m_Name: Main Camera
   m_TagString: MainCamera
@@ -1285,7 +1285,7 @@ MonoBehaviour:
       m_Action: Rotation
       m_Flags: 0
     m_Flags: 0
---- !u!114 &882400329814443301
+--- !u!114 &4563010551976437524
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -2439,8 +2439,8 @@ MonoBehaviour:
   m_Camera: {fileID: 1767192439}
   m_OriginBaseGameObject: {fileID: 1717954561962503725}
   m_CameraFloorOffsetObject: {fileID: 1680501586}
-  m_RequestedTrackingOriginMode: 2
-  m_CameraYOffset: 1.19
+  m_RequestedTrackingOriginMode: 1
+  m_CameraYOffset: 1.56
 --- !u!143 &6232745470614056090
 CharacterController:
   m_ObjectHideFlags: 0
