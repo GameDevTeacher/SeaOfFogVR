@@ -41,7 +41,7 @@ ParticleSystem:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 3714408062660276787}
   serializedVersion: 8
-  lengthInSec: 5
+  lengthInSec: 10
   simulationSpeed: 1
   stopAction: 0
   cullingMode: 0
@@ -49,7 +49,7 @@ ParticleSystem:
   ringBufferLoopRange: {x: 0, y: 1}
   emitterVelocityMode: 1
   looping: 1
-  prewarm: 1
+  prewarm: 0
   playOnAwake: 1
   useUnscaledTime: 0
   autoRandomSeed: 1
@@ -222,7 +222,7 @@ ParticleSystem:
     startColor:
       serializedVersion: 2
       minMaxState: 2
-      minColor: {r: 0.34591186, g: 0.34591186, b: 0.34591186, a: 0.39215687}
+      minColor: {r: 0.42138356, g: 0.42138356, b: 0.42138356, a: 0.39215687}
       maxColor: {r: 0.3207547, g: 0.3207547, b: 0.3207547, a: 0.39215687}
       maxGradient:
         serializedVersion: 2
@@ -287,7 +287,7 @@ ParticleSystem:
     startSize:
       serializedVersion: 2
       minMaxState: 0
-      scalar: 30
+      scalar: 50
       minScalar: 1
       maxCurve:
         serializedVersion: 2
@@ -672,7 +672,7 @@ ParticleSystem:
     donutRadius: 0.1
     m_Position: {x: 0, y: 0, z: 0}
     m_Rotation: {x: 0, y: 0, z: 0}
-    m_Scale: {x: 50, y: 50, z: 1}
+    m_Scale: {x: 150, y: 150, z: 1}
     placementMode: 0
     m_MeshMaterialIndex: 0
     m_MeshNormalOffset: 0
@@ -976,7 +976,7 @@ ParticleSystem:
     m_BurstCount: 0
     m_Bursts: []
   SizeModule:
-    enabled: 1
+    enabled: 0
     curve:
       serializedVersion: 2
       minMaxState: 1
@@ -995,8 +995,8 @@ ParticleSystem:
           inWeight: 0.33333334
           outWeight: 0.33333334
         - serializedVersion: 3
-          time: 0.9879761
-          value: 0.8177166
+          time: 1
+          value: 0.88914466
           inSlope: -0.22446354
           outSlope: -0.22446354
           tangentMode: 0
@@ -3498,7 +3498,7 @@ ParticleSystem:
     curve:
       serializedVersion: 2
       minMaxState: 0
-      scalar: 0.034906585
+      scalar: 0.34906584
       minScalar: 0.7853982
       maxCurve:
         serializedVersion: 2
