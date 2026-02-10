@@ -7,10 +7,12 @@ public class Teleporter : MonoBehaviour, IInteractable
     public Transform teleportDestination;
     private GameObject player;
     private GameObject parent;
-    public float defaultYOffset = 1.19f;
-    public float sittingYOffset;
-    public GameObject locomotion;
-    public GameObject teleportation;
+    private float defaultYOffset = 1.56f;
+    public float sittingYOffset = 0.86f;
+    public string teleportationObjectName = "Teleportation";
+    public string locomotionObjectName = "locomotion";
+    private GameObject locomotion;
+    private GameObject teleportation;
     private XROrigin _xrOrigin;
 
 
@@ -19,6 +21,8 @@ public class Teleporter : MonoBehaviour, IInteractable
     {
         player = GameObject.FindWithTag("Player");
         _xrOrigin = player.gameObject.GetComponent<XROrigin>();
+        locomotion = GameObject.Find(locomotionObjectName);
+        teleportation = GameObject.Find(teleportationObjectName);
         defaultYOffset = _xrOrigin.CameraYOffset;
         if (player == null) Debug.LogError("Player not found");
     }
@@ -29,19 +33,24 @@ public class Teleporter : MonoBehaviour, IInteractable
         print ("teleport");
         
         player.transform.position = teleportDestination.position;
-        player.transform.localRotation = teleportDestination.localRotation;
+        player.transform.rotation = teleportDestination.rotation;
     }
 
     public void SetParent(Transform newParent)
     {
-            player.transform.parent = newParent == player.transform ? null : newParent;
+            player.transform.parent = newParent;
+    }
+
+    public void RemoveParent()
+    {
+        player.transform.parent = null;
     }
 
     public void TriggerSitting()
     {
         locomotion.SetActive(false);
         teleportation.SetActive(false);
-        _xrOrigin.RequestedTrackingOriginMode = XROrigin.TrackingOriginMode.Device;
+        //_xrOrigin.RequestedTrackingOriginMode = XROrigin.TrackingOriginMode.Device;
         _xrOrigin.CameraYOffset = sittingYOffset;
     }
 
@@ -49,7 +58,7 @@ public class Teleporter : MonoBehaviour, IInteractable
     {
         locomotion.SetActive(true);
         teleportation.SetActive(true);
-        _xrOrigin.RequestedTrackingOriginMode = XROrigin.TrackingOriginMode.Device;
+        //_xrOrigin.RequestedTrackingOriginMode = XROrigin.TrackingOriginMode.Device;
         _xrOrigin.CameraYOffset = defaultYOffset;
     }
     
