@@ -3,10 +3,14 @@ using UnityEngine;
 
 public class VRNoPeeking : MonoBehaviour
 {
+    [Header("Fading")]
     [SerializeField] private LayerMask collisionLayer;
     [SerializeField] private float fadeOutSpeed;
     [SerializeField] private float fadeInSpeed;
     [SerializeField] private float sphereCheckSize = 0.15f;
+    
+    [Header("Shader IDs")]
+    [SerializeField] private int alphaName;
 
     private Material _cameraFadeMat;
     private bool _isCameraFadedOut = false;
@@ -17,30 +21,33 @@ public class VRNoPeeking : MonoBehaviour
     { 
         _mainMenuManager = MainMenuManager.Instance;
         _cameraFadeMat = GetComponent<Renderer>().material;
+        
+        alphaName = Shader.PropertyToID("_AlphaValue");
     } 
 
     private void Update()
     {
         if (Physics.CheckSphere(transform.position, sphereCheckSize, collisionLayer, QueryTriggerInteraction.Ignore))
         {
-            CameraFadeOut(1f);
+            CameraFadeOut(1f, gameObject.name);
             _isCameraFadedOut = true;
         }
         else if (_mainMenuManager.shouldCameraFade && !_isCameraFadedOut)
         {
-            CameraFadeOut(1f);
+            CameraFadeOut(1f, gameObject.name);
         }
         else
         {
             if (!_isCameraFadedOut) return;
             
-            CameraFadeIn(0f);
+            CameraFadeIn(0f, gameObject.name);
         }
     }
 
-    public void CameraFadeOut(float targetAlpha)
+    public void CameraFadeOut(float targetAlpha, string caller)
     {
-        var alphaName = Shader.PropertyToID("_AlphaValue");
+        print("Fade out was called by: " + caller);
+        
         var fadeValue = Mathf.MoveTowards(_cameraFadeMat.GetFloat(alphaName), targetAlpha, 
             Time.deltaTime / fadeOutSpeed);
         _cameraFadeMat.SetFloat(alphaName, fadeValue);
@@ -49,9 +56,10 @@ public class VRNoPeeking : MonoBehaviour
             _isCameraFadedOut = false;
     }
 
-    public void CameraFadeIn(float targetAlpha)
+    public void CameraFadeIn(float targetAlpha, string caller)
     {
-        var alphaName = Shader.PropertyToID("_AlphaValue");
+        print("Fade in was called by " + caller);
+        
         var fadeValue = Mathf.MoveTowards(_cameraFadeMat.GetFloat(alphaName), targetAlpha, 
             Time.deltaTime / fadeInSpeed);
         _cameraFadeMat.SetFloat(alphaName, fadeValue);

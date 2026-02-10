@@ -7987,6 +7987,7 @@ MonoBehaviour:
     m_Bits: 1
   playerTransform: {fileID: 1717954561962503726}
   lastPlayerPosition: {x: 0, y: 0.6, z: 0}
+  secondsUntilReset: 6
   vrNoPeeking: {fileID: 2527215978752845833}
 --- !u!1001 &5052627874136238209
 PrefabInstance:

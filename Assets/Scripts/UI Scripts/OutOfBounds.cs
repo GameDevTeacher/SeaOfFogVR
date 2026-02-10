@@ -13,6 +13,7 @@ namespace UI_Scripts
         [Header("Player Stuff")]
         [SerializeField] private Transform playerTransform;
         [SerializeField] private Vector3 lastPlayerPosition;
+        [SerializeField] private float secondsUntilReset;
         
         [Header("Out of Bounds Effect")]
         [SerializeField] private VRNoPeeking vrNoPeeking;
@@ -25,7 +26,7 @@ namespace UI_Scripts
             }
             else
             {
-                StartCoroutine(BlackInBlackOut(1f));
+                StartCoroutine(ResetPlayerPosition());
             }
         }
 
@@ -36,19 +37,28 @@ namespace UI_Scripts
 
         public void SaveLastPlayerPosition()
         {
+            StartCoroutine(DelaySavePosition(1f));
             print("Saving last player position.");
-            lastPlayerPosition = playerTransform.position;
+            lastPlayerPosition = new Vector3(playerTransform.position.x, playerTransform.position.y, playerTransform.position.z);
         }
 
-        private IEnumerator BlackInBlackOut(float seconds)
+        private IEnumerator DelaySavePosition(float seconds)
+        {
+            print("Give me a second.");
+            yield return new WaitForSeconds(seconds);
+            print("Boom, come!");
+        }
+
+        private IEnumerator ResetPlayerPosition()
         {
             print("I am not where I should be.");
-            vrNoPeeking.CameraFadeOut(1f);
-            playerTransform.position = lastPlayerPosition;
+            vrNoPeeking.CameraFadeOut(1f, gameObject.name);
             
-            yield return new WaitForSeconds(seconds);
             
-            vrNoPeeking.CameraFadeIn(0f);
+            yield return new WaitForSeconds(secondsUntilReset);
+            
+            vrNoPeeking.CameraFadeIn(0f, gameObject.name);
+            playerTransform.position = new Vector3(lastPlayerPosition.x, lastPlayerPosition.y, lastPlayerPosition.z);
             print("I am where I should be.");
         } 
 
