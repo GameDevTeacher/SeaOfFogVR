@@ -1,9 +1,19 @@
 fileFormatVersion: 2
-guid: f87662f94fb647147a07bf55b5ee3188
+guid: 4c613e3a1d0b1a6449edf6fe2b7a47bb
 ModelImporter:
   serializedVersion: 24200
   internalIDToNameTable: []
-  externalObjects: {}
+  externalObjects:
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: fern_texture_02
+    second: {fileID: 2100000, guid: 21609c7bc8338964ca34254992eb1047, type: 2}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: Fern_texture_02
+    second: {fileID: 2800000, guid: 0791d9706e5ce9147a383a6b3861b2cc, type: 3}
   materials:
     materialImportMode: 2
     materialName: 0
