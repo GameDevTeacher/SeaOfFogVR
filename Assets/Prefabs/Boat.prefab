@@ -706,6 +706,7 @@ MonoBehaviour:
   _oarAnchors:
   - {fileID: 2830763343211169137}
   - {fileID: 8999677601138548078}
+  _sensitivity: 5
 --- !u!1001 &3746697100527837
 PrefabInstance:
   m_ObjectHideFlags: 0
