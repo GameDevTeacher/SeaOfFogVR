@@ -67,9 +67,9 @@ Material:
     - _QueueControl: 1
     - _QueueOffset: 0
     - _Smoothness: 0.364
-    - _Speed: 0.8
-    - _Speed_1: 1
-    - _Speed_2: 1.2
+    - _Speed: 0.1
+    - _Speed_1: 0.1
+    - _Speed_2: 0.1
     - _WaveHeight: 0.45
     - _WaveHeight_1: 0.3
     - _WaveHeight_2: 0.2
