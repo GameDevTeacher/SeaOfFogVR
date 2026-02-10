@@ -14,9 +14,6 @@ public class OarScript : MonoBehaviour
     public Vector3 OarVector = Vector3.zero;
 
     
-    private MeshRenderer _meshRenderer;
-    [SerializeField] private Material _waterMaterial;
-    [SerializeField] private Material _dryMaterial;
 
     
     
@@ -24,7 +21,6 @@ public class OarScript : MonoBehaviour
     private void Start()
     {
         _maxDistance = _targetOrientation.magnitude;
-        _meshRenderer = GetComponentInChildren<MeshRenderer>();
         _oarTip = GetComponentInChildren<OarTip>();
     }
     
@@ -40,12 +36,10 @@ public class OarScript : MonoBehaviour
 
         if (_oarTip._touchingWater)
         {
-            _meshRenderer.material = _waterMaterial;
             var OarTip = gameObject.GetComponentInChildren<OarTip>();
             OarVector = OarTip.RowingVector;
         } else if (!_oarTip._touchingWater)
         {
-            _meshRenderer.material = _dryMaterial;
             OarVector = Vector3.zero;
         }
         

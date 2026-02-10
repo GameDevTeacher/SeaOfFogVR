@@ -10,9 +10,10 @@ public class BoatMovement : MonoBehaviour
 
     [SerializeField] private List<Transform> _oarAnchors;
 
+    [SerializeField] private float _sensitivity = 5;
+
     private void Awake()
     {
-        //_oarScripts = GetComponentsInChildren<OarScript>().ToList();
         _rb = gameObject.GetComponent<Rigidbody>();
     }
 
@@ -24,7 +25,8 @@ public class BoatMovement : MonoBehaviour
         {
             _oarVectors.Add(oar.OarVector);
         }
-        _rb.AddForceAtPosition(_oarVectors[0], _oarAnchors[0].position, ForceMode.Impulse);
-        _rb.AddForceAtPosition(_oarVectors[1], _oarAnchors[1].position, ForceMode.Impulse);
+
+        _rb.AddForceAtPosition(_oarVectors[0]*_sensitivity, _oarAnchors[0].position, ForceMode.Force);
+        _rb.AddForceAtPosition(_oarVectors[1]*_sensitivity, _oarAnchors[1].position, ForceMode.Force);
     }
 }
