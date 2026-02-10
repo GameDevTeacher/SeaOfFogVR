@@ -50,10 +50,10 @@ Material:
         m_Offset: {x: 0, y: 0}
     m_Ints: []
     m_Floats:
-    - _DepthFadeDistance: 2.11
+    - _DepthFadeDistance: 2.19
     - _Depth_Sample_Offset: 0.0123
-    - _FoamDistance: 1.87
-    - _FoamScale: 13
+    - _FoamDistance: 1.88
+    - _FoamScale: 300
     - _Frequency: 300
     - _Frequency_1: 120
     - _Frequency_2: 140
@@ -79,7 +79,7 @@ Material:
     - _Direction_1: {r: 0.5, g: 0, b: 0.866, a: 0}
     - _Direction_2: {r: -0.7, g: 0, b: 0.7, a: 0}
     - _FoamColor: {r: 0.73168385, g: 0.735849, b: 0.73531413, a: 1}
-    - _Foam_Velocity: {r: 0.04, g: 0.02, b: 0, a: 0}
+    - _Foam_Velocity: {r: 0.01, g: 0.005, b: 0, a: 0}
     - _FresnelColor: {r: 3.5095932, g: 3.7010407, b: 4.2370944, a: 1}
     - _Normal1PanSpeed: {r: 0.001, g: 0.0005, b: 0, a: 0}
     - _Normal2PanSpeed: {r: 0.01, g: 0.005, b: 0, a: 0}
