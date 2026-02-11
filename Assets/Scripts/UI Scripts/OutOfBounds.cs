@@ -14,6 +14,7 @@ namespace UI_Scripts
         [SerializeField] private Transform playerTransform;
         [SerializeField] private Vector3 lastPlayerPosition;
         [SerializeField] private float secondsUntilReset;
+        [SerializeField] private float saveDelay;
         
         [Header("Out of Bounds Effect")]
         [SerializeField] private VRNoPeeking vrNoPeeking;
@@ -37,13 +38,7 @@ namespace UI_Scripts
 
         public void SaveLastPlayerPosition()
         {
-            StartCoroutine(DelaySavePosition(1f));
-        }
-
-        private IEnumerator DelaySavePosition(float seconds)
-        {
-            print("Preparing to save player position.");
-            yield return new WaitForSeconds(seconds);
+            print ("saving player position");
             lastPlayerPosition = new Vector3(playerTransform.position.x, playerTransform.position.y, playerTransform.position.z);
         }
 

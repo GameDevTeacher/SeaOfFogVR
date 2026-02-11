@@ -2106,6 +2106,14 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 2037694220828515003, guid: f6336ac4ac8b4d34bc5072418cdc62a0, type: 3}
+      propertyPath: rayDistance
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 2037694220828515003, guid: f6336ac4ac8b4d34bc5072418cdc62a0, type: 3}
+      propertyPath: secondsUntilReset
+      value: 2
+      objectReference: {fileID: 0}
     - target: {fileID: 2527215978752845833, guid: f6336ac4ac8b4d34bc5072418cdc62a0, type: 3}
       propertyPath: fadeInSpeed
       value: 1
