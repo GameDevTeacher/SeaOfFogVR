@@ -26,7 +26,7 @@ RenderSettings:
   m_AmbientIntensity: 1
   m_AmbientMode: 0
   m_SubtractiveShadowColor: {r: 0.42, g: 0.478, b: 0.627, a: 1}
-  m_SkyboxMaterial: {fileID: 10304, guid: 0000000000000000f000000000000000, type: 0}
+  m_SkyboxMaterial: {fileID: 2100000, guid: c8dea154aa6522d45a4cdcf4b43da2db, type: 2}
   m_HaloStrength: 0.5
   m_FlareStrength: 1
   m_FlareFadeSpeed: 3
@@ -1067,65 +1067,6 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 0ea26ae74641d15498e7b5ecc3b0c0ef, type: 3}
---- !u!1001 &1282771848
-PrefabInstance:
-  m_ObjectHideFlags: 0
-  serializedVersion: 2
-  m_Modification:
-    serializedVersion: 3
-    m_TransformParent: {fileID: 0}
-    m_Modifications:
-    - target: {fileID: -8679921383154817045, guid: ecbd5c6a55b6e794981d2a99792ae626, type: 3}
-      propertyPath: m_LocalPosition.x
-      value: 91.4
-      objectReference: {fileID: 0}
-    - target: {fileID: -8679921383154817045, guid: ecbd5c6a55b6e794981d2a99792ae626, type: 3}
-      propertyPath: m_LocalPosition.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: -8679921383154817045, guid: ecbd5c6a55b6e794981d2a99792ae626, type: 3}
-      propertyPath: m_LocalPosition.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: -8679921383154817045, guid: ecbd5c6a55b6e794981d2a99792ae626, type: 3}
-      propertyPath: m_LocalRotation.w
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: -8679921383154817045, guid: ecbd5c6a55b6e794981d2a99792ae626, type: 3}
-      propertyPath: m_LocalRotation.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: -8679921383154817045, guid: ecbd5c6a55b6e794981d2a99792ae626, type: 3}
-      propertyPath: m_LocalRotation.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: -8679921383154817045, guid: ecbd5c6a55b6e794981d2a99792ae626, type: 3}
-      propertyPath: m_LocalRotation.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: -8679921383154817045, guid: ecbd5c6a55b6e794981d2a99792ae626, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: -8679921383154817045, guid: ecbd5c6a55b6e794981d2a99792ae626, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: -8679921383154817045, guid: ecbd5c6a55b6e794981d2a99792ae626, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 919132149155446097, guid: ecbd5c6a55b6e794981d2a99792ae626, type: 3}
-      propertyPath: m_Name
-      value: LighthouseIslandTextured
-      objectReference: {fileID: 0}
-    m_RemovedComponents: []
-    m_RemovedGameObjects:
-    - {fileID: 65702495048144492, guid: ecbd5c6a55b6e794981d2a99792ae626, type: 3}
-    - {fileID: 7869873546869171050, guid: ecbd5c6a55b6e794981d2a99792ae626, type: 3}
-    m_AddedGameObjects: []
-    m_AddedComponents: []
-  m_SourcePrefab: {fileID: 100100000, guid: ecbd5c6a55b6e794981d2a99792ae626, type: 3}
 --- !u!1001 &1615328478
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1421,7 +1362,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: -8679921383154817045, guid: a8333fdb9e393ad4789335899f2ca8d1, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 150.3
+      value: 109
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: a8333fdb9e393ad4789335899f2ca8d1, type: 3}
       propertyPath: m_LocalPosition.y
@@ -1474,7 +1415,6 @@ SceneRoots:
   m_Roots:
   - {fileID: 894974962}
   - {fileID: 220898808}
-  - {fileID: 1282771848}
   - {fileID: 481122945}
   - {fileID: 1155968453}
   - {fileID: 1051214318}
