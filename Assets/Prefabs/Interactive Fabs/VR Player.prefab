@@ -1144,7 +1144,7 @@ Camera:
   m_ShutterSpeed: 0.005
   m_Aperture: 16
   m_FocusDistance: 10
-  m_FocalLength: 50
+  m_FocalLength: 20.78461
   m_BladeCount: 5
   m_Curvature: {x: 2, y: 11}
   m_BarrelClipping: 0.25
@@ -1159,7 +1159,7 @@ Camera:
     height: 1
   near clip plane: 0.01
   far clip plane: 1000
-  field of view: 60
+  field of view: 60.000004
   orthographic: 0
   orthographic size: 5
   m_Depth: -1
@@ -7981,13 +7981,13 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::OutOfBounds
   rayDirection: {x: 0, y: -2, z: 0}
-  rayDistance: 2
+  rayDistance: 3
   layerMask:
     serializedVersion: 2
     m_Bits: 1
   playerTransform: {fileID: 1717954561962503726}
   lastPlayerPosition: {x: 0, y: 0.6, z: 0}
-  secondsUntilReset: 6
+  secondsUntilReset: 2
   vrNoPeeking: {fileID: 2527215978752845833}
 --- !u!1001 &5052627874136238209
 PrefabInstance:
@@ -8059,8 +8059,12 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7281462715999158408, guid: acee393f25cc9bd45b29e2dd668e6d5b, type: 3}
       propertyPath: fadeOutSpeed
-      value: 0.5
+      value: 0.25
       objectReference: {fileID: 0}
+    - target: {fileID: 7281462715999158408, guid: acee393f25cc9bd45b29e2dd668e6d5b, type: 3}
+      propertyPath: cameraTransform
+      value: 
+      objectReference: {fileID: 1767192434}
     - target: {fileID: 7281462715999158408, guid: acee393f25cc9bd45b29e2dd668e6d5b, type: 3}
       propertyPath: sphereCheckSize
       value: 0.01
