@@ -27,7 +27,6 @@ public class OarTip : MonoBehaviour
         if(other.gameObject.layer == LayerMask.NameToLayer("Water"))
         {
             _touchingWater = true;
-            Debug.Log("Touching Water");
         }
     }
 
@@ -35,7 +34,6 @@ public class OarTip : MonoBehaviour
     {
         if(other.gameObject.layer == LayerMask.NameToLayer("Water"))
         {
-            Debug.Log("Tip out of water");
             _touchingWater = false;
         }
     }
