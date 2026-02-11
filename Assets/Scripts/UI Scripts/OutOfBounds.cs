@@ -38,15 +38,13 @@ namespace UI_Scripts
         public void SaveLastPlayerPosition()
         {
             StartCoroutine(DelaySavePosition(1f));
-            print("Saving last player position.");
-            lastPlayerPosition = new Vector3(playerTransform.position.x, playerTransform.position.y, playerTransform.position.z);
         }
 
         private IEnumerator DelaySavePosition(float seconds)
         {
-            print("Give me a second.");
+            print("Preparing to save player position.");
             yield return new WaitForSeconds(seconds);
-            print("Boom, come!");
+            lastPlayerPosition = new Vector3(playerTransform.position.x, playerTransform.position.y, playerTransform.position.z);
         }
 
         private IEnumerator ResetPlayerPosition()
