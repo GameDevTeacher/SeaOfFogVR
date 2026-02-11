@@ -24,7 +24,7 @@ public class SceneLoadTrigger : MonoBehaviour
     
 
 
-    private void LoadScenes()
+    public void LoadScenes()
     {
         for (int i = 0; i < _scenesToLoad.Length; i++)
         {
@@ -46,7 +46,7 @@ public class SceneLoadTrigger : MonoBehaviour
         }
     }
 
-    private void UnloadScenes()
+    public void UnloadScenes()
     {
         for (int i = 0; i < _scenesToUnload.Length; i++)
         {
