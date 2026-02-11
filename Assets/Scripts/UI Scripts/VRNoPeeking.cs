@@ -11,6 +11,9 @@ public class VRNoPeeking : MonoBehaviour
     
     [Header("Shader IDs")]
     [SerializeField] private int alphaName;
+    
+    [Header("Camera")]
+    [SerializeField] private Transform cameraTransform;
 
     private Material _cameraFadeMat;
     private bool _isCameraFadedOut = false;
@@ -27,7 +30,7 @@ public class VRNoPeeking : MonoBehaviour
 
     private void Update()
     {
-        if (Physics.CheckSphere(transform.position, sphereCheckSize, collisionLayer, QueryTriggerInteraction.Ignore))
+        if (Physics.CheckSphere(cameraTransform.position, sphereCheckSize, collisionLayer, QueryTriggerInteraction.Ignore))
         {
             CameraFadeOut(1f, gameObject.name);
             _isCameraFadedOut = true;
@@ -71,6 +74,6 @@ public class VRNoPeeking : MonoBehaviour
     private void OnDrawGizmos()
     {
         Gizmos.color = Color.red;
-        Gizmos.DrawSphere(transform.position, sphereCheckSize);
+        Gizmos.DrawSphere(cameraTransform.position, sphereCheckSize);
     }
 }

@@ -2123,6 +2123,10 @@ PrefabInstance:
       value: 0.5
       objectReference: {fileID: 0}
     - target: {fileID: 2527215978752845833, guid: f6336ac4ac8b4d34bc5072418cdc62a0, type: 3}
+      propertyPath: cameraTransform
+      value: 
+      objectReference: {fileID: 1120973562}
+    - target: {fileID: 2527215978752845833, guid: f6336ac4ac8b4d34bc5072418cdc62a0, type: 3}
       propertyPath: sphereCheckSize
       value: 0.01
       objectReference: {fileID: 0}
@@ -2150,6 +2154,11 @@ PrefabInstance:
 --- !u!20 &1120973561 stripped
 Camera:
   m_CorrespondingSourceObject: {fileID: 1767192439, guid: f6336ac4ac8b4d34bc5072418cdc62a0, type: 3}
+  m_PrefabInstance: {fileID: 1120973560}
+  m_PrefabAsset: {fileID: 0}
+--- !u!4 &1120973562 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 1767192434, guid: f6336ac4ac8b4d34bc5072418cdc62a0, type: 3}
   m_PrefabInstance: {fileID: 1120973560}
   m_PrefabAsset: {fileID: 0}
 --- !u!1 &1273340381

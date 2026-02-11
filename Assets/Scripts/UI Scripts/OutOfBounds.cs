@@ -14,7 +14,6 @@ namespace UI_Scripts
         [SerializeField] private Transform playerTransform;
         [SerializeField] private Vector3 lastPlayerPosition;
         [SerializeField] private float secondsUntilReset;
-        [SerializeField] private float saveDelay;
         
         [Header("Out of Bounds Effect")]
         [SerializeField] private VRNoPeeking vrNoPeeking;
