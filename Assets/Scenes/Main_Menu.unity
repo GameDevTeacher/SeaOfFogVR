@@ -422,7 +422,7 @@ GameObject:
   - component: {fileID: 250422309}
   m_Layer: 0
   m_Name: Teleportation Area
-  m_TagString: Untagged
+  m_TagString: Teleport
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -2165,6 +2165,18 @@ PrefabInstance:
       propertyPath: secondsUntilReset
       value: 2
       objectReference: {fileID: 0}
+    - target: {fileID: 2037694220828515003, guid: f6336ac4ac8b4d34bc5072418cdc62a0, type: 3}
+      propertyPath: teleportationAreas.Array.size
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2037694220828515003, guid: f6336ac4ac8b4d34bc5072418cdc62a0, type: 3}
+      propertyPath: 'teleportationAreas.Array.data[0]'
+      value: 
+      objectReference: {fileID: 250422309}
+    - target: {fileID: 2037694220828515003, guid: f6336ac4ac8b4d34bc5072418cdc62a0, type: 3}
+      propertyPath: 'teleportationAreas.Array.data[1]'
+      value: 
+      objectReference: {fileID: 250422309}
     - target: {fileID: 2527215978752845833, guid: f6336ac4ac8b4d34bc5072418cdc62a0, type: 3}
       propertyPath: fadeInSpeed
       value: 1

@@ -1,6 +1,7 @@
-using System;
 using System.Collections;
+using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.XR.Interaction.Toolkit.Locomotion.Teleportation;
 
 namespace UI_Scripts
 {
@@ -18,10 +19,26 @@ namespace UI_Scripts
         
         [Header("Out of Bounds Effect")]
         [SerializeField] private VRNoPeeking vrNoPeeking;
+        
+        [Header("fuck this shit")]
+        [SerializeField] private List<TeleportationArea> teleportationAreas;
+        private GameObject[] _teleportationAreasGameObjects;
 
         private void Start()
         {
             lastPlayerPosition = new Vector3(playerTransform.position.x, playerTransform.position.y, playerTransform.position.z);
+
+            _teleportationAreasGameObjects = GameObject.FindGameObjectsWithTag("Teleport");
+
+            foreach (var area in _teleportationAreasGameObjects)
+            {
+                teleportationAreas.Add(area.gameObject.GetComponent<TeleportationArea>());
+            }
+            
+            for (int i = 0; i < teleportationAreas.Count; i++)
+            {
+                teleportationAreas[i].teleporting.AddListener(arg0 => {SaveLastPlayerPosition();});
+            }
         }
 
         private void Update()
