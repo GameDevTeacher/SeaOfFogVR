@@ -11,9 +11,8 @@ public class UIManager : MonoBehaviour
     [SerializeField] private Key pauseKey;
     private UserInputManager _userInput;
     
-    [Header("Marmine Fun")]
-    [SerializeField] private AudioSource source;
-    [SerializeField] private AudioClip clip;
+    [Header("Testing")]
+    [SerializeField] private VRNoPeeking vrNoPeeking;
 
     private void Start()
     {
@@ -24,28 +23,22 @@ public class UIManager : MonoBehaviour
 
     private void Update()
     {
-        // TODO: add input for pausing, using a keyboard layout at first.
-        if (Keyboard.current[pauseKey].wasPressedThisFrame && !isPaused || _userInput.Pause && !isPaused)
+        if (_userInput.Pause && !isPaused || Keyboard.current[pauseKey].wasPressedThisFrame && !isPaused)
         {
-            pauseMenu.SetActive(true);
             isPaused = true;
-            Time.timeScale = 0;
+            print("Paused");
+            vrNoPeeking.CameraFadeOut(1f, gameObject.name);
         }
-        else if (Keyboard.current[pauseKey].wasPressedThisFrame && isPaused || _userInput.Pause && isPaused) 
+        else if (_userInput.Pause && isPaused || Keyboard.current[pauseKey].wasPressedThisFrame && isPaused)
         {
-            pauseMenu.SetActive(false);
             isPaused = false;
-            Time.timeScale = 1;
+            print("Unpaused");
+            vrNoPeeking.CameraFadeIn(0f, gameObject.name);
         }
     }
 
     public void Quit()
     {
         Application.Quit();
-    }
-
-    public void PlaySomeNoise()
-    {
-        source.PlayOneShot(clip);
     }
 }
