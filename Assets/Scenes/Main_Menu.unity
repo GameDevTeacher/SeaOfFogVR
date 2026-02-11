@@ -2181,6 +2181,10 @@ PrefabInstance:
       propertyPath: sphereCheckSize
       value: 0.01
       objectReference: {fileID: 0}
+    - target: {fileID: 2527215978752845833, guid: f6336ac4ac8b4d34bc5072418cdc62a0, type: 3}
+      propertyPath: doesMainMenuExist
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 2734315883792958320, guid: f6336ac4ac8b4d34bc5072418cdc62a0, type: 3}
       propertyPath: m_InteractionManager
       value: 

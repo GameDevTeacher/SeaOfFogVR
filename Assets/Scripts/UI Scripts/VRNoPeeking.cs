@@ -18,14 +18,19 @@ public class VRNoPeeking : MonoBehaviour
     private Material _cameraFadeMat;
     private bool _isCameraFadedOut = false;
     
+    [Header("Main Menu")]
+    [SerializeField] private bool doesMainMenuExist;
     private MainMenuManager _mainMenuManager;
 
     private void Start()
     { 
-        _mainMenuManager = MainMenuManager.Instance;
         _cameraFadeMat = GetComponent<Renderer>().material;
         
         alphaName = Shader.PropertyToID("_AlphaValue");
+        
+        CameraFadeIn(0f, gameObject.name);
+
+        if (doesMainMenuExist) _mainMenuManager = MainMenuManager.Instance;
     } 
 
     private void Update()
@@ -35,7 +40,7 @@ public class VRNoPeeking : MonoBehaviour
             CameraFadeOut(1f, gameObject.name);
             _isCameraFadedOut = true;
         }
-        else if (_mainMenuManager.shouldCameraFade && !_isCameraFadedOut)
+        else if (doesMainMenuExist && _mainMenuManager.shouldCameraFade && !_isCameraFadedOut)
         {
             CameraFadeOut(1f, gameObject.name);
         }

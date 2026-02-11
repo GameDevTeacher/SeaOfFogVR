@@ -32,7 +32,10 @@ namespace UI_Scripts
 
         private bool IsTouchingGround()
         {
-            return Physics.Raycast(transform.position, rayDirection, rayDistance, layerMask);
+            RaycastHit hit;
+            bool touchingGround = Physics.Raycast(transform.position, rayDirection, out hit, rayDistance, layerMask);
+            print("I hit this fucking thing: " + hit.collider.gameObject.name);
+            return touchingGround;
         }
 
         public void SaveLastPlayerPosition()
