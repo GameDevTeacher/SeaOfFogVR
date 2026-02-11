@@ -105,6 +105,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::VRNoPeeking
   collisionLayer:
     serializedVersion: 2
-    m_Bits: 512
-  fadeSpeed: 1
+    m_Bits: 0
+  fadeOutSpeed: 0
+  fadeInSpeed: 0
   sphereCheckSize: 0.19
+  alphaName: 0
+  cameraTransform: {fileID: 0}
+  doesMainMenuExist: 0
