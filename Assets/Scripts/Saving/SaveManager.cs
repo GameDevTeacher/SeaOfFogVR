@@ -12,7 +12,8 @@ public class SaveManager : MonoBehaviour
 
     public PlayerSaving player;
     public BoatSaving boat;
-    public List<SceneData> scene;
+    public SceneData sceneData;
+    public SceneLoader sceneLoader;
     //public EventManager? events;
     
     public void Awake()

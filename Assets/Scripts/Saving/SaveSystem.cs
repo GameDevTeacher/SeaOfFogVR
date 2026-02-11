@@ -11,6 +11,7 @@ public class SaveSystem
     {
         public PlayerSaveData playerData;
         public BoatSaveData boatData;
+        public SceneSaveData sceneData;
         //public EventSaveData eventData;
     }
 
@@ -31,6 +32,7 @@ public class SaveSystem
     {
         SaveManager.instance.player.Save(ref _saveData.playerData);
         SaveManager.instance.boat.Save(ref _saveData.boatData);
+        SaveManager.instance.sceneData.Save(ref _saveData.sceneData);
     }
 
     public static void Load()
@@ -44,6 +46,7 @@ public class SaveSystem
     {
         SaveManager.instance.player.Load(_saveData.playerData);
         SaveManager.instance.boat.Load(_saveData.boatData);
+        SaveManager.instance.sceneData.Load(_saveData.sceneData);
     }
     
     
