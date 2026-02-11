@@ -15,16 +15,22 @@ public class SceneLoadTrigger : MonoBehaviour
 
     private void OnTriggerEnter(Collider other)
     {
-        if (other.gameObject == _player)
+        print("trigger entered" + other.gameObject.name);
+        if (other.gameObject.tag == "Player" || other.gameObject.layer == LayerMask.NameToLayer("Boat"))
         {
             LoadScenes();
             UnloadScenes();
         }
     }
     
+    private void OnCollisionEnter(Collision collision)
+    {
+        print("collision" + collision.collider.gameObject.name);
+    }
+    
 
 
-    private void LoadScenes()
+    public void LoadScenes()
     {
         for (int i = 0; i < _scenesToLoad.Length; i++)
         {
@@ -46,7 +52,7 @@ public class SceneLoadTrigger : MonoBehaviour
         }
     }
 
-    private void UnloadScenes()
+    public void UnloadScenes()
     {
         for (int i = 0; i < _scenesToUnload.Length; i++)
         {
