@@ -21,7 +21,7 @@ namespace UI_Scripts
 
         private void Start()
         {
-            lastPlayerPosition = new Vector3(playerTransform.position.x, playerTransform.position.y + rayDistance, playerTransform.position.z);
+            lastPlayerPosition = new Vector3(playerTransform.position.x, playerTransform.position.y, playerTransform.position.z);
         }
 
         private void Update()
@@ -38,10 +38,7 @@ namespace UI_Scripts
 
         private bool IsTouchingGround()
         {
-            RaycastHit hit;
-            bool touchingGround = Physics.Raycast(transform.position, rayDirection, out hit, rayDistance, layerMask);
-            print("I hit this fucking thing: " + hit.collider.gameObject.name);
-            return touchingGround;
+            return Physics.Raycast(transform.position, rayDirection, rayDistance, layerMask);
         }
 
         public void SaveLastPlayerPosition()
