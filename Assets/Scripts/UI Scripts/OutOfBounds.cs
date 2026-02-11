@@ -1,3 +1,4 @@
+using System;
 using System.Collections;
 using UnityEngine;
 
@@ -17,6 +18,11 @@ namespace UI_Scripts
         
         [Header("Out of Bounds Effect")]
         [SerializeField] private VRNoPeeking vrNoPeeking;
+
+        private void Start()
+        {
+            lastPlayerPosition = new Vector3(playerTransform.position.x, playerTransform.position.y + rayDistance, playerTransform.position.z);
+        }
 
         private void Update()
         {
