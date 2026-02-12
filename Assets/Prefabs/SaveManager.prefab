@@ -49,7 +49,7 @@ MonoBehaviour:
   loadToggle: 0
   player: {fileID: 0}
   boat: {fileID: 0}
-  sceneData: {fileID: 0}
+  sceneData: []
   sceneLoader: {fileID: 7362703712571193523}
 --- !u!114 &7362703712571193523
 MonoBehaviour:
