@@ -6,6 +6,18 @@ EditorBuildSettings:
   serializedVersion: 2
   m_Scenes:
   - enabled: 1
+    path: Assets/TBD_Test Folder/Multi-scene Test Player.unity
+    guid: cbf4015345e2a2845aa1e062e96fa7f3
+  - enabled: 1
+    path: Assets/TBD_Test Folder/Multi-scene Test 1.unity
+    guid: 9a4d0c033f38b614292bf833ac88952c
+  - enabled: 1
+    path: Assets/TBD_Test Folder/Multi-scene Test 2.unity
+    guid: 1b65129bd42e75641864dea6b990033d
+  - enabled: 1
+    path: Assets/TBD_Test Folder/Multi-scene Test 3.unity
+    guid: ab4cad25204ea984eb04c5ebbec86e9a
+  - enabled: 1
     path: Assets/TBD_Test Folder/DryRunScenes/DryRun-Ocean.unity
     guid: ac5dffbbe1cf5db418f2218b12bc4faa
   - enabled: 1
