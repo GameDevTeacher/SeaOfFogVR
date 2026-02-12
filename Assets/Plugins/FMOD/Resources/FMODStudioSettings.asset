@@ -381,7 +381,7 @@ MonoBehaviour:
   HasSourceProject: 0
   HasPlatforms: 0
   sourceProjectPath: 
-  sourceBankPath: "Assets/Audio_FMOD/Banks/Havt\xE5keAudioV_1"
+  sourceBankPath: Assets/Audio_FMOD/Banks/FmodV4
   sourceBankPathUnformatted: 
   BankRefreshCooldown: 5
   ShowBankRefreshWindow: 1
@@ -407,6 +407,7 @@ MonoBehaviour:
   - Master
   Banks:
   - Ambience
+  - Echo
   - Music
   - SFX
   - Voicelines

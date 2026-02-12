@@ -17,15 +17,15 @@ public class StoryEventsController : MonoBehaviour
     onEchoInteraction.Invoke();
   }
   
-  public Action onTriggerEntered;
-  public void TriggeredEntered()
+  public Action<int> onTriggerEntered;
+  public void TriggeredEntered(int id)
   {
-    onTriggerEntered.Invoke();
+    onTriggerEntered.Invoke(id);
   }
-  public Action onTriggerExited;
-  public void TriggerExited()
+  public Action<int> onTriggerExited;
+  public void TriggerExited(int id)
   {
-    onTriggerExited.Invoke();
+    onTriggerExited.Invoke(id);
   }
   
   public Action<float> onTimedTriggerStart;
