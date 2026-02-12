@@ -32,6 +32,7 @@ public class SceneLoadTrigger : MonoBehaviour
 
     public void LoadScenes()
     {
+        
         for (int i = 0; i < _scenesToLoad.Length; i++)
         {
             bool isSceneLoaded = false;
@@ -40,6 +41,7 @@ public class SceneLoadTrigger : MonoBehaviour
                 Scene loadedScene = SceneManager.GetSceneAt(j);
                 if (loadedScene.name == _scenesToLoad[i].SceneName)
                 {
+                    print($"scene at index {i} is already loaded");
                     isSceneLoaded = true;
                     break;
                 }

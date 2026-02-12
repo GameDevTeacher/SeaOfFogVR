@@ -602,7 +602,9 @@ MonoBehaviour:
   _scenesToLoad:
   - _sceneAsset: {fileID: 102900000, guid: 1b65129bd42e75641864dea6b990033d, type: 3}
     _sceneName: Multi-scene Test 2
-  _scenesToUnload: []
+  _scenesToUnload:
+  - _sceneAsset: {fileID: 102900000, guid: ab4cad25204ea984eb04c5ebbec86e9a, type: 3}
+    _sceneName: Multi-scene Test 3
 --- !u!65 &461704151
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -690,7 +692,7 @@ Transform:
   m_GameObject: {fileID: 461704149}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: 0.70707846, z: -0, w: 0.7071352}
-  m_LocalPosition: {x: -3.5, y: 1.6442, z: -0.9356}
+  m_LocalPosition: {x: -16.41, y: 1.6442, z: -0.94}
   m_LocalScale: {x: 58.572353, y: 2.7083, z: 0.48798925}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -812,6 +814,51 @@ Transform:
   m_Children:
   - {fileID: 233557719}
   - {fileID: 1349766108}
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &561029153
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 561029155}
+  - component: {fileID: 561029154}
+  m_Layer: 0
+  m_Name: SceneData
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &561029154
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 561029153}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 902911141377a164d812bcc7b5f0a53a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::SceneData
+  Data: {fileID: 11400000, guid: a924905f05fb0a7419051cbddb456087, type: 2}
+--- !u!4 &561029155
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 561029153}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -0.45166, y: 0.001, z: -1.57824}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &647693252
@@ -1169,3 +1216,4 @@ SceneRoots:
   - {fileID: 1822371707}
   - {fileID: 536520762}
   - {fileID: 647693256}
+  - {fileID: 561029155}
