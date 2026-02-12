@@ -602,7 +602,9 @@ MonoBehaviour:
   _scenesToLoad:
   - _sceneAsset: {fileID: 102900000, guid: 1b65129bd42e75641864dea6b990033d, type: 3}
     _sceneName: Multi-scene Test 2
-  _scenesToUnload: []
+  _scenesToUnload:
+  - _sceneAsset: {fileID: 102900000, guid: ab4cad25204ea984eb04c5ebbec86e9a, type: 3}
+    _sceneName: Multi-scene Test 3
 --- !u!65 &461704151
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -843,7 +845,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 902911141377a164d812bcc7b5f0a53a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::SceneData
-  data: {fileID: 11400000, guid: a924905f05fb0a7419051cbddb456087, type: 2}
+  Data: {fileID: 11400000, guid: a924905f05fb0a7419051cbddb456087, type: 2}
 --- !u!4 &561029155
 Transform:
   m_ObjectHideFlags: 0
@@ -1212,6 +1214,6 @@ SceneRoots:
   m_Roots:
   - {fileID: 461704154}
   - {fileID: 1822371707}
-  - {fileID: 561029155}
   - {fileID: 536520762}
   - {fileID: 647693256}
+  - {fileID: 561029155}

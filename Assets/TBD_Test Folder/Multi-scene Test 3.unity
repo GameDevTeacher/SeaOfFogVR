@@ -279,7 +279,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 902911141377a164d812bcc7b5f0a53a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::SceneData
-  data: {fileID: 11400000, guid: b12045de11f36194ab51c45e7b4077a8, type: 2}
+  Data: {fileID: 11400000, guid: b12045de11f36194ab51c45e7b4077a8, type: 2}
 --- !u!4 &561029155
 Transform:
   m_ObjectHideFlags: 0

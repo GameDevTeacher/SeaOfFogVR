@@ -14,7 +14,7 @@ public class SaveManager : MonoBehaviour
     public BoatSaving boat;
     public List<SceneData> sceneData; //multi scene loading
     public SceneLoader sceneLoader;
-    //public EventManager? events;
+    //public EventManager? events;  
     
     public void Awake()
     {
@@ -24,13 +24,18 @@ public class SaveManager : MonoBehaviour
         }
         else
         {
-            Destroy(this);
+            Destroy(gameObject);
         }
-        
-        player = GameObject.FindGameObjectWithTag("Player").GetComponent<PlayerSaving>();
-        boat = GameObject.FindGameObjectWithTag("Boat").GetComponent<BoatSaving>();
+        AssignVariables();
         
         DontDestroyOnLoad(this);
+    }
+
+    public void AssignVariables()
+    {
+        print("assigining variables");
+        player =  GameObject.FindGameObjectWithTag("Player").GetComponent<PlayerSaving>();
+        boat = GameObject.FindGameObjectWithTag("Boat").GetComponent<BoatSaving>();
     }
     
     public void Update()

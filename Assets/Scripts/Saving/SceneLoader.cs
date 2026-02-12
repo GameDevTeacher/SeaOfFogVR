@@ -44,7 +44,7 @@ public class SceneLoader : MonoBehaviour
 
     private void Awake()
     {
-        SaveManager.instance.sceneLoader = this;
+        if (!SaveManager.instance.sceneLoader) SaveManager.instance.sceneLoader = this;
 
         PopulateSceneMappings();
     }
@@ -69,5 +69,12 @@ public class SceneLoader : MonoBehaviour
             Debug.Log("scene" + sceneIndex + " already loaded");
         }
     }
+    
+    public void LoadSceneByIndexSingle(int sceneIndex)
+    {
+        print("loading scene: " + sceneIndex);
+        SceneManager.LoadScene(sceneIndex);
+    }
+    
     #endregion
 }

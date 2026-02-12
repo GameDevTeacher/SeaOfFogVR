@@ -1,6 +1,8 @@
+using System;
 using System.Collections.Generic;
 using UnityEngine;
 using System.IO;
+using UnityEngine.SceneManagement;
 
 public class SaveSystem
 {
@@ -49,22 +51,38 @@ public class SaveSystem
 
     public static void Load()
     {
+        Debug.Log("loading Triggered");
         string saveContent = File.ReadAllText(SaveFileName());
         _saveData = JsonUtility.FromJson<SaveData>(saveContent);
         HandleLoadData();
     }
 
-    private static void HandleLoadData()
+    private static async void HandleLoadData()
     {
-        for (int i = 0; i < _saveData.sceneData.Count; i++)
+        try
         {
-            SaveManager.instance.sceneLoader.LoadSceneByIndex(_saveData.sceneData[i].sceneIndex);
+            //DO NOT FUCK WITH THIS, the order of operations is VITAL
+            Debug.Log("starting loading");
+            SaveManager.instance.sceneLoader.LoadSceneByIndexSingle(_saveData.sceneData[0].sceneIndex); //load first scene to clear all current loaded scenes
+            await Awaitable.NextFrameAsync();
+            if (SaveManager.instance.sceneData.Count > 0) //load all additional scenes additively 
+            {
+                for (int i = 1; i < _saveData.sceneData.Count; i++)
+                {
+                    SaveManager.instance.sceneLoader.LoadSceneByIndex(_saveData.sceneData[i].sceneIndex);
+                }
+            }
+            SaveManager.instance.AssignVariables();
+            SaveManager.instance.player.Load(_saveData.playerData);
+            SaveManager.instance.boat.Load(_saveData.boatData);
+            Debug.Log("finished loading");
         }
-        SaveManager.instance.player.Load(_saveData.playerData);
-        SaveManager.instance.boat.Load(_saveData.boatData);
-        
+        catch (Exception e)
+        {
+            throw; // TODO handle exception
+        }
     }
-    
-    
-    
+
+
+
 }
