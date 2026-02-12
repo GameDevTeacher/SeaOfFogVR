@@ -70,8 +70,8 @@ Material:
     - _SrcBlend: 1
     - _SrcBlendAlpha: 1
     - _Surface: 1
-    - _Transparency: 0.324
-    - _VertexOffset: 0.05
+    - _Transparency: 0
+    - _VertexOffset: 0
     - _WorkflowMode: 1
     - _ZTest: 4
     - _ZWrite: 0

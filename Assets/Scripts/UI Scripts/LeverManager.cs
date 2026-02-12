@@ -1,6 +1,6 @@
 using UnityEngine;
 using TMPro;
-using UnityEngine.UIElements;
+using System;
 
 public class LeverManager : MonoBehaviour
 {
@@ -16,18 +16,14 @@ public class LeverManager : MonoBehaviour
     [SerializeField] private float maxLimit;
     [SerializeField] private float minLimit;
     
-    // Current issues: at the start, we get NaN. In the update, the value doesn't go below 50.
-    // changing it to the transform doesn't help either.
-    
     private void Start()
     {
-        //todo: asign a starting value on start, starting value of 50,preferably then saved&pulled to a settings config
         leverTransform.eulerAngles = new Vector3(0, leverTransform.eulerAngles.y, 0);
         
         if (lever.useLimits)
         {
             var value = Mathf.Clamp(lever.angle, minLimit, maxLimit);
-            text.text = "Value: " + Mathf.Round(ScaleRegulator(value));
+            text.text = "Value: " + Math.Round(NewScaleRegulator(value), 2);
         }
     }
 
@@ -36,13 +32,18 @@ public class LeverManager : MonoBehaviour
         if (leverRigidbody.angularVelocity != Vector3.zero)
         {
             var value = Mathf.Clamp(lever.angle, minLimit, maxLimit);
-            print("When regulated, that value becomes: " + ScaleRegulator(value)); // use this for settings
-            text.text = "Value: " + Mathf.Round(ScaleRegulator(value));
+            print("When regulated, that value becomes: " + NewScaleRegulator(value));
+            text.text = "Value: " + Math.Round(NewScaleRegulator(value), 2);
         }
     }
 
-    private float ScaleRegulator(float value)
+    private float OldScaleRegulator(float value)
     {
         return (value + 75) * 2 / 3;
+    }
+
+    private float NewScaleRegulator(float value)
+    {
+        return (value - minLimit) / (maxLimit - minLimit);
     }
 }
