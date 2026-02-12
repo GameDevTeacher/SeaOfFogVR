@@ -14,47 +14,15 @@ Preset:
   m_Properties:
   - target: {fileID: 0}
     propertyPath: m_ExternalObjects.Array.size
-    value: 2
+    value: 0
     objectReference: {fileID: 0}
-  - target: {fileID: 0}
-    propertyPath: m_ExternalObjects.Array.data[0].first.type
-    value: UnityEngine:Material
-    objectReference: {fileID: 0}
-  - target: {fileID: 0}
-    propertyPath: m_ExternalObjects.Array.data[0].first.assembly
-    value: UnityEngine.CoreModule
-    objectReference: {fileID: 0}
-  - target: {fileID: 0}
-    propertyPath: m_ExternalObjects.Array.data[0].first.name
-    value: oar_texture_01
-    objectReference: {fileID: 0}
-  - target: {fileID: 0}
-    propertyPath: m_ExternalObjects.Array.data[0].second
-    value: 
-    objectReference: {fileID: 2100000, guid: d59414940431e224f958b710575bc0e1, type: 2}
-  - target: {fileID: 0}
-    propertyPath: m_ExternalObjects.Array.data[1].first.type
-    value: UnityEngine:Texture2D
-    objectReference: {fileID: 0}
-  - target: {fileID: 0}
-    propertyPath: m_ExternalObjects.Array.data[1].first.assembly
-    value: UnityEngine.CoreModule
-    objectReference: {fileID: 0}
-  - target: {fileID: 0}
-    propertyPath: m_ExternalObjects.Array.data[1].first.name
-    value: oar_texture_01
-    objectReference: {fileID: 0}
-  - target: {fileID: 0}
-    propertyPath: m_ExternalObjects.Array.data[1].second
-    value: 
-    objectReference: {fileID: 2800000, guid: 3ee66a73b4411c24eb3fd1c352d5b1d6, type: 3}
   - target: {fileID: 0}
     propertyPath: m_MaterialImportMode
     value: 2
     objectReference: {fileID: 0}
   - target: {fileID: 0}
     propertyPath: m_MaterialName
-    value: 0
+    value: 1
     objectReference: {fileID: 0}
   - target: {fileID: 0}
     propertyPath: m_MaterialSearch
@@ -186,11 +154,11 @@ Preset:
     objectReference: {fileID: 0}
   - target: {fileID: 0}
     propertyPath: m_ImportCameras
-    value: 0
+    value: 1
     objectReference: {fileID: 0}
   - target: {fileID: 0}
     propertyPath: m_ImportLights
-    value: 0
+    value: 1
     objectReference: {fileID: 0}
   - target: {fileID: 0}
     propertyPath: m_NodeNameCollisionStrategy
