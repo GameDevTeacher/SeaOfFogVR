@@ -1,13 +1,63 @@
 fileFormatVersion: 2
-guid: 2748d1e5a5c794f4999844038f59edd3
+guid: 3c2bf28aeb4f3e241a74925987a9d0ed
 ModelImporter:
   serializedVersion: 24200
   internalIDToNameTable: []
-  externalObjects: {}
+  externalObjects:
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Hands_texture_01
+    second: {fileID: 2100000, guid: c969264ef6d87a8409afb3c0518db4fa, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Skeleton_texture_01
+    second: {fileID: 2100000, guid: c87c39bdd429b1840833957de44152f2, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Skeleton_texture_02
+    second: {fileID: 2100000, guid: 59f0457b0d818614588e2230b45f711a, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Skeleton_texture_03
+    second: {fileID: 2100000, guid: f70fd683af5da0d4ab126d6ffaad77cb, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Skeleton_texture_04
+    second: {fileID: 2100000, guid: 5e33820b897d5b54b92cf4e7442be7bd, type: 2}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: Hands_texture_01
+    second: {fileID: 2800000, guid: e385b321ad2c23945803e63d9ccf149e, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: Skeleton_texture_body_05
+    second: {fileID: 2800000, guid: a93c32312ff0cb347a70486d07ac6a85, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: Skeleton_texture_head_03
+    second: {fileID: 2800000, guid: 9d714adf3e9756d44b7794513b8df71e, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: Skeleton_texture_jacket_05
+    second: {fileID: 2800000, guid: 6da7a4b3e2d42454fa117ad70506d58f, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: Skeleton_texture_legs_05
+    second: {fileID: 2800000, guid: 915e59f4be5a96d4ca7460045b37741b, type: 3}
   materials:
     materialImportMode: 2
-    materialName: 0
-    materialSearch: 1
+    materialName: 2
+    materialSearch: 2
     materialLocation: 1
   animations:
     legacyGenerateAnimations: 4
@@ -41,8 +91,8 @@ ModelImporter:
     importPhysicalCameras: 1
     importVisibility: 1
     importBlendShapes: 1
-    importCameras: 0
-    importLights: 0
+    importCameras: 1
+    importLights: 1
     nodeNameCollisionStrategy: 1
     fileIdsGeneration: 2
     swapUVChannels: 0
