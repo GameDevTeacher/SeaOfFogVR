@@ -19,11 +19,10 @@ public class BoatMovement : MonoBehaviour
 
     private void Update()
     {
-        
         _oarVectors.Clear();
         foreach (var oar in _oarScripts)
         {
-            _oarVectors.Add(oar.OarVector);
+            _oarVectors.Add(oar.OarVector.normalized);
         }
 
         _rb.AddForceAtPosition(_oarVectors[0]*_sensitivity, _oarAnchors[0].position, ForceMode.Force);

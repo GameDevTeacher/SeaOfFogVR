@@ -6,11 +6,17 @@ EditorBuildSettings:
   serializedVersion: 2
   m_Scenes:
   - enabled: 1
-    path: Assets/Scenes/Rowing Test Scene.unity
-    guid: 7147af27f058626469f2c9d49215d929
+    path: Assets/TBD_Test Folder/DryRunScenes/DryRun-Ocean.unity
+    guid: ac5dffbbe1cf5db418f2218b12bc4faa
   - enabled: 1
-    path: Assets/Scenes/TestBuild0602.unity
-    guid: c9d131e93c7e35e4a8e8c5c383d1b39f
+    path: Assets/TBD_Test Folder/DryRunScenes/DryRun-LighthouseIsle.unity
+    guid: 4e231328a6a0b6e439401ab52d03de48
+  - enabled: 1
+    path: Assets/TBD_Test Folder/DryRunScenes/DryRun-FishermanIsle.unity
+    guid: 49d54dbd0c8759640a741ef1e6e84315
+  - enabled: 1
+    path: Assets/TBD_Test Folder/DryRunScenes/DryRun-ShipwreckIsle.unity
+    guid: 552d71677147287459e983e621565e74
   m_configObjects:
     Unity.XR.Oculus.Settings: {fileID: 11400000, guid: 3606ab671f6c66b479fd8ffe50ec43a0, type: 2}
     com.unity.input.settings.actions: {fileID: -944628639613478452, guid: c348712bda248c246b8c49b3db54643f, type: 3}
