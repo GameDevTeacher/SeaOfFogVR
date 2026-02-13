@@ -12,6 +12,7 @@ GameObject:
   - component: {fileID: 5278402511600589710}
   - component: {fileID: 1397945096633776443}
   - component: {fileID: 7525166402238976913}
+  - component: {fileID: 5935821552504107730}
   m_Layer: 0
   m_Name: TempPauseMenu
   m_TagString: Untagged
@@ -112,3 +113,18 @@ BoxCollider:
   serializedVersion: 3
   m_Size: {x: 1, y: 1, z: 1}
   m_Center: {x: 0, y: 0, z: 0}
+--- !u!114 &5935821552504107730
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4164814070557010626}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 73d875bfe31bf644dba7a313f0190350, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::PauseMenuManager
+  maxDistance: 2
+  target: {fileID: 0}
+  pauseScrub: {fileID: 11400000, guid: 1efa98d5d331328409cc6a6222a1f1b2, type: 2}

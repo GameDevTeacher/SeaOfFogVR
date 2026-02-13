@@ -9,6 +9,9 @@ public class LanternEchoInteract : MonoBehaviour
     
     [Header("Visualize Interaction")]
     [SerializeField] private Renderer visualizeRenderer;
+    
+    private Transform _currentTarget;
+    private EchoHighlight _echoHighlightTarget;
 
     private void Update()
     {
@@ -19,14 +22,26 @@ public class LanternEchoInteract : MonoBehaviour
         {
             if (hit.collider.CompareTag("Echo"))
             {
-                hit.collider.TryGetComponent(out EchoHighlight echoHighlight);
-                echoHighlight.Transparency(0.5f);
-                echoHighlight.WobbleWithDavid(0.2f);
+                _currentTarget = hit.collider.transform;
+                _currentTarget.TryGetComponent(out EchoHighlight echoHighlight);
+                    _echoHighlightTarget = echoHighlight;
+                    
+                _echoHighlightTarget.Transparency(0.5f);
+                _echoHighlightTarget.WobbleWithDavid(0.2f);
             }
         }
         else
         {
-            print("No nothing.");
+            if (_currentTarget == null) return;
+            
+            _currentTarget.TryGetComponent(out EchoHighlight echoHighlight);
+                _echoHighlightTarget = echoHighlight;
+                
+            _echoHighlightTarget.Transparency(0);
+            _echoHighlightTarget.WobbleWithDavid(0);
+            
+            _currentTarget = null;
+            _echoHighlightTarget = null;
         }
     }
 
