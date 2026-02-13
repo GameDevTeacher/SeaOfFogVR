@@ -1,5 +1,56 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
+--- !u!114 &-9072835525670092723
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/Echos/GravediggerEcho1ShipwreckGraves01
+  m_EditorClassIdentifier: FMODUnityEditor::FMODUnity.EditorEventRef
+  Path: event:/Echos/GravediggerEcho1ShipwreckGraves01
+  Guid:
+    Data1: -593141245
+    Data2: 1273059910
+    Data3: 1146585762
+    Data4: 1586751828
+  Banks:
+  - {fileID: -7940660501989794843}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 6187
+--- !u!114 &-8917711615444274541
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/Ambience/Section
+  m_EditorClassIdentifier: FMODUnityEditor::FMODUnity.EditorParamRef
+  Name: Section
+  StudioPath: 
+  Min: 0
+  Max: 7
+  Default: 0
+  ID:
+    data1: 3970428435
+    data2: 4163594882
+  Type: 1
+  IsGlobal: 1
+  Labels: []
+  Exists: 1
 --- !u!114 &-8625617858540333463
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -28,6 +79,87 @@ MonoBehaviour:
   MinDistance: 1
   MaxDistance: 20
   Length: 288291
+--- !u!114 &-8622509620131746239
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/Ambience/Water Beach Lapping
+  m_EditorClassIdentifier: FMODUnityEditor::FMODUnity.EditorEventRef
+  Path: event:/Ambience/Water Beach Lapping
+  Guid:
+    Data1: 1221511189
+    Data2: 1301996907
+    Data3: 743739018
+    Data4: 901517365
+  Banks:
+  - {fileID: -786548816698501742}
+  IsStream: 1
+  Is3D: 0
+  IsOneShot: 0
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 65457
+--- !u!114 &-8355822980786356648
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/Echos/PrayingEchoChurch01
+  m_EditorClassIdentifier: FMODUnityEditor::FMODUnity.EditorEventRef
+  Path: event:/Echos/PrayingEchoChurch01
+  Guid:
+    Data1: -178270042
+    Data2: 1156633319
+    Data3: -1208135796
+    Data4: 767204916
+  Banks:
+  - {fileID: -7940660501989794843}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 8482
+--- !u!114 &-8280697115976419775
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/Voicelines/LighthouseEnding01
+  m_EditorClassIdentifier: FMODUnityEditor::FMODUnity.EditorEventRef
+  Path: event:/Voicelines/LighthouseEnding01
+  Guid:
+    Data1: 579515756
+    Data2: 1097410436
+    Data3: -1860678776
+    Data4: 1264273020
+  Banks:
+  - {fileID: -7940660501989794843}
+  IsStream: 1
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 41000
 --- !u!114 &-8275137670974308170
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -55,6 +187,51 @@ MonoBehaviour:
   MinDistance: 1
   MaxDistance: 20
   Length: 11952
+--- !u!114 &-8044765354938758038
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/Voicelines/LighthouseEnding04
+  m_EditorClassIdentifier: FMODUnityEditor::FMODUnity.EditorEventRef
+  Path: event:/Voicelines/LighthouseEnding04
+  Guid:
+    Data1: -1309775656
+    Data2: 1094478085
+    Data3: 1341431174
+    Data4: 1731712455
+  Banks:
+  - {fileID: -7940660501989794843}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 3062
+--- !u!114 &-7940660501989794843
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c18180ecb35941f4682ae60107b85b7c, type: 3}
+  m_Name: bank:/Voicelines.bank
+  m_EditorClassIdentifier: FMODUnityEditor::FMODUnity.EditorBankRef
+  Path: Assets/Audio_FMOD/Banks/FmodV5/Voicelines.bank
+  Name: Voicelines
+  StudioPath: bank:/Voicelines
+  lastModified: 639065798353971959
+  FileSizes: []
+  Exists: 1
 --- !u!114 &-7937767485487265778
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -129,6 +306,35 @@ MonoBehaviour:
   lastModified: 639065004313516670
   FileSizes: []
   Exists: 1
+--- !u!114 &-6938673556705608436
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/Soundtrack/6. The Fishermen
+  m_EditorClassIdentifier: FMODUnityEditor::FMODUnity.EditorEventRef
+  Path: event:/Soundtrack/6. The Fishermen
+  Guid:
+    Data1: 704250354
+    Data2: 1197546830
+    Data3: 620987546
+    Data4: 928358744
+  Banks:
+  - {fileID: 5060268028016066373}
+  - {fileID: -3926969543068550760}
+  IsStream: 1
+  Is3D: 0
+  IsOneShot: 0
+  Parameters:
+  - {fileID: 7125761055203079444}
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 22000
 --- !u!114 &-6623109357239848948
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -171,6 +377,34 @@ MonoBehaviour:
   IsGlobal: 1
   Labels: []
   Exists: 1
+--- !u!114 &-5985177093928395852
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/Soundtrack/4.The Shipwreck
+  m_EditorClassIdentifier: FMODUnityEditor::FMODUnity.EditorEventRef
+  Path: event:/Soundtrack/4.The Shipwreck
+  Guid:
+    Data1: -569369557
+    Data2: 1248834994
+    Data3: -2083677518
+    Data4: -870406985
+  Banks:
+  - {fileID: 5060268028016066373}
+  - {fileID: -3926969543068550760}
+  IsStream: 1
+  Is3D: 0
+  IsOneShot: 0
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 126000
 --- !u!114 &-5884919013760757391
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -199,6 +433,62 @@ MonoBehaviour:
   MinDistance: 1
   MaxDistance: 20
   Length: 80676
+--- !u!114 &-5846023281366688859
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/Voicelines/The Fishermen Village/BakeryMemory 6
+  m_EditorClassIdentifier: FMODUnityEditor::FMODUnity.EditorEventRef
+  Path: event:/Voicelines/The Fishermen Village/BakeryMemory 6
+  Guid:
+    Data1: -1040083951
+    Data2: 1316314451
+    Data3: -1229161538
+    Data4: 365317356
+  Banks:
+  - {fileID: -7940660501989794843}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 0
+--- !u!114 &-5668594576570626695
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/Echos/Voicelines Cave
+  m_EditorClassIdentifier: FMODUnityEditor::FMODUnity.EditorEventRef
+  Path: event:/Echos/Voicelines Cave
+  Guid:
+    Data1: -422702629
+    Data2: 1318881455
+    Data3: -91032419
+    Data4: 853292348
+  Banks:
+  - {fileID: 5060268028016066373}
+  - {fileID: -3926969543068550760}
+  - {fileID: -7940660501989794843}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 12112
 --- !u!114 &-5336803046651574492
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -223,6 +513,86 @@ MonoBehaviour:
   IsGlobal: 1
   Labels: []
   Exists: 1
+--- !u!114 &-5007647431551881915
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/Lighthouse
+  m_EditorClassIdentifier: FMODUnityEditor::FMODUnity.EditorParamRef
+  Name: Lighthouse
+  StudioPath: parameter:/Lighthouse
+  Min: 0
+  Max: 2
+  Default: 0
+  ID:
+    data1: 788567858
+    data2: 1155313586
+  Type: 1
+  IsGlobal: 1
+  Labels: []
+  Exists: 1
+--- !u!114 &-4902287197649051338
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/Ambience/The Storm
+  m_EditorClassIdentifier: FMODUnityEditor::FMODUnity.EditorEventRef
+  Path: event:/Ambience/The Storm
+  Guid:
+    Data1: -1177313333
+    Data2: 1093628651
+    Data3: -38509384
+    Data4: 1944442810
+  Banks:
+  - {fileID: -786548816698501742}
+  - {fileID: 5060268028016066373}
+  - {fileID: -3926969543068550760}
+  IsStream: 1
+  Is3D: 0
+  IsOneShot: 0
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 8000
+--- !u!114 &-4425866121011924012
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/Echos/CaptainEchoShipwreck01
+  m_EditorClassIdentifier: FMODUnityEditor::FMODUnity.EditorEventRef
+  Path: event:/Echos/CaptainEchoShipwreck01
+  Guid:
+    Data1: -1707799064
+    Data2: 1332209660
+    Data3: 873472917
+    Data4: -1807623500
+  Banks:
+  - {fileID: -7940660501989794843}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 1634
 --- !u!114 &-4423544986847814144
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -252,6 +622,155 @@ MonoBehaviour:
   MinDistance: 1
   MaxDistance: 20
   Length: 9413
+--- !u!114 &-4325266111290962331
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/Soundtrack/8.The Lighthouse
+  m_EditorClassIdentifier: FMODUnityEditor::FMODUnity.EditorEventRef
+  Path: event:/Soundtrack/8.The Lighthouse
+  Guid:
+    Data1: 289973646
+    Data2: 1243166774
+    Data3: -2072925775
+    Data4: 368365593
+  Banks:
+  - {fileID: 5060268028016066373}
+  - {fileID: -3926969543068550760}
+  IsStream: 1
+  Is3D: 0
+  IsOneShot: 0
+  Parameters:
+  - {fileID: 2505596226713316012}
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 240000
+--- !u!114 &-4199099409400357646
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/Voicelines/The Shipwreck Island/BoatMemory01
+  m_EditorClassIdentifier: FMODUnityEditor::FMODUnity.EditorEventRef
+  Path: event:/Voicelines/The Shipwreck Island/BoatMemory01
+  Guid:
+    Data1: 1964312597
+    Data2: 1144593361
+    Data3: 305767831
+    Data4: -887236554
+  Banks:
+  - {fileID: -7940660501989794843}
+  IsStream: 1
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 25977
+--- !u!114 &-3926969543068550760
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c18180ecb35941f4682ae60107b85b7c, type: 3}
+  m_Name: bank:/Music.bank
+  m_EditorClassIdentifier: FMODUnityEditor::FMODUnity.EditorBankRef
+  Path: Assets/Audio_FMOD/Banks/FmodV5/Music.bank
+  Name: Music
+  StudioPath: bank:/Music
+  lastModified: 639065798362276713
+  FileSizes: []
+  Exists: 1
+--- !u!114 &-3367428064212325667
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/Section
+  m_EditorClassIdentifier: FMODUnityEditor::FMODUnity.EditorParamRef
+  Name: Section
+  StudioPath: parameter:/Section
+  Min: 0
+  Max: 7
+  Default: 0
+  ID:
+    data1: 3970428435
+    data2: 4163594882
+  Type: 1
+  IsGlobal: 1
+  Labels: []
+  Exists: 1
+--- !u!114 &-3291242129748493072
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/Ambience/Oar Exits
+  m_EditorClassIdentifier: FMODUnityEditor::FMODUnity.EditorEventRef
+  Path: event:/Ambience/Oar Exits
+  Guid:
+    Data1: -1065334862
+    Data2: 1339900815
+    Data3: -1056961108
+    Data4: -1649724655
+  Banks:
+  - {fileID: -786548816698501742}
+  IsStream: 0
+  Is3D: 1
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 80000
+--- !u!114 &-2931737510583040860
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/Ambience/The Fishermen
+  m_EditorClassIdentifier: FMODUnityEditor::FMODUnity.EditorParamRef
+  Name: The Fishermen
+  StudioPath: 
+  Min: 0
+  Max: 2
+  Default: 0
+  ID:
+    data1: 1700334730
+    data2: 755120890
+  Type: 1
+  IsGlobal: 1
+  Labels: []
+  Exists: 1
 --- !u!114 &-2627226836571513250
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -282,6 +801,142 @@ MonoBehaviour:
   MinDistance: 1
   MaxDistance: 20
   Length: 23000
+--- !u!114 &-2513429820677597194
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/Echos/Caveperson3CaveSuprise01
+  m_EditorClassIdentifier: FMODUnityEditor::FMODUnity.EditorEventRef
+  Path: event:/Echos/Caveperson3CaveSuprise01
+  Guid:
+    Data1: -1155789979
+    Data2: 1159213579
+    Data3: 739915679
+    Data4: 1970375298
+  Banks:
+  - {fileID: -7940660501989794843}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 2182
+--- !u!114 &-2487183078260951398
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/Voicelines/The Fishermen Village/BakeryMemory 5
+  m_EditorClassIdentifier: FMODUnityEditor::FMODUnity.EditorEventRef
+  Path: event:/Voicelines/The Fishermen Village/BakeryMemory 5
+  Guid:
+    Data1: 658831665
+    Data2: 1136312523
+    Data3: -429535865
+    Data4: -1009199452
+  Banks:
+  - {fileID: -7940660501989794843}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 0
+--- !u!114 &-2485110162104443837
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/Soundtrack/7.The Third Row
+  m_EditorClassIdentifier: FMODUnityEditor::FMODUnity.EditorEventRef
+  Path: event:/Soundtrack/7.The Third Row
+  Guid:
+    Data1: 1443577090
+    Data2: 1196463882
+    Data3: -1274291018
+    Data4: -1069515238
+  Banks:
+  - {fileID: 5060268028016066373}
+  - {fileID: -3926969543068550760}
+  IsStream: 1
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 127842
+--- !u!114 &-2406314764849138017
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/Voicelines/The Fishermen Village/BakeryMemory
+  m_EditorClassIdentifier: FMODUnityEditor::FMODUnity.EditorEventRef
+  Path: event:/Voicelines/The Fishermen Village/BakeryMemory
+  Guid:
+    Data1: 815490951
+    Data2: 1139671771
+    Data3: -882642012
+    Data4: 1182058382
+  Banks:
+  - {fileID: -7940660501989794843}
+  IsStream: 1
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 13868
+--- !u!114 &-2396821083653197971
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/Echos/Church01
+  m_EditorClassIdentifier: FMODUnityEditor::FMODUnity.EditorEventRef
+  Path: event:/Echos/Church01
+  Guid:
+    Data1: -1001893821
+    Data2: 1100966349
+    Data3: 1787082171
+    Data4: -777589309
+  Banks:
+  - {fileID: -7940660501989794843}
+  IsStream: 1
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 10624
 --- !u!114 &-1984314457937327182
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -306,6 +961,33 @@ MonoBehaviour:
   IsGlobal: 1
   Labels: []
   Exists: 1
+--- !u!114 &-1856254931020560158
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/Echos/Family Echo 2
+  m_EditorClassIdentifier: FMODUnityEditor::FMODUnity.EditorEventRef
+  Path: event:/Echos/Family Echo 2
+  Guid:
+    Data1: -260099101
+    Data2: 1158416503
+    Data3: -326334017
+    Data4: -1612308994
+  Banks:
+  - {fileID: -7940660501989794843}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 16826
 --- !u!114 &-1599681147436095228
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -362,6 +1044,75 @@ MonoBehaviour:
   MinDistance: 1
   MaxDistance: 20
   Length: 23000
+--- !u!114 &-1284623574364884788
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/The Fishermen
+  m_EditorClassIdentifier: FMODUnityEditor::FMODUnity.EditorParamRef
+  Name: The Fishermen
+  StudioPath: parameter:/The Fishermen
+  Min: 0
+  Max: 2
+  Default: 0
+  ID:
+    data1: 1700334730
+    data2: 755120890
+  Type: 1
+  IsGlobal: 1
+  Labels: []
+  Exists: 1
+--- !u!114 &-815182591583283101
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/Echos/Family Echo
+  m_EditorClassIdentifier: FMODUnityEditor::FMODUnity.EditorEventRef
+  Path: event:/Echos/Family Echo
+  Guid:
+    Data1: 939898025
+    Data2: 1295635879
+    Data3: -2123212873
+    Data4: 862820717
+  Banks:
+  - {fileID: -7940660501989794843}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 0
+--- !u!114 &-786548816698501742
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c18180ecb35941f4682ae60107b85b7c, type: 3}
+  m_Name: bank:/Ambience.bank
+  m_EditorClassIdentifier: FMODUnityEditor::FMODUnity.EditorBankRef
+  Path: Assets/Audio_FMOD/Banks/FmodV5/Ambience.bank
+  Name: Ambience
+  StudioPath: bank:/Ambience
+  lastModified: 639065798355219776
+  FileSizes: []
+  Exists: 1
 --- !u!114 &-552826317800127449
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -390,6 +1141,34 @@ MonoBehaviour:
   MinDistance: 1
   MaxDistance: 20
   Length: 126000
+--- !u!114 &-25027958859405242
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/Soundtrack/2.The Awakening
+  m_EditorClassIdentifier: FMODUnityEditor::FMODUnity.EditorEventRef
+  Path: event:/Soundtrack/2.The Awakening
+  Guid:
+    Data1: -1571020336
+    Data2: 1097737510
+    Data3: 953207176
+    Data4: 2083487947
+  Banks:
+  - {fileID: 5060268028016066373}
+  - {fileID: -3926969543068550760}
+  IsStream: 1
+  Is3D: 0
+  IsOneShot: 0
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 288291
 --- !u!114 &11400000
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -403,56 +1182,70 @@ MonoBehaviour:
   m_Name: FMODStudioCache
   m_EditorClassIdentifier: FMODUnityEditor::FMODUnity.EventCache
   EditorBanks:
-  - {fileID: 8055501574155850089}
-  - {fileID: 8370122405209160213}
-  - {fileID: 8884866493144726630}
-  - {fileID: -6623109357239848948}
-  - {fileID: -7097137623726141305}
-  - {fileID: 5579989112104259092}
-  - {fileID: 3584536427629150240}
+  - {fileID: 8021466780834606406}
+  - {fileID: -786548816698501742}
+  - {fileID: 7780115668910924507}
+  - {fileID: 5060268028016066373}
+  - {fileID: -3926969543068550760}
+  - {fileID: 3108287806463713889}
+  - {fileID: -7940660501989794843}
   EditorEvents:
-  - {fileID: 3645723340785725302}
-  - {fileID: -2627226836571513250}
-  - {fileID: -7352287372776123860}
-  - {fileID: -5884919013760757391}
-  - {fileID: -552826317800127449}
-  - {fileID: 7609498124885955972}
-  - {fileID: 8819815280508597805}
-  - {fileID: -1532102434560720910}
-  - {fileID: 7112754313326606254}
-  - {fileID: -8625617858540333463}
-  - {fileID: 2964484769929883962}
-  - {fileID: 6179490741806010589}
-  - {fileID: 3772204814373908503}
-  - {fileID: 4873840295013324025}
-  - {fileID: 2707044092636541091}
-  - {fileID: 8832242757350455597}
-  - {fileID: 6072553248886321463}
-  - {fileID: -4423544986847814144}
-  - {fileID: 1300058051616212618}
-  - {fileID: 6622256383520457683}
-  - {fileID: 3731246601393120492}
-  - {fileID: 4932892624314448013}
-  - {fileID: 6745965231211090697}
-  - {fileID: -8275137670974308170}
-  - {fileID: -1599681147436095228}
-  - {fileID: -7937767485487265778}
-  - {fileID: 4432497502504515124}
-  - {fileID: 1369337343251938931}
-  - {fileID: 6872516230065138730}
-  - {fileID: 3631458253732866673}
-  - {fileID: 1598439004560728813}
-  - {fileID: 9125854522984888730}
-  - {fileID: 8883849447390961870}
+  - {fileID: -8622509620131746239}
+  - {fileID: 5050355549285215961}
+  - {fileID: 8335554612536819831}
+  - {fileID: 1989783677645394849}
+  - {fileID: -3291242129748493072}
+  - {fileID: -4902287197649051338}
+  - {fileID: 6740853316989445331}
+  - {fileID: -2485110162104443837}
+  - {fileID: -5985177093928395852}
+  - {fileID: 8074153328546379139}
+  - {fileID: 1074821629245795143}
+  - {fileID: 2040684028221330138}
+  - {fileID: 8318739341575326982}
+  - {fileID: -4325266111290962331}
+  - {fileID: 6377546730269975573}
+  - {fileID: 9031569652607622738}
+  - {fileID: -25027958859405242}
+  - {fileID: -5668594576570626695}
+  - {fileID: -6938673556705608436}
+  - {fileID: -9072835525670092723}
+  - {fileID: 3870814661637039839}
+  - {fileID: -5846023281366688859}
+  - {fileID: -4199099409400357646}
+  - {fileID: 8121480279368886868}
+  - {fileID: -2487183078260951398}
+  - {fileID: -2396821083653197971}
+  - {fileID: 2918932699934479664}
+  - {fileID: 7480096886365272998}
+  - {fileID: -2513429820677597194}
+  - {fileID: 1406105418621835055}
+  - {fileID: -8280697115976419775}
+  - {fileID: -2406314764849138017}
+  - {fileID: 1871010474966783658}
+  - {fileID: 6843891417663149280}
+  - {fileID: -8355822980786356648}
+  - {fileID: -815182591583283101}
+  - {fileID: 8334088398110681312}
+  - {fileID: 598257100243038633}
+  - {fileID: 2111613777082213490}
+  - {fileID: -8044765354938758038}
+  - {fileID: 4295860382107847448}
+  - {fileID: 89075679552745109}
+  - {fileID: -1856254931020560158}
+  - {fileID: 8978209918628661131}
+  - {fileID: -4425866121011924012}
+  - {fileID: 4692094620148165981}
   EditorParameters:
-  - {fileID: -5336803046651574492}
-  - {fileID: 8093679447743655540}
+  - {fileID: -3367428064212325667}
+  - {fileID: -5007647431551881915}
+  - {fileID: -1284623574364884788}
   MasterBanks:
-  - {fileID: -6623109357239848948}
+  - {fileID: 5060268028016066373}
   StringsBanks:
-  - {fileID: 8055501574155850089}
+  - {fileID: 8021466780834606406}
   cacheVersion: 131858
-  cacheTime: 639065004313516670
+  cacheTime: 639065798362276713
   SerializableEventsDict:
   - key: event:/Ambience/Sea Waves
     index: 0
@@ -520,6 +1313,88 @@ MonoBehaviour:
     index: 31
   - key: event:/Voicelines/ShipwreckGraves01
     index: 32
+--- !u!114 &89075679552745109
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/Voicelines/The Awakening/AwakeningIslandTalk02
+  m_EditorClassIdentifier: FMODUnityEditor::FMODUnity.EditorEventRef
+  Path: event:/Voicelines/The Awakening/AwakeningIslandTalk02
+  Guid:
+    Data1: -1188284446
+    Data2: 1331075596
+    Data3: 1431675837
+    Data4: -1604012377
+  Banks:
+  - {fileID: -7940660501989794843}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 6376
+--- !u!114 &598257100243038633
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/Voicelines/FisherIslandEntrance02
+  m_EditorClassIdentifier: FMODUnityEditor::FMODUnity.EditorEventRef
+  Path: event:/Voicelines/FisherIslandEntrance02
+  Guid:
+    Data1: 2010140101
+    Data2: 1276536528
+    Data3: -357150076
+    Data4: 123025348
+  Banks:
+  - {fileID: -7940660501989794843}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 2992
+--- !u!114 &1074821629245795143
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/Soundtrack/5.The Second Row
+  m_EditorClassIdentifier: FMODUnityEditor::FMODUnity.EditorEventRef
+  Path: event:/Soundtrack/5.The Second Row
+  Guid:
+    Data1: 898918755
+    Data2: 1119009332
+    Data3: 386300843
+    Data4: -1898895588
+  Banks:
+  - {fileID: 5060268028016066373}
+  - {fileID: -3926969543068550760}
+  IsStream: 1
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 92632
 --- !u!114 &1300058051616212618
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -574,6 +1449,57 @@ MonoBehaviour:
   MinDistance: 1
   MaxDistance: 20
   Length: 2000
+--- !u!114 &1406105418621835055
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/Echos/AngryPersonEchoShipwreckSurvivors01
+  m_EditorClassIdentifier: FMODUnityEditor::FMODUnity.EditorEventRef
+  Path: event:/Echos/AngryPersonEchoShipwreckSurvivors01
+  Guid:
+    Data1: 1879097962
+    Data2: 1089987521
+    Data3: 1245383309
+    Data4: 488095640
+  Banks:
+  - {fileID: -7940660501989794843}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 12954
+--- !u!114 &1426088776538464655
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: "parameter:/Havt\xE5ke/Section"
+  m_EditorClassIdentifier: FMODUnityEditor::FMODUnity.EditorParamRef
+  Name: Section
+  StudioPath: 
+  Min: 0
+  Max: 7
+  Default: 0
+  ID:
+    data1: 3970428435
+    data2: 4163594882
+  Type: 1
+  IsGlobal: 1
+  Labels: []
+  Exists: 1
 --- !u!114 &1598439004560728813
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -601,6 +1527,166 @@ MonoBehaviour:
   MinDistance: 1
   MaxDistance: 20
   Length: 6376
+--- !u!114 &1871010474966783658
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/Echos/IslandmanEchoFishBanter01
+  m_EditorClassIdentifier: FMODUnityEditor::FMODUnity.EditorEventRef
+  Path: event:/Echos/IslandmanEchoFishBanter01
+  Guid:
+    Data1: 2079941267
+    Data2: 1244152454
+    Data3: -890499164
+    Data4: 1050195960
+  Banks:
+  - {fileID: -7940660501989794843}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 19371
+--- !u!114 &1989783677645394849
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/Ambience/Cave
+  m_EditorClassIdentifier: FMODUnityEditor::FMODUnity.EditorEventRef
+  Path: event:/Ambience/Cave
+  Guid:
+    Data1: 644453513
+    Data2: 1285463165
+    Data3: -1704589425
+    Data4: 453510959
+  Banks:
+  - {fileID: -786548816698501742}
+  - {fileID: 5060268028016066373}
+  - {fileID: -3926969543068550760}
+  IsStream: 1
+  Is3D: 0
+  IsOneShot: 0
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 10000
+--- !u!114 &2040684028221330138
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/Voicelines/Voiceline Awakening
+  m_EditorClassIdentifier: FMODUnityEditor::FMODUnity.EditorEventRef
+  Path: event:/Voicelines/Voiceline Awakening
+  Guid:
+    Data1: 1244440165
+    Data2: 1176884779
+    Data3: 1129838733
+    Data4: -676607519
+  Banks:
+  - {fileID: 5060268028016066373}
+  - {fileID: -3926969543068550760}
+  - {fileID: -7940660501989794843}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 9413
+--- !u!114 &2111613777082213490
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/Voicelines/The Awakening/AwakeningDock01
+  m_EditorClassIdentifier: FMODUnityEditor::FMODUnity.EditorEventRef
+  Path: event:/Voicelines/The Awakening/AwakeningDock01
+  Guid:
+    Data1: 1337909713
+    Data2: 1103178586
+    Data3: 1002528140
+    Data4: -708750741
+  Banks:
+  - {fileID: -7940660501989794843}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 4398
+--- !u!114 &2505596226713316012
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/8.The Lighthouse/Lighthouse
+  m_EditorClassIdentifier: FMODUnityEditor::FMODUnity.EditorParamRef
+  Name: Lighthouse
+  StudioPath: 
+  Min: 0
+  Max: 2
+  Default: 0
+  ID:
+    data1: 788567858
+    data2: 1155313586
+  Type: 1
+  IsGlobal: 1
+  Labels: []
+  Exists: 1
+--- !u!114 &2552613761542029211
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: "parameter:/Havt\xE5ke/The Fishermen"
+  m_EditorClassIdentifier: FMODUnityEditor::FMODUnity.EditorParamRef
+  Name: The Fishermen
+  StudioPath: 
+  Min: 0
+  Max: 2
+  Default: 0
+  ID:
+    data1: 1700334730
+    data2: 755120890
+  Type: 1
+  IsGlobal: 1
+  Labels: []
+  Exists: 1
 --- !u!114 &2707044092636541091
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -628,6 +1714,33 @@ MonoBehaviour:
   MinDistance: 1
   MaxDistance: 20
   Length: 80000
+--- !u!114 &2918932699934479664
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/Voicelines/The Shipwreck Island/Shipwreck01
+  m_EditorClassIdentifier: FMODUnityEditor::FMODUnity.EditorEventRef
+  Path: event:/Voicelines/The Shipwreck Island/Shipwreck01
+  Guid:
+    Data1: 1255275853
+    Data2: 1126316414
+    Data3: 882283167
+    Data4: 967223476
+  Banks:
+  - {fileID: -7940660501989794843}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 6572
 --- !u!114 &2964484769929883962
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -657,6 +1770,24 @@ MonoBehaviour:
   MinDistance: 1
   MaxDistance: 20
   Length: 22000
+--- !u!114 &3108287806463713889
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c18180ecb35941f4682ae60107b85b7c, type: 3}
+  m_Name: bank:/SFX.bank
+  m_EditorClassIdentifier: FMODUnityEditor::FMODUnity.EditorBankRef
+  Path: Assets/Audio_FMOD/Banks/FmodV5/SFX.bank
+  Name: SFX
+  StudioPath: bank:/SFX
+  lastModified: 639065798353356586
+  FileSizes: []
+  Exists: 1
 --- !u!114 &3287218080109469891
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -833,6 +1964,60 @@ MonoBehaviour:
   MinDistance: 1
   MaxDistance: 20
   Length: 8000
+--- !u!114 &3870814661637039839
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/Voicelines/The Fishermen Village/BenchMemory
+  m_EditorClassIdentifier: FMODUnityEditor::FMODUnity.EditorEventRef
+  Path: event:/Voicelines/The Fishermen Village/BenchMemory
+  Guid:
+    Data1: 1286033675
+    Data2: 1135733544
+    Data3: 498558871
+    Data4: 1607662862
+  Banks:
+  - {fileID: -7940660501989794843}
+  IsStream: 1
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 19254
+--- !u!114 &4295860382107847448
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/Voicelines/The Fishermen Village/BakeryMemory 4
+  m_EditorClassIdentifier: FMODUnityEditor::FMODUnity.EditorEventRef
+  Path: event:/Voicelines/The Fishermen Village/BakeryMemory 4
+  Guid:
+    Data1: -784322851
+    Data2: 1121125202
+    Data3: -46244696
+    Data4: -482540477
+  Banks:
+  - {fileID: -7940660501989794843}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 0
 --- !u!114 &4432497502504515124
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -860,6 +2045,33 @@ MonoBehaviour:
   MinDistance: 1
   MaxDistance: 20
   Length: 0
+--- !u!114 &4692094620148165981
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/Voicelines/The Shipwreck Island/ShipwreckGraves01
+  m_EditorClassIdentifier: FMODUnityEditor::FMODUnity.EditorEventRef
+  Path: event:/Voicelines/The Shipwreck Island/ShipwreckGraves01
+  Guid:
+    Data1: 1815339244
+    Data2: 1097248013
+    Data3: 557911176
+    Data4: 1580132615
+  Banks:
+  - {fileID: -7940660501989794843}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 4272
 --- !u!114 &4873840295013324025
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -915,6 +2127,51 @@ MonoBehaviour:
   MinDistance: 1
   MaxDistance: 20
   Length: 6572
+--- !u!114 &5050355549285215961
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/Ambience/Sea Waves
+  m_EditorClassIdentifier: FMODUnityEditor::FMODUnity.EditorEventRef
+  Path: event:/Ambience/Sea Waves
+  Guid:
+    Data1: -1985446616
+    Data2: 1229428509
+    Data3: -377651796
+    Data4: 234565778
+  Banks:
+  - {fileID: -786548816698501742}
+  IsStream: 1
+  Is3D: 0
+  IsOneShot: 0
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 77477
+--- !u!114 &5060268028016066373
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c18180ecb35941f4682ae60107b85b7c, type: 3}
+  m_Name: bank:/Master.bank
+  m_EditorClassIdentifier: FMODUnityEditor::FMODUnity.EditorBankRef
+  Path: Assets/Audio_FMOD/Banks/FmodV5/Master.bank
+  Name: Master
+  StudioPath: bank:/Master
+  lastModified: 639065798359132948
+  FileSizes: []
+  Exists: 1
 --- !u!114 &5579989112104259092
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -989,6 +2246,36 @@ MonoBehaviour:
   MinDistance: 1
   MaxDistance: 20
   Length: 65457
+--- !u!114 &6377546730269975573
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: "event:/Game/Havt\xE5ke"
+  m_EditorClassIdentifier: FMODUnityEditor::FMODUnity.EditorEventRef
+  Path: "event:/Game/Havt\xE5ke"
+  Guid:
+    Data1: -321923439
+    Data2: 1222959192
+    Data3: 5126332
+    Data4: -20007339
+  Banks:
+  - {fileID: 5060268028016066373}
+  IsStream: 1
+  Is3D: 1
+  IsOneShot: 0
+  Parameters:
+  - {fileID: 2552613761542029211}
+  - {fileID: 1426088776538464655}
+  - {fileID: 8798397871018688868}
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 23000
 --- !u!114 &6622256383520457683
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1016,6 +2303,33 @@ MonoBehaviour:
   MinDistance: 1
   MaxDistance: 20
   Length: 25977
+--- !u!114 &6740853316989445331
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/Ambience/Oar Enters
+  m_EditorClassIdentifier: FMODUnityEditor::FMODUnity.EditorEventRef
+  Path: event:/Ambience/Oar Enters
+  Guid:
+    Data1: 2134226920
+    Data2: 1141809542
+    Data3: -1490616395
+    Data4: 2050992195
+  Banks:
+  - {fileID: -786548816698501742}
+  IsStream: 0
+  Is3D: 1
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 80000
 --- !u!114 &6745965231211090697
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1043,6 +2357,33 @@ MonoBehaviour:
   MinDistance: 1
   MaxDistance: 20
   Length: 0
+--- !u!114 &6843891417663149280
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/Voicelines/The Shipwreck Island/ShipwreckCamps01
+  m_EditorClassIdentifier: FMODUnityEditor::FMODUnity.EditorEventRef
+  Path: event:/Voicelines/The Shipwreck Island/ShipwreckCamps01
+  Guid:
+    Data1: 73769619
+    Data2: 1157560568
+    Data3: -918427203
+    Data4: 1867298890
+  Banks:
+  - {fileID: -7940660501989794843}
+  IsStream: 1
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 26239
 --- !u!114 &6872516230065138730
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1098,6 +2439,57 @@ MonoBehaviour:
   MinDistance: 1
   MaxDistance: 20
   Length: 133252
+--- !u!114 &7125761055203079444
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/6. The Fishermen/The Fishermen
+  m_EditorClassIdentifier: FMODUnityEditor::FMODUnity.EditorParamRef
+  Name: The Fishermen
+  StudioPath: 
+  Min: 0
+  Max: 2
+  Default: 0
+  ID:
+    data1: 1700334730
+    data2: 755120890
+  Type: 1
+  IsGlobal: 1
+  Labels: []
+  Exists: 1
+--- !u!114 &7480096886365272998
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/Voicelines/The Shipwreck Island/ShipwreckLeave01
+  m_EditorClassIdentifier: FMODUnityEditor::FMODUnity.EditorEventRef
+  Path: event:/Voicelines/The Shipwreck Island/ShipwreckLeave01
+  Guid:
+    Data1: 383734365
+    Data2: 1338519721
+    Data3: -321112390
+    Data4: 575945371
+  Banks:
+  - {fileID: -7940660501989794843}
+  IsStream: 1
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 11952
 --- !u!114 &7609498124885955972
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1126,6 +2518,44 @@ MonoBehaviour:
   MinDistance: 1
   MaxDistance: 20
   Length: 0
+--- !u!114 &7780115668910924507
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c18180ecb35941f4682ae60107b85b7c, type: 3}
+  m_Name: bank:/Echo.bank
+  m_EditorClassIdentifier: FMODUnityEditor::FMODUnity.EditorBankRef
+  Path: Assets/Audio_FMOD/Banks/FmodV5/Echo.bank
+  Name: Echo
+  StudioPath: bank:/Echo
+  lastModified: 639065798354034562
+  FileSizes: []
+  Exists: 1
+--- !u!114 &8021466780834606406
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c18180ecb35941f4682ae60107b85b7c, type: 3}
+  m_Name: bank:/Master.strings.bank
+  m_EditorClassIdentifier: FMODUnityEditor::FMODUnity.EditorBankRef
+  Path: Assets/Audio_FMOD/Banks/FmodV5/Master.strings.bank
+  Name: Master.strings
+  StudioPath: bank:/Master.strings
+  lastModified: 639065798354069649
+  FileSizes:
+  - Name: 
+    Value: 3660
+  Exists: 1
 --- !u!114 &8055501574155850089
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1146,6 +2576,35 @@ MonoBehaviour:
   - Name: 
     Value: 2866
   Exists: 1
+--- !u!114 &8074153328546379139
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/Voicelines/Voiceline Storm
+  m_EditorClassIdentifier: FMODUnityEditor::FMODUnity.EditorEventRef
+  Path: event:/Voicelines/Voiceline Storm
+  Guid:
+    Data1: 1721218607
+    Data2: 1122993481
+    Data3: -1030290254
+    Data4: -758200339
+  Banks:
+  - {fileID: 5060268028016066373}
+  - {fileID: -3926969543068550760}
+  - {fileID: -7940660501989794843}
+  IsStream: 1
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 29596
 --- !u!114 &8093679447743655540
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1170,6 +2629,118 @@ MonoBehaviour:
   IsGlobal: 1
   Labels: []
   Exists: 1
+--- !u!114 &8121480279368886868
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/Echos/RallyEchoLeadToCave01
+  m_EditorClassIdentifier: FMODUnityEditor::FMODUnity.EditorEventRef
+  Path: event:/Echos/RallyEchoLeadToCave01
+  Guid:
+    Data1: -436914903
+    Data2: 1089350993
+    Data3: -27430992
+    Data4: 1670479057
+  Banks:
+  - {fileID: -7940660501989794843}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 3250
+--- !u!114 &8318739341575326982
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/Soundtrack/1. The Storm
+  m_EditorClassIdentifier: FMODUnityEditor::FMODUnity.EditorEventRef
+  Path: event:/Soundtrack/1. The Storm
+  Guid:
+    Data1: -570021762
+    Data2: 1201483428
+    Data3: -1358626415
+    Data4: -1697691402
+  Banks:
+  - {fileID: 5060268028016066373}
+  - {fileID: -3926969543068550760}
+  IsStream: 1
+  Is3D: 0
+  IsOneShot: 0
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 22000
+--- !u!114 &8334088398110681312
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/Voicelines/The Awakening/AwakeningDock02
+  m_EditorClassIdentifier: FMODUnityEditor::FMODUnity.EditorEventRef
+  Path: event:/Voicelines/The Awakening/AwakeningDock02
+  Guid:
+    Data1: 1198737602
+    Data2: 1292494189
+    Data3: 1091843762
+    Data4: 779197707
+  Banks:
+  - {fileID: -7940660501989794843}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 2000
+--- !u!114 &8335554612536819831
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/Ambience/Ambience
+  m_EditorClassIdentifier: FMODUnityEditor::FMODUnity.EditorEventRef
+  Path: event:/Ambience/Ambience
+  Guid:
+    Data1: -445261005
+    Data2: 1314219487
+    Data3: 1565237940
+    Data4: -871404846
+  Banks:
+  - {fileID: -786548816698501742}
+  - {fileID: 5060268028016066373}
+  IsStream: 1
+  Is3D: 1
+  IsOneShot: 0
+  Parameters:
+  - {fileID: -8917711615444274541}
+  - {fileID: -2931737510583040860}
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 23000
 --- !u!114 &8370122405209160213
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1208,6 +2779,30 @@ MonoBehaviour:
   ID:
     data1: 1700334730
     data2: 755120890
+  Type: 1
+  IsGlobal: 1
+  Labels: []
+  Exists: 1
+--- !u!114 &8798397871018688868
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: "parameter:/Havt\xE5ke/Lighthouse"
+  m_EditorClassIdentifier: FMODUnityEditor::FMODUnity.EditorParamRef
+  Name: Lighthouse
+  StudioPath: 
+  Min: 0
+  Max: 2
+  Default: 0
+  ID:
+    data1: 788567858
+    data2: 1155313586
   Type: 1
   IsGlobal: 1
   Labels: []
@@ -1312,6 +2907,61 @@ MonoBehaviour:
   lastModified: 639065004308908558
   FileSizes: []
   Exists: 1
+--- !u!114 &8978209918628661131
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/Echos/DyingPersonEchoShipwreckSurvivors01
+  m_EditorClassIdentifier: FMODUnityEditor::FMODUnity.EditorEventRef
+  Path: event:/Echos/DyingPersonEchoShipwreckSurvivors01
+  Guid:
+    Data1: 709570020
+    Data2: 1113695884
+    Data3: -916137539
+    Data4: -919700994
+  Banks:
+  - {fileID: -7940660501989794843}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 3403
+--- !u!114 &9031569652607622738
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/Soundtrack/3.The First Row
+  m_EditorClassIdentifier: FMODUnityEditor::FMODUnity.EditorEventRef
+  Path: event:/Soundtrack/3.The First Row
+  Guid:
+    Data1: 1541531549
+    Data2: 1307294214
+    Data3: -220565064
+    Data4: -86723949
+  Banks:
+  - {fileID: 5060268028016066373}
+  - {fileID: -3926969543068550760}
+  IsStream: 1
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 127465
 --- !u!114 &9125854522984888730
 MonoBehaviour:
   m_ObjectHideFlags: 0
