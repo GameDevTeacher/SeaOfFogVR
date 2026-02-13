@@ -12,8 +12,9 @@ public class SaveManager : MonoBehaviour
 
     public PlayerSaving player;
     public BoatSaving boat;
-    //public List<SceneData> scene;
-    //public EventManager? events;
+    public List<SceneData> sceneData; //multi scene loading
+    public SceneLoader sceneLoader;
+    //public EventManager? events;  
     
     public void Awake()
     {
@@ -23,11 +24,17 @@ public class SaveManager : MonoBehaviour
         }
         else
         {
-            Destroy(instance);
-            instance = this;
+            Destroy(gameObject);
         }
+        AssignVariables();
         
-        player = GameObject.FindGameObjectWithTag("Player").GetComponent<PlayerSaving>();
+        DontDestroyOnLoad(this);
+    }
+
+    public void AssignVariables()
+    {
+        print("assigining variables");
+        player =  GameObject.FindGameObjectWithTag("Player").GetComponent<PlayerSaving>();
         boat = GameObject.FindGameObjectWithTag("Boat").GetComponent<BoatSaving>();
     }
     

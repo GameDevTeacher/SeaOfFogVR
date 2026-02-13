@@ -1,3 +1,4 @@
+using System;
 using Unity.Mathematics;
 using Unity.VisualScripting;
 using UnityEngine;
@@ -8,6 +9,7 @@ public class BoatSaving : MonoBehaviour
     private Collider _handleRightCollider;
     private Collider _handleLeftCollider;
     private Collider _boatCollider;
+    private Rigidbody _boatRigidbody;
     
     private void Awake()
     {
@@ -15,6 +17,22 @@ public class BoatSaving : MonoBehaviour
         _handleLeftCollider = gameObject.transform.GetChild(2).gameObject.GetComponent<Collider>();
         _handleRightCollider = gameObject.transform.GetChild(1).gameObject.GetComponent<Collider>();
         _boatCollider = gameObject.transform.GetChild(0).gameObject.GetComponent<Collider>();
+        _boatRigidbody = gameObject.transform.GetComponent<Rigidbody>();
+        _boatRigidbody.interpolation = RigidbodyInterpolation.None;
+        
+    }
+
+    private async void Start()
+    {
+        try
+        {
+            await Awaitable.FixedUpdateAsync();
+            _boatRigidbody.interpolation = RigidbodyInterpolation.Interpolate;
+        }
+        catch (Exception e)
+        {
+            throw; // TODO handle exception
+        }
     }
     
     public void Save(ref BoatSaveData data)

@@ -16,7 +16,7 @@ Material:
   m_LightmapFlags: 2
   m_EnableInstancingVariants: 0
   m_DoubleSidedGI: 0
-  m_CustomRenderQueue: -1
+  m_CustomRenderQueue: 2999
   stringTagMap: {}
   disabledShaderPasses:
   - MOTIONVECTORS
@@ -48,7 +48,7 @@ Material:
     - _Metallic: 0
     - _Nromal_Strength: 1
     - _QueueControl: 0
-    - _QueueOffset: 0
+    - _QueueOffset: -1
     - _Ripple_Depth: 1
     - _Smoothness: 0
     - _Wave_Density: 15.7
@@ -57,6 +57,7 @@ Material:
     - _Wave_Sine_Speed: 0.05
     - _Wave_Speed: 0.01
     - _Wave_Strength: 1
+    - _XRMotionVectorsPass: 1
     - _scale: 15.31
     - _wave_speed: -0.005
     - _wave_speed_Y: -0.008

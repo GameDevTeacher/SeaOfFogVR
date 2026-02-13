@@ -6,6 +6,7 @@ TagManager:
   tags:
   - OarAnchor
   - Boat
+  - Teleport
   layers:
   - Default
   - TransparentFX

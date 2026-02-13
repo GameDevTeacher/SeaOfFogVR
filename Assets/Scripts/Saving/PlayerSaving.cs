@@ -9,8 +9,9 @@ public class PlayerSaving : MonoBehaviour
     private GameObject _locomotion;
     private GameObject _teleportation;
 
-    private void Awake()
+    private void Start()
     {
+        print("Player awake");
         _position = gameObject.transform;
         _xrOrigin = gameObject.GetComponent<XROrigin>();
         _locomotion = GameObject.Find("locomotion");

@@ -20,11 +20,11 @@ public class TimedTriggerListener : MonoBehaviour
     }
     
     
-    private void TimedTrigger(float duration)
+    public void TimedTrigger(float duration)
     {
         _triggerExited = false;
         
-        this._duration = duration;
+        _duration = duration;
         _countDownTimer = CountDownTimer.Start(duration);
         Debug.Log(duration + "in time trigger");
         
