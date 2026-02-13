@@ -11,6 +11,7 @@ GameObject:
   - component: {fileID: 4604127222109567459}
   - component: {fileID: 6796577875485204203}
   - component: {fileID: 8271556209304650711}
+  - component: {fileID: 2413587940586429628}
   m_Layer: 0
   m_Name: Trapdoor
   m_TagString: Untagged
@@ -182,6 +183,22 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::UIElementsInteract
   hoveringRenderer: {fileID: 6987994956748031921}
+--- !u!114 &2413587940586429628
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2710500199227661701}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 475e5ead4b72f9842be4e41af1f26ef9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::MainMenuManager
+  animator: {fileID: 2739986392077235211}
+  clip: {fileID: 7400000, guid: 6641d1637652f52438ce8ddf91712d09, type: 2}
+  shouldSceneBeLoaded: 0
+  shouldCameraFade: 0
 --- !u!1 &8576271981251208608
 GameObject:
   m_ObjectHideFlags: 0
