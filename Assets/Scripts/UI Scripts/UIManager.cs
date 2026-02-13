@@ -25,13 +25,11 @@ public class UIManager : MonoBehaviour
         {
             isPaused = true;
             _pauseMenu = Instantiate(pauseMenuPrefab, pauseMenuSpawnPoint.position, pauseMenuSpawnPoint.rotation);
-            print("Paused");
         }
         else if (_userInput.Pause && isPaused || Keyboard.current[pauseKey].wasPressedThisFrame && isPaused)
         {
             isPaused = false;
             Destroy(_pauseMenu);
-            print("Unpaused");
         }
     }
 

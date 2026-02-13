@@ -37,7 +37,6 @@ public class LeverManager : MonoBehaviour
         if (leverRigidbody.angularVelocity != Vector3.zero)
         {
             var value = Mathf.Clamp(lever.angle, minLimit, maxLimit);
-            print("When regulated, that value becomes: " + NewScaleRegulator(value));
             text.text = "Value: " + Math.Round(NewScaleRegulator(value), 2);
             volumeTest = NewScaleRegulator(value);
         }

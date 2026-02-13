@@ -28,7 +28,7 @@ public class VRNoPeeking : MonoBehaviour
         
         alphaName = Shader.PropertyToID("_AlphaValue");
         
-        CameraFadeIn(0f, gameObject.name);
+        CameraFadeIn(0f);
 
         if (doesMainMenuExist) _mainMenuManager = MainMenuManager.Instance;
     } 
@@ -37,25 +37,23 @@ public class VRNoPeeking : MonoBehaviour
     {
         if (Physics.CheckSphere(cameraTransform.position, sphereCheckSize, collisionLayer, QueryTriggerInteraction.Ignore))
         {
-            CameraFadeOut(1f, gameObject.name);
+            CameraFadeOut(1f);
             _isCameraFadedOut = true;
         }
         else if (doesMainMenuExist && _mainMenuManager.shouldCameraFade && !_isCameraFadedOut)
         {
-            CameraFadeOut(1f, gameObject.name);
+            CameraFadeOut(1f);
         }
         else
         {
             if (!_isCameraFadedOut) return;
             
-            CameraFadeIn(0f, gameObject.name);
+            CameraFadeIn(0f);
         }
     }
 
-    public void CameraFadeOut(float targetAlpha, string caller)
+    public void CameraFadeOut(float targetAlpha)
     {
-        print("Fade out was called by: " + caller);
-        
         var fadeValue = Mathf.MoveTowards(_cameraFadeMat.GetFloat(alphaName), targetAlpha, 
             Time.deltaTime / fadeOutSpeed);
         _cameraFadeMat.SetFloat(alphaName, fadeValue);
@@ -64,10 +62,8 @@ public class VRNoPeeking : MonoBehaviour
             _isCameraFadedOut = false;
     }
 
-    public void CameraFadeIn(float targetAlpha, string caller)
+    public void CameraFadeIn(float targetAlpha)
     {
-        print("Fade in was called by " + caller);
-        
         var fadeValue = Mathf.MoveTowards(_cameraFadeMat.GetFloat(alphaName), targetAlpha, 
             Time.deltaTime / fadeInSpeed);
         _cameraFadeMat.SetFloat(alphaName, fadeValue);
