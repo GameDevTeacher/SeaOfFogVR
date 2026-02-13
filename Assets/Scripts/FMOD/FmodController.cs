@@ -145,10 +145,7 @@ public class FmodController : MonoBehaviour
             
         }
 
-        private void StopAllInstances()
-        {
-            RuntimeManager.
-        }
+        
         private float DecibelToLinear(float dB)
         {
             //Converts our volumedata into decibels
