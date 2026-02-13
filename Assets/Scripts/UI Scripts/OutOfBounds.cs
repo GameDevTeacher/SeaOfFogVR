@@ -45,7 +45,7 @@ namespace UI_Scripts
         {
             if (IsTouchingGround())
             {
-                print("Player is touching ground.");
+                //print("Player is touching ground.");
             }
             else
             {

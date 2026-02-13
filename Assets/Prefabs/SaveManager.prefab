@@ -1,0 +1,71 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1 &6551173992355264704
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 9197010093215261798}
+  - component: {fileID: 4049987779728070483}
+  - component: {fileID: 7362703712571193523}
+  m_Layer: 2
+  m_Name: SaveManager
+  m_TagString: Untagged
+  m_Icon: {fileID: 5721338939258241955, guid: 0000000000000000d000000000000000, type: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &9197010093215261798
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6551173992355264704}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &4049987779728070483
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6551173992355264704}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 08d49d4bb750cc44da82940ac19af998, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: '::'
+  saveToggle: 0
+  loadToggle: 0
+  player: {fileID: 0}
+  boat: {fileID: 0}
+  sceneData: []
+  sceneLoader: {fileID: 7362703712571193523}
+--- !u!114 &7362703712571193523
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6551173992355264704}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 39ef6f84fdcad3a4aa4ac33aac927ecb, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::SceneLoader
+  _sceneDataScrubArray:
+  - {fileID: 11400000, guid: 9ab2dd8b542751041af97d9bcda39c90, type: 2}
+  - {fileID: 11400000, guid: a924905f05fb0a7419051cbddb456087, type: 2}
+  - {fileID: 11400000, guid: 9db86851e9ca5984f840716486aa3b8a, type: 2}
+  - {fileID: 11400000, guid: b12045de11f36194ab51c45e7b4077a8, type: 2}
+  - {fileID: 11400000, guid: 79688b506f5a23c4faf545eb2af0cc6a, type: 2}
