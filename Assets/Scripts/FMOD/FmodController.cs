@@ -2,10 +2,6 @@ using System;
 using FMOD.Studio;
 using FMODUnity;
 using UnityEngine;
-using System.Collections;
-using System.Collections.Generic;
-using FMOD;
-using Unity.VisualScripting;
 using Debug = UnityEngine.Debug;
 using STOP_MODE = FMOD.Studio.STOP_MODE;
 
