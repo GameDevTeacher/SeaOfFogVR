@@ -1,6 +1,6 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
---- !u!1001 &8566328448714060977
+--- !u!1001 &2337381852006982983
 PrefabInstance:
   m_ObjectHideFlags: 0
   serializedVersion: 2
@@ -10,19 +10,19 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 2838545207952756690, guid: 62c403aeb28c6fe4cbf554a4bbcc3a89, type: 3}
       propertyPath: m_Name
-      value: MusicTriggerObj Variant
+      value: EchoInteractObj Variant
       objectReference: {fileID: 0}
     - target: {fileID: 4374644511041845162, guid: 62c403aeb28c6fe4cbf554a4bbcc3a89, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -3.7700586
+      value: 163.65305
       objectReference: {fileID: 0}
     - target: {fileID: 4374644511041845162, guid: 62c403aeb28c6fe4cbf554a4bbcc3a89, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 0
+      value: 76.18
       objectReference: {fileID: 0}
     - target: {fileID: 4374644511041845162, guid: 62c403aeb28c6fe4cbf554a4bbcc3a89, type: 3}
       propertyPath: m_LocalPosition.z
-      value: 0
+      value: -770.5
       objectReference: {fileID: 0}
     - target: {fileID: 4374644511041845162, guid: 62c403aeb28c6fe4cbf554a4bbcc3a89, type: 3}
       propertyPath: m_LocalRotation.w
