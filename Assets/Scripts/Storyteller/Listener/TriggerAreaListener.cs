@@ -3,6 +3,8 @@ using UnityEngine;
 public class TriggerAreaListener : MonoBehaviour
 {
     
+    
+    
     void Start()
     {
         StoryEventsController.current.onTriggerEntered += TriggerEntered;
@@ -10,13 +12,13 @@ public class TriggerAreaListener : MonoBehaviour
         
     }
 
-    private void TriggerEntered()
+    private void TriggerEntered(int id)
     {
         GetComponent<MeshRenderer>().material.color = Color.green;
         Debug.Log("Entered Trigger");
     }
 
-    private void TriggerExited()
+    private void TriggerExited(int id)
     {
         GetComponent<MeshRenderer>().material.color = Color.dodgerBlue;
         Debug.Log("Exited Trigger");
