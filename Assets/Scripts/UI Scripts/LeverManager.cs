@@ -16,6 +16,10 @@ public class LeverManager : MonoBehaviour
     [SerializeField] private float maxLimit;
     [SerializeField] private float minLimit;
     
+    [Header("Setting")] 
+    [Range(0, 1)]
+    [SerializeField] private float volumeTest;
+    
     private void Start()
     {
         leverTransform.eulerAngles = new Vector3(0, leverTransform.eulerAngles.y, 0);
@@ -24,6 +28,7 @@ public class LeverManager : MonoBehaviour
         {
             var value = Mathf.Clamp(lever.angle, minLimit, maxLimit);
             text.text = "Value: " + Math.Round(NewScaleRegulator(value), 2);
+            volumeTest = NewScaleRegulator(value);
         }
     }
 
@@ -34,6 +39,7 @@ public class LeverManager : MonoBehaviour
             var value = Mathf.Clamp(lever.angle, minLimit, maxLimit);
             print("When regulated, that value becomes: " + NewScaleRegulator(value));
             text.text = "Value: " + Math.Round(NewScaleRegulator(value), 2);
+            volumeTest = NewScaleRegulator(value);
         }
     }
 
