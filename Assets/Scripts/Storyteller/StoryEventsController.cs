@@ -7,8 +7,15 @@ public class StoryEventsController : MonoBehaviour
  
   private void Awake()
   {
-    current = this;
-    
+    if (current == null)
+    {
+      current = this;
+      DontDestroyOnLoad(gameObject);
+    }
+    else
+    {
+      Destroy(gameObject);
+    }
   }
   
   public Action onEchoInteraction;

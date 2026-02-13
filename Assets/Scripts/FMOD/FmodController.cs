@@ -32,6 +32,7 @@ public class FmodController : MonoBehaviour
     private void Start()
     {
         StartVolumeMixer();
+        
     }
 
     private void Update()
@@ -144,12 +145,35 @@ public class FmodController : MonoBehaviour
             
         }
 
+        private void StopAllInstances()
+        {
+            RuntimeManager.
+        }
         private float DecibelToLinear(float dB)
         {
             //Converts our volumedata into decibels
             float linear = Mathf.Pow(10.0f, dB / 20f);
             return linear;
         }
+
+    #endregion
+
+    #region ECHO CONTROL
+    
+            private EventInstance _echoInstance;
+        
+        
+            public void UpdateEchoTrigger(string filepath)
+            {
+                RuntimeManager.PlayOneShot(filepath);
+            }
+
+            public void Update3DEchoTrigger(string filepath, GameObject gameobject)
+            {
+                RuntimeManager.PlayOneShotAttached(filepath, gameobject);
+            }
+
+            
 
     #endregion
 }
