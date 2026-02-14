@@ -27,7 +27,10 @@ public class OarTip : MonoBehaviour
         if(other.gameObject.layer == LayerMask.NameToLayer("Water"))
         {
             _touchingWater = true;
+            
+            FmodController.current.OarSplash(gameObject);
         }
+        
     }
 
     private void OnTriggerExit(Collider other)
@@ -35,6 +38,7 @@ public class OarTip : MonoBehaviour
         if(other.gameObject.layer == LayerMask.NameToLayer("Water"))
         {
             _touchingWater = false;
+            FmodController.current.OarSplash(gameObject);
         }
     }
 }

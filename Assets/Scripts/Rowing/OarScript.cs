@@ -22,6 +22,7 @@ public class OarScript : MonoBehaviour
     {
         _maxDistance = _targetOrientation.magnitude;
         _oarTip = GetComponentInChildren<OarTip>();
+        FmodController.current.RowingAmbience();
     }
     
     

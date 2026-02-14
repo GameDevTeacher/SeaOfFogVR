@@ -3,12 +3,19 @@ using UnityEngine;
 
 public class TriggerBox : MonoBehaviour
 {
+    [SerializeField] private int id;
+
+    public int ID
+    {
+        get => id;
+    }
+
     private void OnTriggerEnter(Collider other)
     {
-        StoryEventsController.current.TriggeredEntered();
+        StoryEventsController.current.TriggeredEntered(id);
     }
     private void OnTriggerExit(Collider other)
     {
-        StoryEventsController.current.TriggerExited();
+        StoryEventsController.current.TriggerExited(id);
     }
 }
