@@ -407,9 +407,7 @@ MonoBehaviour:
   - Master
   Banks:
   - Ambience
-  - Echo
   - Music
-  - SFX
   - Voicelines
   BanksToLoad: []
   LiveUpdatePort: 9264
