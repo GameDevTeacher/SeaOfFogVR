@@ -13,6 +13,18 @@ PrefabInstance:
       value: EchoInteractObj Variant
       objectReference: {fileID: 0}
     - target: {fileID: 4374644511041845162, guid: 62c403aeb28c6fe4cbf554a4bbcc3a89, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4374644511041845162, guid: 62c403aeb28c6fe4cbf554a4bbcc3a89, type: 3}
+      propertyPath: m_LocalScale.y
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4374644511041845162, guid: 62c403aeb28c6fe4cbf554a4bbcc3a89, type: 3}
+      propertyPath: m_LocalScale.z
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4374644511041845162, guid: 62c403aeb28c6fe4cbf554a4bbcc3a89, type: 3}
       propertyPath: m_LocalPosition.x
       value: 163.65305
       objectReference: {fileID: 0}

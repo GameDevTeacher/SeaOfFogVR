@@ -18,6 +18,7 @@ public class TriggerAreaListener : MonoBehaviour
         if (id != GetComponent<TriggerBox>().ID) return;
         GetComponent<MeshRenderer>().material.color = Color.green;
         if (_enterEchoPath == null) return;
+        
         FmodController.current.UpdateEchoTrigger(_enterEchoPath); 
         Debug.Log("Entered Trigger");
     }

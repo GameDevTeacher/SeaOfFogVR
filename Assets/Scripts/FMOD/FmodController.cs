@@ -39,12 +39,6 @@ public class FmodController : MonoBehaviour
     #region BOAT SFX AND AMBIENCE
 
         private bool _oarInWater;
-        public void RowingAmbience()
-        {
-            EventInstance SeaWaves = RuntimeManager.CreateInstance("Event:/Ambience/Ambience");
-            //RuntimeManager.StudioSystem.setParameterByName("Section", 2);
-            //SeaWaves.start();
-        }
         
         public void OarSplash(GameObject target)
         {
@@ -68,13 +62,14 @@ public class FmodController : MonoBehaviour
 
     #region  SECTION CHANGES
 
-        private float _CurrentSection;
+        //private float _CurrentSection;
         private EventInstance _ambienceInstance;
         private bool _ambienceIsPlaying;
         
 
         public void UpdateSection(int paramvalue)
         {
+            // parameter value = the section of music to be played See Havtåke VR/AudioSpace/FMOD
             _ambienceInstance = RuntimeManager.CreateInstance("Event:/Game/Havtåke");
             if (_ambienceIsPlaying)
             {
@@ -89,6 +84,23 @@ public class FmodController : MonoBehaviour
             }
             
         }
+
+        public void UpdateFishmanIsle(int paramvalue)
+        {
+        /*  0 = Intro (loop)
+            1 = Find the body (loop)
+            2 = End (no loop)   */
+            RuntimeManager.StudioSystem.setParameterByName("The Fishermen", paramvalue);
+        }
+
+        public void UpdateTheLightHouseReturn(int paramvalue)
+        {
+            /*  0 = Village
+            1 = Church
+            2 = Cave   */
+            RuntimeManager.StudioSystem.setParameterByName("The LightHouse (Return)", paramvalue);
+        }
+        
 
         public void stopAmbience()
         {
