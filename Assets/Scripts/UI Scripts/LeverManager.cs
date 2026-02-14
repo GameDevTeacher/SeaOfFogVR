@@ -20,7 +20,6 @@ public class LeverManager : MonoBehaviour
     [SerializeField] private float minLimit;
 
     [Header("Setting")] 
-    [Range(0, 1)]
     [SerializeField] private float volumeTest;
     [SerializeField] private float volumeTestMax, volumeTestMin; // should be replaced by a settings value from FMOD or otherwise
 
@@ -31,15 +30,15 @@ public class LeverManager : MonoBehaviour
     {
         leverTransform.eulerAngles = new Vector3(0, leverTransform.eulerAngles.y, 0);
         volume.profile.TryGet(out _colorAdjustments);
-        _colorAdjustments.hueShift.max = volumeTestMax;
-        _colorAdjustments.hueShift.min = volumeTestMin;
+        volumeTestMax = _colorAdjustments.hueShift.max;
+        volumeTestMin = _colorAdjustments.hueShift.min;
         
         if (lever.useLimits)
         {
             var value = Mathf.Clamp(lever.angle, minLimit, maxLimit);
             text.text = "Value: " + Math.Round(NewScaleRegulator(value), 2);
             volumeTest = NewScaleRegulator(value);
-            _colorAdjustments.hueShift.value = volumeTest;
+            _colorAdjustments.hueShift.value = FunTimes(volumeTest);
         }
     }
 
@@ -50,17 +49,18 @@ public class LeverManager : MonoBehaviour
             var value = Mathf.Clamp(lever.angle, minLimit, maxLimit);
             text.text = "Value: " + Math.Round(NewScaleRegulator(value), 2);
             volumeTest = NewScaleRegulator(value);
-            _colorAdjustments.hueShift.value = volumeTest;
+            _colorAdjustments.hueShift.value = FunTimes(volumeTest);
         }
     }
-
-    private float OldScaleRegulator(float value)
-    {
-        return (value + 75) * 2 / 3;
-    }
-
+    
     private float NewScaleRegulator(float value)
     {
         return (value - minLimit) / (maxLimit - minLimit);
+    }
+
+    private float FunTimes(float value)
+    {
+        // Take the value from the new scale regulator and translate that into values the funtimes can understand
+        return (volumeTestMax - volumeTestMin) * value + volumeTestMin;
     }
 }
