@@ -61,7 +61,7 @@ namespace UI_Scripts
 
         private IEnumerator ResetPlayerPosition()
         {
-            vrNoPeeking.CameraFadeOut(1f);
+            vrNoPeeking.CameraFadeOut(1f, vrNoPeeking.defaultFadeOutSpeed);
             
             
             yield return new WaitForSeconds(secondsUntilReset);

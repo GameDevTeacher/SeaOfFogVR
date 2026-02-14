@@ -5,7 +5,8 @@ public class VRNoPeeking : MonoBehaviour
 {
     [Header("Fading")]
     [SerializeField] private LayerMask collisionLayer;
-    [SerializeField] private float fadeOutSpeed;
+    public float defaultFadeOutSpeed;
+    [SerializeField] private float startGameFadeSpeed;
     [SerializeField] private float fadeInSpeed;
     [SerializeField] private float sphereCheckSize = 0.15f;
     
@@ -37,12 +38,12 @@ public class VRNoPeeking : MonoBehaviour
     {
         if (Physics.CheckSphere(cameraTransform.position, sphereCheckSize, collisionLayer, QueryTriggerInteraction.Ignore))
         {
-            CameraFadeOut(1f);
+            CameraFadeOut(1f, defaultFadeOutSpeed);
             _isCameraFadedOut = true;
         }
         else if (doesMainMenuExist && _mainMenuManager.shouldCameraFade && !_isCameraFadedOut)
         {
-            CameraFadeOut(1f);
+            CameraFadeOut(1f, startGameFadeSpeed);
         }
         else
         {
@@ -52,7 +53,7 @@ public class VRNoPeeking : MonoBehaviour
         }
     }
 
-    public void CameraFadeOut(float targetAlpha)
+    public void CameraFadeOut(float targetAlpha, float fadeOutSpeed)
     {
         var fadeValue = Mathf.MoveTowards(_cameraFadeMat.GetFloat(alphaName), targetAlpha, 
             Time.deltaTime / fadeOutSpeed);
