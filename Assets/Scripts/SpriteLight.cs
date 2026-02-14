@@ -1,5 +1,6 @@
 using System;
 using System.Collections;
+using Unity.Jobs;
 using Unity.VisualScripting;
 using UnityEngine;
 
@@ -9,6 +10,8 @@ public class SpriteLight : MonoBehaviour
     private bool _fadeOutTriggered = false;
     public float fadeOutTime = 0.05f;
     [SerializeField] private SphereCollider _collider;
+    private Light _light;
+    private float _lightIntensityDefault;
 
     private void Awake()
     {
@@ -16,6 +19,9 @@ public class SpriteLight : MonoBehaviour
         _material.color = new Color(_material.color.r,_material.color.g,_material.color.b,0);
         _collider = GetComponent<SphereCollider>();
         _collider.enabled = false;
+        _light = gameObject.GetComponentInChildren<Light>();
+        _lightIntensityDefault = _light.intensity;
+        _light.intensity = 0;
     }
 
     private void OnTriggerEnter(Collider other)
@@ -47,6 +53,8 @@ public class SpriteLight : MonoBehaviour
             {
                 yield break;
             }
+            
+            _light.intensity += _lightIntensityDefault/10;
             _material.color += new Color(0, 0, 0, 0.1f);
             yield return new WaitForSeconds(fadeOutTime);
         }
@@ -57,6 +65,7 @@ public class SpriteLight : MonoBehaviour
         while (_material.color.a > 0.1f)
         {
             _material.color -= new Color(0, 0, 0, 0.1f);
+            _light.intensity -= _lightIntensityDefault/10;
             yield return new WaitForSeconds(fadeOutTime);
         }
         gameObject.SetActive(false);
