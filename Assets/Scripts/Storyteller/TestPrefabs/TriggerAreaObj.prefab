@@ -11,8 +11,8 @@ GameObject:
   - component: {fileID: 4374644511041845162}
   - component: {fileID: 4642019348510704640}
   - component: {fileID: 6250747080232685440}
-  - component: {fileID: 1530595099237970693}
   - component: {fileID: 2036119639021920010}
+  - component: {fileID: 1530595099237970693}
   - component: {fileID: 1564192419901323419}
   - component: {fileID: 6123369669587901869}
   m_Layer: 0
@@ -94,18 +94,6 @@ MeshRenderer:
   m_SortingOrder: 0
   m_MaskInteraction: 0
   m_AdditionalVertexStreams: {fileID: 0}
---- !u!114 &1530595099237970693
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2838545207952756690}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: d9b9f7680fe9b434c80256f90038a87a, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::EchoInteractListener
 --- !u!65 &2036119639021920010
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -127,6 +115,18 @@ BoxCollider:
   serializedVersion: 3
   m_Size: {x: 1, y: 1, z: 1}
   m_Center: {x: 0, y: 0, z: 0}
+--- !u!114 &1530595099237970693
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2838545207952756690}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d9b9f7680fe9b434c80256f90038a87a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::EchoInteractListener
 --- !u!114 &1564192419901323419
 MonoBehaviour:
   m_ObjectHideFlags: 0
