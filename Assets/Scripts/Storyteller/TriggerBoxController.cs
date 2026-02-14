@@ -4,6 +4,12 @@ using UnityEngine;
 public class TriggerBox : MonoBehaviour
 {
     [SerializeField] private int id;
+
+    public int ID
+    {
+        get => id;
+    }
+
     private void OnTriggerEnter(Collider other)
     {
         StoryEventsController.current.TriggeredEntered(id);

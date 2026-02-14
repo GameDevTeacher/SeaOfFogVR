@@ -2,10 +2,6 @@ using System;
 using FMOD.Studio;
 using FMODUnity;
 using UnityEngine;
-using System.Collections;
-using System.Collections.Generic;
-using FMOD;
-using Unity.VisualScripting;
 using Debug = UnityEngine.Debug;
 using STOP_MODE = FMOD.Studio.STOP_MODE;
 
@@ -114,16 +110,18 @@ public class FmodController : MonoBehaviour
         private Bus voicelinesBus;
         private Bus reverbBus;
         [Header("Volume mixer")] 
-        [SerializeField] [Range(-80f, 10f)] private float _masterVolume;
-        [SerializeField] [Range(-80f, 10f)] private float _ambienceVolume;
-        [SerializeField] [Range(-80f, 10f)] private float _EchoVolume;
-        [SerializeField] [Range(-80f, 10f)] private float _musicVolume;
-        [SerializeField] [Range(-80f, 10f)] private float _sfxVolume;
-        [SerializeField] [Range(-80f, 10f)] private float _voicelinesVolume;
-        [SerializeField] [Range(-80f, 10f)] private float reverbVolume;
+        [Range(-80f, 10f)] public float masterVolume;
+        
+        [Range(-80f, 10f)] public float ambienceVolume;
+        [Range(-80f, 10f)] public float EchoVolume;
+        [Range(-80f, 10f)] public float musicVolume;
+        [Range(-80f, 10f)] public float sfxVolume;
+        [Range(-80f, 10f)] public float voicelinesVolume;
+        [Range(-80f, 10f)] public float reverbVolume;
 
         private void StartVolumeMixer()
         {
+            
             masterBus = RuntimeManager.GetBus("bus:/");
             ambienceBus = RuntimeManager.GetBus("bus:/Ambience");
             echoBus = RuntimeManager.GetBus("bus:/Echo Bus");
@@ -135,16 +133,17 @@ public class FmodController : MonoBehaviour
 
         private void UpdateVolumeMixer()
         {
-            masterBus.setVolume(DecibelToLinear(_masterVolume));
-            ambienceBus.setVolume(DecibelToLinear(_ambienceVolume));
-            echoBus.setVolume(DecibelToLinear(_EchoVolume));
-            musicBus.setVolume(DecibelToLinear(_musicVolume));
-            sfxBus.setVolume(DecibelToLinear(_sfxVolume));
-            voicelinesBus.setVolume(DecibelToLinear(_voicelinesVolume));
+            masterBus.setVolume(DecibelToLinear(masterVolume));
+            ambienceBus.setVolume(DecibelToLinear(ambienceVolume));
+            echoBus.setVolume(DecibelToLinear(EchoVolume));
+            musicBus.setVolume(DecibelToLinear(musicVolume));
+            sfxBus.setVolume(DecibelToLinear(sfxVolume));
+            voicelinesBus.setVolume(DecibelToLinear(voicelinesVolume));
             reverbBus.setVolume(DecibelToLinear(reverbVolume));
             
         }
 
+        
         
         private float DecibelToLinear(float dB)
         {
