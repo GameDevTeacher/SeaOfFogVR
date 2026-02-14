@@ -132,7 +132,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::TriggerAreaListener
   _enterEchoPath: event:/Voicelines/The Shipwreck Island/Shipwreck01
-  _exitEchoPath: event:/Voicelines/The Shipwreck Island/ShipwreckLeave01
+  _exitEchoPath: 
+  _triggered: 0
 --- !u!114 &131699646
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -248,6 +249,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::TriggerAreaListener
   _enterEchoPath: event:/Voicelines/The Shipwreck Island/ShipwreckCamps01
   _exitEchoPath: 
+  _triggered: 0
 --- !u!114 &594828270
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -363,6 +365,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::TriggerAreaListener
   _enterEchoPath: event:/Voicelines/The Shipwreck Island/BoatMemory01
   _exitEchoPath: 
+  _triggered: 0
 --- !u!114 &1656098542
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -482,6 +485,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::TriggerAreaListener
   _enterEchoPath: event:/Voicelines/The Shipwreck Island/ShipwreckGraves01
   _exitEchoPath: 
+  _triggered: 0
 --- !u!114 &1737344784
 MonoBehaviour:
   m_ObjectHideFlags: 0
