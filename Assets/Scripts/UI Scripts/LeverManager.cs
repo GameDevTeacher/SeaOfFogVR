@@ -1,6 +1,9 @@
 using UnityEngine;
 using TMPro;
-using UnityEngine.UIElements;
+using System;
+using UnityEngine.Rendering;
+using UnityEngine.Rendering.PostProcessing;
+using UnityEngine.Rendering.Universal;
 
 public class LeverManager : MonoBehaviour
 {
@@ -15,19 +18,27 @@ public class LeverManager : MonoBehaviour
     [Header("Limits")]
     [SerializeField] private float maxLimit;
     [SerializeField] private float minLimit;
-    
-    // Current issues: at the start, we get NaN. In the update, the value doesn't go below 50.
-    // changing it to the transform doesn't help either.
+
+    [Header("Setting")] 
+    [SerializeField] private float volumeTest;
+    [SerializeField] private float volumeTestMax, volumeTestMin; // should be replaced by a settings value from FMOD or otherwise
+
+    public Volume volume;
+    private ColorAdjustments _colorAdjustments;
     
     private void Start()
     {
-        //todo: asign a starting value on start, starting value of 50,preferably then saved&pulled to a settings config
         leverTransform.eulerAngles = new Vector3(0, leverTransform.eulerAngles.y, 0);
+        volume.profile.TryGet(out _colorAdjustments);
+        volumeTestMax = _colorAdjustments.hueShift.max;
+        volumeTestMin = _colorAdjustments.hueShift.min;
         
         if (lever.useLimits)
         {
             var value = Mathf.Clamp(lever.angle, minLimit, maxLimit);
-            text.text = "Value: " + Mathf.Round(ScaleRegulator(value));
+            text.text = "Value: " + Math.Round(NewScaleRegulator(value), 2);
+            volumeTest = NewScaleRegulator(value);
+            _colorAdjustments.hueShift.value = FunTimes(volumeTest);
         }
     }
 
@@ -36,13 +47,20 @@ public class LeverManager : MonoBehaviour
         if (leverRigidbody.angularVelocity != Vector3.zero)
         {
             var value = Mathf.Clamp(lever.angle, minLimit, maxLimit);
-            print("When regulated, that value becomes: " + ScaleRegulator(value)); // use this for settings
-            text.text = "Value: " + Mathf.Round(ScaleRegulator(value));
+            text.text = "Value: " + Math.Round(NewScaleRegulator(value), 2);
+            volumeTest = NewScaleRegulator(value);
+            _colorAdjustments.hueShift.value = FunTimes(volumeTest);
         }
     }
-
-    private float ScaleRegulator(float value)
+    
+    private float NewScaleRegulator(float value)
     {
-        return (value + 75) * 2 / 3;
+        return (value - minLimit) / (maxLimit - minLimit);
+    }
+
+    private float FunTimes(float value)
+    {
+        // Take the value from the new scale regulator and translate that into values the funtimes can understand
+        return (volumeTestMax - volumeTestMin) * value + volumeTestMin;
     }
 }
