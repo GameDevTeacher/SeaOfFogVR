@@ -540,27 +540,16 @@ MonoBehaviour:
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
-  m_Name: event:/Voicelines/The Awakening/Voiceline Awakening
-  m_EditorClassIdentifier: FMODUnityEditor::FMODUnity.EditorEventRef
-  Path: event:/Voicelines/The Awakening/Voiceline Awakening
-  Guid:
-    Data1: 1244440165
-    Data2: 1176884779
-    Data3: 1129838733
-    Data4: -676607519
-  Banks:
-  - {fileID: -9166348840504406405}
-  - {fileID: -569672853374852389}
-  - {fileID: 1859468079938477068}
-  IsStream: 0
-  Is3D: 0
-  IsOneShot: 1
-  Parameters: []
-  MinDistance: 1
-  MaxDistance: 20
-  Length: 9413
---- !u!114 &-3975777500595605926
+  m_Script: {fileID: 11500000, guid: c18180ecb35941f4682ae60107b85b7c, type: 3}
+  m_Name: bank:/Music.bank
+  m_EditorClassIdentifier: FMODUnityEditor::FMODUnity.EditorBankRef
+  Path: Assets/Audio_FMOD/Banks/FmodV6/Music.bank
+  Name: Music
+  StudioPath: bank:/Music
+  lastModified: 639066096498805579
+  FileSizes: []
+  Exists: 1
+--- !u!114 &-4067385739940213703
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -953,7 +942,7 @@ MonoBehaviour:
   StringsBanks:
   - {fileID: 7388485704120699758}
   cacheVersion: 131858
-  cacheTime: 639065920988786796
+  cacheTime: 639066096499007091
   SerializableEventsDict:
   - key: event:/Ambience/Sea Waves
     index: 0
@@ -1222,7 +1211,27 @@ MonoBehaviour:
   Parameters: []
   MinDistance: 1
   MaxDistance: 20
-  Length: 8028
+  Length: 8872
+--- !u!114 &2538123018267834706
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c18180ecb35941f4682ae60107b85b7c, type: 3}
+  m_Name: bank:/Master.strings.bank
+  m_EditorClassIdentifier: FMODUnityEditor::FMODUnity.EditorBankRef
+  Path: Assets/Audio_FMOD/Banks/FmodV6/Master.strings.bank
+  Name: Master.strings
+  StudioPath: bank:/Master.strings
+  lastModified: 639066096498216109
+  FileSizes:
+  - Name: 
+    Value: 3826
+  Exists: 1
 --- !u!114 &2707044092636541091
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1582,6 +1591,24 @@ MonoBehaviour:
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c18180ecb35941f4682ae60107b85b7c, type: 3}
+  m_Name: bank:/Master.bank
+  m_EditorClassIdentifier: FMODUnityEditor::FMODUnity.EditorBankRef
+  Path: Assets/Audio_FMOD/Banks/FmodV6/Master.bank
+  Name: Master
+  StudioPath: bank:/Master
+  lastModified: 639066096498200972
+  FileSizes: []
+  Exists: 1
+--- !u!114 &5860289659709764237
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
   m_Name: event:/Voicelines/The Awakening/AwakeningDock02
   m_EditorClassIdentifier: FMODUnityEditor::FMODUnity.EditorEventRef
@@ -1599,7 +1626,25 @@ MonoBehaviour:
   Parameters: []
   MinDistance: 1
   MaxDistance: 20
-  Length: 2000
+  Length: 26239
+--- !u!114 &5898893001509342924
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c18180ecb35941f4682ae60107b85b7c, type: 3}
+  m_Name: bank:/Ambience.bank
+  m_EditorClassIdentifier: FMODUnityEditor::FMODUnity.EditorBankRef
+  Path: Assets/Audio_FMOD/Banks/FmodV6/Ambience.bank
+  Name: Ambience
+  StudioPath: bank:/Ambience
+  lastModified: 639066096497589123
+  FileSizes: []
+  Exists: 1
 --- !u!114 &6179490741806010589
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1721,13 +1766,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c18180ecb35941f4682ae60107b85b7c, type: 3}
   m_Name: bank:/Master.strings.bank
   m_EditorClassIdentifier: FMODUnityEditor::FMODUnity.EditorBankRef
-  Path: Assets/Audio_FMOD/Banks/FmodV6/Master.strings.bank
-  Name: Master.strings
-  StudioPath: bank:/Master.strings
-  lastModified: 639065920981158987
-  FileSizes:
-  - Name: 
-    Value: 3826
+  Path: Assets/Audio_FMOD/Banks/FmodV6/Voicelines.bank
+  Name: Voicelines
+  StudioPath: bank:/Voicelines
+  lastModified: 639066096499007091
+  FileSizes: []
   Exists: 1
 --- !u!114 &7609498124885955972
 MonoBehaviour:
