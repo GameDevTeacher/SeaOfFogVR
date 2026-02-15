@@ -4,7 +4,7 @@ public class TriggerAreaListener : MonoBehaviour
 {
     [SerializeField] private string _enterEchoPath;
     [SerializeField] private string _exitEchoPath;
-    
+    [SerializeField] private bool _triggered;    
     
     void Start()
     {
@@ -15,16 +15,19 @@ public class TriggerAreaListener : MonoBehaviour
 
     private void TriggerEntered(int id)
     {
-        if (id != GetComponent<TriggerBox>().ID) return;
+        if ((id != GetComponent<TriggerBox>().ID) || _triggered) return;
+        _triggered = true;
         GetComponent<MeshRenderer>().material.color = Color.green;
         if (_enterEchoPath == null) return;
+        
         FmodController.current.UpdateEchoTrigger(_enterEchoPath); 
         Debug.Log("Entered Trigger");
     }
 
     private void TriggerExited(int id)
     {
-        if (id != GetComponent<TriggerBox>().ID) return;
+        if ((id != GetComponent<TriggerBox>().ID) || _triggered) return;
+        _triggered = true;
         GetComponent<MeshRenderer>().material.color = Color.dodgerBlue;
         if (_exitEchoPath == null) return;
         FmodController.current.UpdateEchoTrigger(_exitEchoPath); 
