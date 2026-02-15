@@ -7,8 +7,16 @@ using UnityEngine.Rendering.Universal;
 
 public class LeverManager : MonoBehaviour
 {
-    [Header("Testing")]
-    [SerializeField] private TextMeshProUGUI text;
+    public enum VolumeType
+    {
+        Master,
+        Ambience,
+        Echo,
+        Music,
+        Sfx,
+        Voice,
+        Reverb
+    }
     
     [Header("Lever")]
     [SerializeField] private HingeJoint lever;
@@ -20,25 +28,25 @@ public class LeverManager : MonoBehaviour
     [SerializeField] private float minLimit;
 
     [Header("Setting")] 
-    [SerializeField] private float volumeTest;
-    [SerializeField] private float volumeTestMax, volumeTestMin; // should be replaced by a settings value from FMOD or otherwise
-
-    public Volume volume;
-    private ColorAdjustments _colorAdjustments;
+    [SerializeField] private float volume;
+    private float _volumeMin = -80f;
+    private float _volumeMax = 10f;
+    
+    public VolumeType volumeType;
+    
+    private FmodController _fmodController;
     
     private void Start()
     {
+        _fmodController = FmodController.current;
+        
         leverTransform.eulerAngles = new Vector3(0, leverTransform.eulerAngles.y, 0);
-        volume.profile.TryGet(out _colorAdjustments);
-        volumeTestMax = _colorAdjustments.hueShift.max;
-        volumeTestMin = _colorAdjustments.hueShift.min;
         
         if (lever.useLimits)
         {
             var value = Mathf.Clamp(lever.angle, minLimit, maxLimit);
-            text.text = "Value: " + Math.Round(NewScaleRegulator(value), 2);
-            volumeTest = NewScaleRegulator(value);
-            _colorAdjustments.hueShift.value = FunTimes(volumeTest);
+            volume = NewScaleRegulator(value);
+            SpecifyVolume(volumeType);
         }
     }
 
@@ -47,9 +55,36 @@ public class LeverManager : MonoBehaviour
         if (leverRigidbody.angularVelocity != Vector3.zero)
         {
             var value = Mathf.Clamp(lever.angle, minLimit, maxLimit);
-            text.text = "Value: " + Math.Round(NewScaleRegulator(value), 2);
-            volumeTest = NewScaleRegulator(value);
-            _colorAdjustments.hueShift.value = FunTimes(volumeTest);
+            volume = NewScaleRegulator(value);
+            SpecifyVolume(volumeType);
+        }
+    }
+
+    private void SpecifyVolume(VolumeType volType)
+    {
+        switch (volType)
+        {
+            case VolumeType.Master:
+                _fmodController.masterVolume = FunTimes(volume);
+                break;
+            case VolumeType.Ambience:
+                _fmodController.ambienceVolume = FunTimes(volume);
+                break;
+            case VolumeType.Echo:
+                _fmodController.EchoVolume = FunTimes(volume);
+                break;
+            case VolumeType.Music:
+                _fmodController.musicVolume = FunTimes(volume);
+                break;
+            case VolumeType.Sfx:
+                _fmodController.sfxVolume = FunTimes(volume);
+                break;
+            case VolumeType.Voice:
+                _fmodController.voicelinesVolume = FunTimes(volume);
+                break;
+            case VolumeType.Reverb:
+                _fmodController.reverbVolume = FunTimes(volume);
+                break;
         }
     }
     
@@ -61,6 +96,6 @@ public class LeverManager : MonoBehaviour
     private float FunTimes(float value)
     {
         // Take the value from the new scale regulator and translate that into values the funtimes can understand
-        return (volumeTestMax - volumeTestMin) * value + volumeTestMin;
+        return (_volumeMax - _volumeMin) * value + _volumeMin;
     }
 }
