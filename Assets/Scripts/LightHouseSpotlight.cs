@@ -10,9 +10,9 @@ public class LighthouseSpotlight : MonoBehaviour
         else Destroy(this);
     }
 
-    public void LookAtMe(GameObject target)
+    public void LookAtMe(Vector3 target)
     {
-        instance.transform.LookAt(target.transform);
+        instance.transform.LookAt(target);
     }
     
 }
