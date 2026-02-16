@@ -7,27 +7,32 @@ using UnityEngine.SceneManagement;
 /// </summary>
 public class MainMenuManager : MonoBehaviour
 {
-    public static MainMenuManager Instance;
-    
     [Header("Trapdoor")]
     [SerializeField] private Animator animator;
     [SerializeField] private AnimationClip clip;
-    [SerializeField] private bool shouldSceneBeLoaded = false;
+    [SerializeField] private float fadeOutSpeed;
     public bool shouldCameraFade = false;
-
-    private void Awake() => Instance = this;
     
-    public void StartGame(string sceneName)
+    
+    private VRNoPeeking _noPeekingInstance;
+
+    private void Start()
     {
-        if (shouldSceneBeLoaded)
+        shouldCameraFade = false;
+        _noPeekingInstance = VRNoPeeking.Instance;
+    }
+
+    private void Update()
+    {
+        if (shouldCameraFade)
         {
-            SceneManager.LoadScene(sceneName);
+            _noPeekingInstance.CameraFadeOut(1f, fadeOutSpeed);
         }
-        else
-        {
-            animator.Play(clip.name);
-            shouldCameraFade = true;
-            print("Scene not loaded.");
-        }
+    }
+    
+    public void StartGame()
+    {
+        animator.Play(clip.name); 
+        shouldCameraFade = true; 
     }
 }

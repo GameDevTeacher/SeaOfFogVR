@@ -8126,6 +8126,14 @@ PrefabInstance:
       value: 0.01
       objectReference: {fileID: 0}
     - target: {fileID: 7281462715999158408, guid: acee393f25cc9bd45b29e2dd668e6d5b, type: 3}
+      propertyPath: startGameFadeSpeed
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7281462715999158408, guid: acee393f25cc9bd45b29e2dd668e6d5b, type: 3}
+      propertyPath: defaultFadeOutSpeed
+      value: 0.25
+      objectReference: {fileID: 0}
+    - target: {fileID: 7281462715999158408, guid: acee393f25cc9bd45b29e2dd668e6d5b, type: 3}
       propertyPath: collisionLayer.m_Bits
       value: 256
       objectReference: {fileID: 0}
