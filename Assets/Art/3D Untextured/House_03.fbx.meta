@@ -3,7 +3,32 @@ guid: 3e923c50e40419047865eba33b62a922
 ModelImporter:
   serializedVersion: 24200
   internalIDToNameTable: []
-  externalObjects: {}
+  externalObjects:
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: House_texture_03
+    second: {fileID: 2100000, guid: 42f8c3a4da6885c4fabcfb1f2af221fc, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Wood_texture_01
+    second: {fileID: 2100000, guid: b130f9545b1fb72449651db14b27bfba, type: 2}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: House_texture_03
+    second: {fileID: 2800000, guid: f8b33fb436ae3de4595f45eecdc40987, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: RaobowUVImage
+    second: {fileID: 2800000, guid: ae44c11291d92e3418fb7bb5078c9947, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: Wood_texture_01
+    second: {fileID: 2800000, guid: 6fbe4cf226260744497ccb875b0a7706, type: 3}
   materials:
     materialImportMode: 2
     materialName: 0
