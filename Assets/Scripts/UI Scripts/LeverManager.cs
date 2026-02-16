@@ -96,6 +96,6 @@ public class LeverManager : MonoBehaviour
     private float FunTimes(float value)
     {
         // Take the value from the new scale regulator and translate that into values the funtimes can understand
-        return (_volumeMax - _volumeMin) * value + _volumeMin;
+        return (_volumeMin - _volumeMax) * value + _volumeMax;
     }
 }

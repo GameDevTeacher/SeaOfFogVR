@@ -3,7 +3,157 @@ guid: 87970eb8d6fbd994ead78940de7fbe2c
 ModelImporter:
   serializedVersion: 24200
   internalIDToNameTable: []
-  externalObjects: {}
+  externalObjects:
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Church_roof_texture_01
+    second: {fileID: 2100000, guid: 5ba3ceb6bf89a2748b452512fcd7a7fe, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Fern_texture_03
+    second: {fileID: 2100000, guid: 283b07d904831e04788bc75ad9a23c1e, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Fern_texture_06
+    second: {fileID: 2100000, guid: da9abb06477a9864ebf47686909dd5af, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Glass_texture_01
+    second: {fileID: 2100000, guid: 812aeafd2b95dbf42b2eee724859f8e7, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: church_door_texture_01
+    second: {fileID: 2100000, guid: dc1f033770a46b7458741eaaab6b3d0b, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: church_inside_texture_01
+    second: {fileID: 2100000, guid: 307b64cd52c91464b8fa9d7f8c24b549, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: church_organ_pipes_texture_01
+    second: {fileID: 2100000, guid: e8710dff990b2874f90321ead4e88351, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: church_roof_texture_02
+    second: {fileID: 2100000, guid: c775fe786d6a0f24a9dbe598a894e780, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: church_roof_texture_03
+    second: {fileID: 2100000, guid: 63e2036fbee0b684bafb0321132e9cd7, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: church_roof_texture_04
+    second: {fileID: 2100000, guid: 1bd67528aa842de468ad111fc1c143c5, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: church_roof_texture_05
+    second: {fileID: 2100000, guid: 7c92e74137e126e45b56aaecaf269397, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: church_roof_underside_texture_01
+    second: {fileID: 2100000, guid: 79688035788606a48b2d60746e66c70d, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: church_walls_texture_01
+    second: {fileID: 2100000, guid: e18c732a5183ea2469df0fed2c0ccd0b, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: church_wood_texture_01
+    second: {fileID: 2100000, guid: 83f9d7918ef5e2a42abcdb699077b360, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: church_wood_texture_02
+    second: {fileID: 2100000, guid: e53c172b389d1d843928ac8d619ad465, type: 2}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: Fern_texture_03
+    second: {fileID: 2800000, guid: 7ca82b5e808933748a4c7ed17f395809, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: Fern_texture_06
+    second: {fileID: 2800000, guid: f99dffd60eceb19488cbcc20381144ea, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: Glass_texture_01
+    second: {fileID: 2800000, guid: 7d9222a7f789d404d910d0ba54ea90eb, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: church_door_texture_01
+    second: {fileID: 2800000, guid: 7d484a984f932f148b598debec8577a8, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: church_organ_pipes_texture_01
+    second: {fileID: 2800000, guid: 118e1679e4a90dc4ab3c5b4d2ca97c96, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: church_roof_texture_01
+    second: {fileID: 2800000, guid: 55cd7335700c3d64ca273e862472496d, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: church_roof_texture_02
+    second: {fileID: 2800000, guid: ea6fce339314f77448e010ff8a4d4e2f, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: church_roof_texture_03
+    second: {fileID: 2800000, guid: 389fa29f1b3ba8e42bd8a12bb64616d4, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: church_roof_texture_04
+    second: {fileID: 2800000, guid: d2258b6c56bce5944975e0d3b9739597, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: church_roof_texture_05
+    second: {fileID: 2800000, guid: a8e1d83a69427524995d997ead16d823, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: church_roof_underside_texture_01
+    second: {fileID: 2800000, guid: 871dc77511798a449916bd78c3f99395, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: church_walls_texture_01
+    second: {fileID: 2800000, guid: 7110449cc74dcde41a05b993d9375a81, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: church_wood_texture_01
+    second: {fileID: 2800000, guid: f617aaab31eb53b4e8d22190e4f3846d, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: church_wood_texture_02
+    second: {fileID: 2800000, guid: 63752aa355abb4c4cb3fc38d5cc41267, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: fern_03
+    second: {fileID: 2800000, guid: d400dbced93e7434881f020c2288fc00, type: 3}
   materials:
     materialImportMode: 2
     materialName: 0
@@ -41,8 +191,8 @@ ModelImporter:
     importPhysicalCameras: 1
     importVisibility: 1
     importBlendShapes: 1
-    importCameras: 1
-    importLights: 1
+    importCameras: 0
+    importLights: 0
     nodeNameCollisionStrategy: 1
     fileIdsGeneration: 2
     swapUVChannels: 0
