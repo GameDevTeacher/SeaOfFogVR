@@ -273,27 +273,27 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 4155359104535906576, guid: f82c6179f25539b4ab299393361ff06a, type: 3}
       propertyPath: m_LocalScale.x
-      value: 2
+      value: 11.8122
       objectReference: {fileID: 0}
     - target: {fileID: 4155359104535906576, guid: f82c6179f25539b4ab299393361ff06a, type: 3}
       propertyPath: m_LocalScale.y
-      value: 2
+      value: 12.137123
       objectReference: {fileID: 0}
     - target: {fileID: 4155359104535906576, guid: f82c6179f25539b4ab299393361ff06a, type: 3}
       propertyPath: m_LocalScale.z
-      value: 2
+      value: 49.920765
       objectReference: {fileID: 0}
     - target: {fileID: 4155359104535906576, guid: f82c6179f25539b4ab299393361ff06a, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 470.7
+      value: 548.3062
       objectReference: {fileID: 0}
     - target: {fileID: 4155359104535906576, guid: f82c6179f25539b4ab299393361ff06a, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 6.2
+      value: 5.7004
       objectReference: {fileID: 0}
     - target: {fileID: 4155359104535906576, guid: f82c6179f25539b4ab299393361ff06a, type: 3}
       propertyPath: m_LocalPosition.z
-      value: -511.8
+      value: -505.1961
       objectReference: {fileID: 0}
     - target: {fileID: 4155359104535906576, guid: f82c6179f25539b4ab299393361ff06a, type: 3}
       propertyPath: m_LocalRotation.w
@@ -323,9 +323,17 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 5074213186645896982, guid: f82c6179f25539b4ab299393361ff06a, type: 3}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 6550212931726491064, guid: f82c6179f25539b4ab299393361ff06a, type: 3}
       propertyPath: m_Name
       value: E_GravediggerEcho1ShipwreckGraves01_Proximity
+      objectReference: {fileID: 0}
+    - target: {fileID: 8608338200079837148, guid: f82c6179f25539b4ab299393361ff06a, type: 3}
+      propertyPath: m_IsTrigger
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -381,27 +389,27 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 4155359104535906576, guid: f82c6179f25539b4ab299393361ff06a, type: 3}
       propertyPath: m_LocalScale.x
-      value: 2
+      value: 19.1258
       objectReference: {fileID: 0}
     - target: {fileID: 4155359104535906576, guid: f82c6179f25539b4ab299393361ff06a, type: 3}
       propertyPath: m_LocalScale.y
-      value: 2
+      value: 13.328074
       objectReference: {fileID: 0}
     - target: {fileID: 4155359104535906576, guid: f82c6179f25539b4ab299393361ff06a, type: 3}
       propertyPath: m_LocalScale.z
-      value: 2
+      value: 70.8898
       objectReference: {fileID: 0}
     - target: {fileID: 4155359104535906576, guid: f82c6179f25539b4ab299393361ff06a, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 623.1
+      value: 623.8629
       objectReference: {fileID: 0}
     - target: {fileID: 4155359104535906576, guid: f82c6179f25539b4ab299393361ff06a, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 6.2
+      value: 6.7423
       objectReference: {fileID: 0}
     - target: {fileID: 4155359104535906576, guid: f82c6179f25539b4ab299393361ff06a, type: 3}
       propertyPath: m_LocalPosition.z
-      value: -521.7
+      value: -473.7737
       objectReference: {fileID: 0}
     - target: {fileID: 4155359104535906576, guid: f82c6179f25539b4ab299393361ff06a, type: 3}
       propertyPath: m_LocalRotation.w
@@ -431,9 +439,17 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 5074213186645896982, guid: f82c6179f25539b4ab299393361ff06a, type: 3}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 6550212931726491064, guid: f82c6179f25539b4ab299393361ff06a, type: 3}
       propertyPath: m_Name
       value: E_DyingPersonEchoShipwreckSurvivors01_Proximity
+      objectReference: {fileID: 0}
+    - target: {fileID: 8608338200079837148, guid: f82c6179f25539b4ab299393361ff06a, type: 3}
+      propertyPath: m_IsTrigger
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -727,7 +743,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1312aa0782e98e44b92a2e1143498416, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::TriggerMusicChange
-  AmbienceSectionChange: 3
+  _onFishManIsle: 0
+  _onLightHouseReturn: 0
+  _fishmanIsleSections: 0
+  _lightHouseReturnSections: 0
+  _ambienceSectionChange: 0
 --- !u!65 &2036119640304762278
 BoxCollider:
   m_ObjectHideFlags: 0
