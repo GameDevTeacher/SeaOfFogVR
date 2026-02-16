@@ -519,6 +519,14 @@ PrefabInstance:
       propertyPath: m_LocalPosition.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 4119763374040694565, guid: f6336ac4ac8b4d34bc5072418cdc62a0, type: 3}
+      propertyPath: radius
+      value: 0.09
+      objectReference: {fileID: 0}
+    - target: {fileID: 4119763374040694565, guid: f6336ac4ac8b4d34bc5072418cdc62a0, type: 3}
+      propertyPath: maxDistance
+      value: 4
+      objectReference: {fileID: 0}
     - target: {fileID: 6788387329367311403, guid: f6336ac4ac8b4d34bc5072418cdc62a0, type: 3}
       propertyPath: m_IsActive
       value: 1
