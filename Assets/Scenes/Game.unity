@@ -119,260 +119,6 @@ NavMeshSettings:
     debug:
       m_Flags: 0
   m_NavMeshData: {fileID: 0}
---- !u!1001 &19187543
-PrefabInstance:
-  m_ObjectHideFlags: 0
-  serializedVersion: 2
-  m_Modification:
-    serializedVersion: 3
-    m_TransformParent: {fileID: 0}
-    m_Modifications:
-    - target: {fileID: 3252034653302868109, guid: 7ac0d6c7335ab6842a93b8f6831f7915, type: 3}
-      propertyPath: _scenesToLoad.Array.size
-      value: 4
-      objectReference: {fileID: 0}
-    - target: {fileID: 3252034653302868109, guid: 7ac0d6c7335ab6842a93b8f6831f7915, type: 3}
-      propertyPath: _scenesToLoad.Array.data[0]._sceneName
-      value: Fisherman_Isle
-      objectReference: {fileID: 0}
-    - target: {fileID: 3252034653302868109, guid: 7ac0d6c7335ab6842a93b8f6831f7915, type: 3}
-      propertyPath: _scenesToLoad.Array.data[1]._sceneName
-      value: Fisherman_Isle_LD
-      objectReference: {fileID: 0}
-    - target: {fileID: 3252034653302868109, guid: 7ac0d6c7335ab6842a93b8f6831f7915, type: 3}
-      propertyPath: _scenesToLoad.Array.data[2]._sceneName
-      value: Fisherman_Isle_Lighting
-      objectReference: {fileID: 0}
-    - target: {fileID: 3252034653302868109, guid: 7ac0d6c7335ab6842a93b8f6831f7915, type: 3}
-      propertyPath: _scenesToLoad.Array.data[3]._sceneName
-      value: Lighthouse_Isle_Return
-      objectReference: {fileID: 0}
-    - target: {fileID: 3252034653302868109, guid: 7ac0d6c7335ab6842a93b8f6831f7915, type: 3}
-      propertyPath: _scenesToLoad.Array.data[0]._sceneAsset
-      value: 
-      objectReference: {fileID: 102900000, guid: 515557428a2fc634d8945c05deab9b79, type: 3}
-    - target: {fileID: 3252034653302868109, guid: 7ac0d6c7335ab6842a93b8f6831f7915, type: 3}
-      propertyPath: _scenesToLoad.Array.data[1]._sceneAsset
-      value: 
-      objectReference: {fileID: 102900000, guid: 520dc6d54d199fa4aa8e7884fe457cbf, type: 3}
-    - target: {fileID: 3252034653302868109, guid: 7ac0d6c7335ab6842a93b8f6831f7915, type: 3}
-      propertyPath: _scenesToLoad.Array.data[2]._sceneAsset
-      value: 
-      objectReference: {fileID: 102900000, guid: cca05a6f84cdcf84d832e0fd42c8b872, type: 3}
-    - target: {fileID: 3252034653302868109, guid: 7ac0d6c7335ab6842a93b8f6831f7915, type: 3}
-      propertyPath: _scenesToLoad.Array.data[3]._sceneAsset
-      value: 
-      objectReference: {fileID: 102900000, guid: 2cd7077dc10a8774eaf4fa5ea7ef681f, type: 3}
-    - target: {fileID: 6489293943016512910, guid: 7ac0d6c7335ab6842a93b8f6831f7915, type: 3}
-      propertyPath: m_LocalScale.x
-      value: 363.31842
-      objectReference: {fileID: 0}
-    - target: {fileID: 6489293943016512910, guid: 7ac0d6c7335ab6842a93b8f6831f7915, type: 3}
-      propertyPath: m_LocalScale.y
-      value: 56.3178
-      objectReference: {fileID: 0}
-    - target: {fileID: 6489293943016512910, guid: 7ac0d6c7335ab6842a93b8f6831f7915, type: 3}
-      propertyPath: m_LocalScale.z
-      value: 18.95
-      objectReference: {fileID: 0}
-    - target: {fileID: 6489293943016512910, guid: 7ac0d6c7335ab6842a93b8f6831f7915, type: 3}
-      propertyPath: m_LocalPosition.x
-      value: 281.4819
-      objectReference: {fileID: 0}
-    - target: {fileID: 6489293943016512910, guid: 7ac0d6c7335ab6842a93b8f6831f7915, type: 3}
-      propertyPath: m_LocalPosition.y
-      value: 9.3532
-      objectReference: {fileID: 0}
-    - target: {fileID: 6489293943016512910, guid: 7ac0d6c7335ab6842a93b8f6831f7915, type: 3}
-      propertyPath: m_LocalPosition.z
-      value: -659.3046
-      objectReference: {fileID: 0}
-    - target: {fileID: 6489293943016512910, guid: 7ac0d6c7335ab6842a93b8f6831f7915, type: 3}
-      propertyPath: m_LocalRotation.w
-      value: 0.83295697
-      objectReference: {fileID: 0}
-    - target: {fileID: 6489293943016512910, guid: 7ac0d6c7335ab6842a93b8f6831f7915, type: 3}
-      propertyPath: m_LocalRotation.x
-      value: -0
-      objectReference: {fileID: 0}
-    - target: {fileID: 6489293943016512910, guid: 7ac0d6c7335ab6842a93b8f6831f7915, type: 3}
-      propertyPath: m_LocalRotation.y
-      value: 0.5533377
-      objectReference: {fileID: 0}
-    - target: {fileID: 6489293943016512910, guid: 7ac0d6c7335ab6842a93b8f6831f7915, type: 3}
-      propertyPath: m_LocalRotation.z
-      value: -0
-      objectReference: {fileID: 0}
-    - target: {fileID: 6489293943016512910, guid: 7ac0d6c7335ab6842a93b8f6831f7915, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 6489293943016512910, guid: 7ac0d6c7335ab6842a93b8f6831f7915, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.y
-      value: 67.193
-      objectReference: {fileID: 0}
-    - target: {fileID: 6489293943016512910, guid: 7ac0d6c7335ab6842a93b8f6831f7915, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 9127633749512020370, guid: 7ac0d6c7335ab6842a93b8f6831f7915, type: 3}
-      propertyPath: m_Name
-      value: ShipWreckLoader
-      objectReference: {fileID: 0}
-    m_RemovedComponents: []
-    m_RemovedGameObjects: []
-    m_AddedGameObjects: []
-    m_AddedComponents: []
-  m_SourcePrefab: {fileID: 100100000, guid: 7ac0d6c7335ab6842a93b8f6831f7915, type: 3}
---- !u!1001 &136716335
-PrefabInstance:
-  m_ObjectHideFlags: 0
-  serializedVersion: 2
-  m_Modification:
-    serializedVersion: 3
-    m_TransformParent: {fileID: 0}
-    m_Modifications:
-    - target: {fileID: 3252034653302868109, guid: 7ac0d6c7335ab6842a93b8f6831f7915, type: 3}
-      propertyPath: _scenesToLoad.Array.size
-      value: 5
-      objectReference: {fileID: 0}
-    - target: {fileID: 3252034653302868109, guid: 7ac0d6c7335ab6842a93b8f6831f7915, type: 3}
-      propertyPath: _scenesToUnload.Array.size
-      value: 3
-      objectReference: {fileID: 0}
-    - target: {fileID: 3252034653302868109, guid: 7ac0d6c7335ab6842a93b8f6831f7915, type: 3}
-      propertyPath: _scenesToLoad.Array.data[0]._sceneName
-      value: Fisherman_Isle
-      objectReference: {fileID: 0}
-    - target: {fileID: 3252034653302868109, guid: 7ac0d6c7335ab6842a93b8f6831f7915, type: 3}
-      propertyPath: _scenesToLoad.Array.data[1]._sceneName
-      value: Fisherman_Isle_LD
-      objectReference: {fileID: 0}
-    - target: {fileID: 3252034653302868109, guid: 7ac0d6c7335ab6842a93b8f6831f7915, type: 3}
-      propertyPath: _scenesToLoad.Array.data[2]._sceneName
-      value: Fisherman_Isle_Lighting
-      objectReference: {fileID: 0}
-    - target: {fileID: 3252034653302868109, guid: 7ac0d6c7335ab6842a93b8f6831f7915, type: 3}
-      propertyPath: _scenesToLoad.Array.data[3]._sceneName
-      value: Lighthouse_Isle_Return
-      objectReference: {fileID: 0}
-    - target: {fileID: 3252034653302868109, guid: 7ac0d6c7335ab6842a93b8f6831f7915, type: 3}
-      propertyPath: _scenesToLoad.Array.data[4]._sceneName
-      value: Lighthouse_Isle_Return_Lighting
-      objectReference: {fileID: 0}
-    - target: {fileID: 3252034653302868109, guid: 7ac0d6c7335ab6842a93b8f6831f7915, type: 3}
-      propertyPath: _scenesToLoad.Array.data[5]._sceneName
-      value: Fisherman_Isle_Lighting
-      objectReference: {fileID: 0}
-    - target: {fileID: 3252034653302868109, guid: 7ac0d6c7335ab6842a93b8f6831f7915, type: 3}
-      propertyPath: _scenesToLoad.Array.data[0]._sceneAsset
-      value: 
-      objectReference: {fileID: 102900000, guid: 515557428a2fc634d8945c05deab9b79, type: 3}
-    - target: {fileID: 3252034653302868109, guid: 7ac0d6c7335ab6842a93b8f6831f7915, type: 3}
-      propertyPath: _scenesToLoad.Array.data[1]._sceneAsset
-      value: 
-      objectReference: {fileID: 102900000, guid: 520dc6d54d199fa4aa8e7884fe457cbf, type: 3}
-    - target: {fileID: 3252034653302868109, guid: 7ac0d6c7335ab6842a93b8f6831f7915, type: 3}
-      propertyPath: _scenesToLoad.Array.data[2]._sceneAsset
-      value: 
-      objectReference: {fileID: 102900000, guid: cca05a6f84cdcf84d832e0fd42c8b872, type: 3}
-    - target: {fileID: 3252034653302868109, guid: 7ac0d6c7335ab6842a93b8f6831f7915, type: 3}
-      propertyPath: _scenesToLoad.Array.data[3]._sceneAsset
-      value: 
-      objectReference: {fileID: 102900000, guid: 2cd7077dc10a8774eaf4fa5ea7ef681f, type: 3}
-    - target: {fileID: 3252034653302868109, guid: 7ac0d6c7335ab6842a93b8f6831f7915, type: 3}
-      propertyPath: _scenesToLoad.Array.data[4]._sceneAsset
-      value: 
-      objectReference: {fileID: 102900000, guid: 34d3f06d7f35ec74cb5d5510fac989b1, type: 3}
-    - target: {fileID: 3252034653302868109, guid: 7ac0d6c7335ab6842a93b8f6831f7915, type: 3}
-      propertyPath: _scenesToLoad.Array.data[5]._sceneAsset
-      value: 
-      objectReference: {fileID: 102900000, guid: cca05a6f84cdcf84d832e0fd42c8b872, type: 3}
-    - target: {fileID: 3252034653302868109, guid: 7ac0d6c7335ab6842a93b8f6831f7915, type: 3}
-      propertyPath: _scenesToUnload.Array.data[0]._sceneName
-      value: Lighthouse_Isle
-      objectReference: {fileID: 0}
-    - target: {fileID: 3252034653302868109, guid: 7ac0d6c7335ab6842a93b8f6831f7915, type: 3}
-      propertyPath: _scenesToUnload.Array.data[1]._sceneName
-      value: Lighthouse_Isle_LD
-      objectReference: {fileID: 0}
-    - target: {fileID: 3252034653302868109, guid: 7ac0d6c7335ab6842a93b8f6831f7915, type: 3}
-      propertyPath: _scenesToUnload.Array.data[2]._sceneName
-      value: Lighthouse_Isle_Lighting
-      objectReference: {fileID: 0}
-    - target: {fileID: 3252034653302868109, guid: 7ac0d6c7335ab6842a93b8f6831f7915, type: 3}
-      propertyPath: _scenesToUnload.Array.data[0]._sceneAsset
-      value: 
-      objectReference: {fileID: 102900000, guid: 172b5bc17477b184687cb53b27e11501, type: 3}
-    - target: {fileID: 3252034653302868109, guid: 7ac0d6c7335ab6842a93b8f6831f7915, type: 3}
-      propertyPath: _scenesToUnload.Array.data[1]._sceneAsset
-      value: 
-      objectReference: {fileID: 102900000, guid: f987e2bb9dca0a540a839634887af120, type: 3}
-    - target: {fileID: 3252034653302868109, guid: 7ac0d6c7335ab6842a93b8f6831f7915, type: 3}
-      propertyPath: _scenesToUnload.Array.data[2]._sceneAsset
-      value: 
-      objectReference: {fileID: 102900000, guid: b48673e7b75c0c54e800a94e01557a8c, type: 3}
-    - target: {fileID: 6489293943016512910, guid: 7ac0d6c7335ab6842a93b8f6831f7915, type: 3}
-      propertyPath: m_LocalScale.x
-      value: 315.77927
-      objectReference: {fileID: 0}
-    - target: {fileID: 6489293943016512910, guid: 7ac0d6c7335ab6842a93b8f6831f7915, type: 3}
-      propertyPath: m_LocalScale.y
-      value: 56.3178
-      objectReference: {fileID: 0}
-    - target: {fileID: 6489293943016512910, guid: 7ac0d6c7335ab6842a93b8f6831f7915, type: 3}
-      propertyPath: m_LocalScale.z
-      value: 18.95
-      objectReference: {fileID: 0}
-    - target: {fileID: 6489293943016512910, guid: 7ac0d6c7335ab6842a93b8f6831f7915, type: 3}
-      propertyPath: m_LocalPosition.x
-      value: 272
-      objectReference: {fileID: 0}
-    - target: {fileID: 6489293943016512910, guid: 7ac0d6c7335ab6842a93b8f6831f7915, type: 3}
-      propertyPath: m_LocalPosition.y
-      value: 9.3532
-      objectReference: {fileID: 0}
-    - target: {fileID: 6489293943016512910, guid: 7ac0d6c7335ab6842a93b8f6831f7915, type: 3}
-      propertyPath: m_LocalPosition.z
-      value: -317
-      objectReference: {fileID: 0}
-    - target: {fileID: 6489293943016512910, guid: 7ac0d6c7335ab6842a93b8f6831f7915, type: 3}
-      propertyPath: m_LocalRotation.w
-      value: 0.6254618
-      objectReference: {fileID: 0}
-    - target: {fileID: 6489293943016512910, guid: 7ac0d6c7335ab6842a93b8f6831f7915, type: 3}
-      propertyPath: m_LocalRotation.x
-      value: -0
-      objectReference: {fileID: 0}
-    - target: {fileID: 6489293943016512910, guid: 7ac0d6c7335ab6842a93b8f6831f7915, type: 3}
-      propertyPath: m_LocalRotation.y
-      value: 0.7802547
-      objectReference: {fileID: 0}
-    - target: {fileID: 6489293943016512910, guid: 7ac0d6c7335ab6842a93b8f6831f7915, type: 3}
-      propertyPath: m_LocalRotation.z
-      value: -0
-      objectReference: {fileID: 0}
-    - target: {fileID: 6489293943016512910, guid: 7ac0d6c7335ab6842a93b8f6831f7915, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 6489293943016512910, guid: 7ac0d6c7335ab6842a93b8f6831f7915, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.y
-      value: 102.568
-      objectReference: {fileID: 0}
-    - target: {fileID: 6489293943016512910, guid: 7ac0d6c7335ab6842a93b8f6831f7915, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 9127633749512020370, guid: 7ac0d6c7335ab6842a93b8f6831f7915, type: 3}
-      propertyPath: m_Name
-      value: FishermanLoader
-      objectReference: {fileID: 0}
-    m_RemovedComponents: []
-    m_RemovedGameObjects: []
-    m_AddedGameObjects: []
-    m_AddedComponents: []
-  m_SourcePrefab: {fileID: 100100000, guid: 7ac0d6c7335ab6842a93b8f6831f7915, type: 3}
 --- !u!1001 &289402083
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1296,7 +1042,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1031195923019432889, guid: f6336ac4ac8b4d34bc5072418cdc62a0, type: 3}
       propertyPath: m_IsActive
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 1717954561962503725, guid: f6336ac4ac8b4d34bc5072418cdc62a0, type: 3}
       propertyPath: m_Name
@@ -1308,7 +1054,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1717954561962503726, guid: f6336ac4ac8b4d34bc5072418cdc62a0, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 69.02572
+      value: 81.917
       objectReference: {fileID: 0}
     - target: {fileID: 1717954561962503726, guid: f6336ac4ac8b4d34bc5072418cdc62a0, type: 3}
       propertyPath: m_LocalPosition.z
@@ -1342,9 +1088,17 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 2206636089040386613, guid: f6336ac4ac8b4d34bc5072418cdc62a0, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 3.46
+      objectReference: {fileID: 0}
+    - target: {fileID: 2206636089040386613, guid: f6336ac4ac8b4d34bc5072418cdc62a0, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 6788387329367311403, guid: f6336ac4ac8b4d34bc5072418cdc62a0, type: 3}
       propertyPath: m_IsActive
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 9200028993100747384, guid: f6336ac4ac8b4d34bc5072418cdc62a0, type: 3}
       propertyPath: m_IsActive

@@ -3,10 +3,11 @@ using UnityEngine;
 
 public class VRNoPeeking : MonoBehaviour
 {
+    public static VRNoPeeking Instance;
+    
     [Header("Fading")]
     [SerializeField] private LayerMask collisionLayer;
     public float defaultFadeOutSpeed;
-    [SerializeField] private float startGameFadeSpeed;
     [SerializeField] private float fadeInSpeed;
     [SerializeField] private float sphereCheckSize = 0.15f;
     
@@ -18,10 +19,11 @@ public class VRNoPeeking : MonoBehaviour
 
     private Material _cameraFadeMat;
     private bool _isCameraFadedOut = false;
-    
-    [Header("Main Menu")]
-    [SerializeField] private bool doesMainMenuExist;
-    private MainMenuManager _mainMenuManager;
+
+    private void Awake()
+    {
+        Instance = this;
+    }
 
     private void Start()
     { 
@@ -30,8 +32,6 @@ public class VRNoPeeking : MonoBehaviour
         alphaName = Shader.PropertyToID("_AlphaValue");
         
         CameraFadeIn(0f);
-
-        if (doesMainMenuExist) _mainMenuManager = MainMenuManager.Instance;
     } 
 
     private void Update()
@@ -40,10 +40,6 @@ public class VRNoPeeking : MonoBehaviour
         {
             CameraFadeOut(1f, defaultFadeOutSpeed);
             _isCameraFadedOut = true;
-        }
-        else if (doesMainMenuExist && _mainMenuManager.shouldCameraFade && !_isCameraFadedOut)
-        {
-            CameraFadeOut(1f, startGameFadeSpeed);
         }
         else
         {
