@@ -1,3 +1,4 @@
+using System;
 using UnityEngine;
 
 public class TriggerMusicChange : MonoBehaviour
@@ -12,6 +13,7 @@ public class TriggerMusicChange : MonoBehaviour
     
     [SerializeField] private int _sectionChange;
 
+    private BoxCollider _collider;
     private void OnTriggerEnter(Collider other) 
     {   
         
@@ -34,5 +36,12 @@ public class TriggerMusicChange : MonoBehaviour
             FmodController.current.UpdateLighthouseReturn(_lightHouseReturnSections);
         }
         
+    }
+
+    private void OnDrawGizmos()
+    {
+        _collider =  gameObject.GetComponent<BoxCollider>();
+        Gizmos.color = Color.purple;
+        Gizmos.DrawWireCube(_collider.bounds.center, _collider.size);
     }
 }
