@@ -79,6 +79,7 @@ public class SaveSystem
         }
         catch (Exception e)
         {
+            Debug.LogError("Error loading: " + e.Message);
             throw; // TODO handle exception
         }
     }
