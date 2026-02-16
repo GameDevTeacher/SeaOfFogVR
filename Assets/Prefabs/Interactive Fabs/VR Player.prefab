@@ -8243,7 +8243,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f1cb566debc9730439bbbda5468525b3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::LanternEchoInteract
-  endPoint: {fileID: 0}
+  endPoint: {fileID: 2206636089040386613}
   radius: 0.2
-  maxDistance: 1
+  maxDistance: 3
   visualizeRenderer: {fileID: 0}
