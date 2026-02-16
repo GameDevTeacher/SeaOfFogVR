@@ -29,6 +29,7 @@ public class FmodController : MonoBehaviour
     {
         StartVolumeMixer();
         
+        
     }
 
     private void Update()
