@@ -1,11 +1,22 @@
 using UnityEngine;
 using TMPro;
-using UnityEngine.UIElements;
+using System;
+using UnityEngine.Rendering;
+using UnityEngine.Rendering.PostProcessing;
+using UnityEngine.Rendering.Universal;
 
 public class LeverManager : MonoBehaviour
 {
-    [Header("Testing")]
-    [SerializeField] private TextMeshProUGUI text;
+    public enum VolumeType
+    {
+        Master,
+        Ambience,
+        Echo,
+        Music,
+        Sfx,
+        Voice,
+        Reverb
+    }
     
     [Header("Lever")]
     [SerializeField] private HingeJoint lever;
@@ -15,19 +26,27 @@ public class LeverManager : MonoBehaviour
     [Header("Limits")]
     [SerializeField] private float maxLimit;
     [SerializeField] private float minLimit;
+
+    [Header("Setting")] 
+    [SerializeField] private float volume;
+    private float _volumeMin = -80f;
+    private float _volumeMax = 10f;
     
-    // Current issues: at the start, we get NaN. In the update, the value doesn't go below 50.
-    // changing it to the transform doesn't help either.
+    public VolumeType volumeType;
+    
+    private FmodController _fmodController;
     
     private void Start()
     {
-        //todo: asign a starting value on start, starting value of 50,preferably then saved&pulled to a settings config
+        _fmodController = FmodController.current;
+        
         leverTransform.eulerAngles = new Vector3(0, leverTransform.eulerAngles.y, 0);
         
         if (lever.useLimits)
         {
             var value = Mathf.Clamp(lever.angle, minLimit, maxLimit);
-            text.text = "Value: " + Mathf.Round(ScaleRegulator(value));
+            volume = NewScaleRegulator(value);
+            SpecifyVolume(volumeType);
         }
     }
 
@@ -36,13 +55,47 @@ public class LeverManager : MonoBehaviour
         if (leverRigidbody.angularVelocity != Vector3.zero)
         {
             var value = Mathf.Clamp(lever.angle, minLimit, maxLimit);
-            print("When regulated, that value becomes: " + ScaleRegulator(value)); // use this for settings
-            text.text = "Value: " + Mathf.Round(ScaleRegulator(value));
+            volume = NewScaleRegulator(value);
+            SpecifyVolume(volumeType);
         }
     }
 
-    private float ScaleRegulator(float value)
+    private void SpecifyVolume(VolumeType volType)
     {
-        return (value + 75) * 2 / 3;
+        switch (volType)
+        {
+            case VolumeType.Master:
+                _fmodController.masterVolume = FunTimes(volume);
+                break;
+            case VolumeType.Ambience:
+                _fmodController.ambienceVolume = FunTimes(volume);
+                break;
+            case VolumeType.Echo:
+                _fmodController.EchoVolume = FunTimes(volume);
+                break;
+            case VolumeType.Music:
+                _fmodController.musicVolume = FunTimes(volume);
+                break;
+            case VolumeType.Sfx:
+                _fmodController.sfxVolume = FunTimes(volume);
+                break;
+            case VolumeType.Voice:
+                _fmodController.voicelinesVolume = FunTimes(volume);
+                break;
+            case VolumeType.Reverb:
+                _fmodController.reverbVolume = FunTimes(volume);
+                break;
+        }
+    }
+    
+    private float NewScaleRegulator(float value)
+    {
+        return (value - minLimit) / (maxLimit - minLimit);
+    }
+
+    private float FunTimes(float value)
+    {
+        // Take the value from the new scale regulator and translate that into values the funtimes can understand
+        return (_volumeMax - _volumeMin) * value + _volumeMin;
     }
 }

@@ -43,11 +43,7 @@ namespace UI_Scripts
 
         private void Update()
         {
-            if (IsTouchingGround())
-            {
-                //print("Player is touching ground.");
-            }
-            else
+            if (!IsTouchingGround())
             {
                 StartCoroutine(ResetPlayerPosition());
             }
@@ -60,21 +56,18 @@ namespace UI_Scripts
 
         public void SaveLastPlayerPosition()
         {
-            print ("saving player position");
             lastPlayerPosition = new Vector3(playerTransform.position.x, playerTransform.position.y, playerTransform.position.z);
         }
 
         private IEnumerator ResetPlayerPosition()
         {
-            print("I am not where I should be.");
-            vrNoPeeking.CameraFadeOut(1f, gameObject.name);
+            vrNoPeeking.CameraFadeOut(1f, vrNoPeeking.defaultFadeOutSpeed);
             
             
             yield return new WaitForSeconds(secondsUntilReset);
             
-            vrNoPeeking.CameraFadeIn(0f, gameObject.name);
+            vrNoPeeking.CameraFadeIn(0f);
             playerTransform.position = new Vector3(lastPlayerPosition.x, lastPlayerPosition.y, lastPlayerPosition.z);
-            print("I am where I should be.");
         } 
 
         private void OnDrawGizmos()
