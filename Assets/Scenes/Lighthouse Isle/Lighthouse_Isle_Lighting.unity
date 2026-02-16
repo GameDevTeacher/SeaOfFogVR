@@ -1233,7 +1233,7 @@ VisualEffect:
       - m_Value: 5
         m_Name: Count
         m_Overridden: 1
-      - m_Value: 1
+      - m_Value: 5
         m_Name: Radius
         m_Overridden: 1
       - m_Value: 1
@@ -1247,6 +1247,9 @@ VisualEffect:
         m_Overridden: 0
       - m_Value: 10
         m_Name: LifeTime
+        m_Overridden: 1
+      - m_Value: 5
+        m_Name: Radius 2
         m_Overridden: 1
     m_Vector2f:
       m_Array: []
@@ -1283,7 +1286,7 @@ Transform:
   m_GameObject: {fileID: 2093266401}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 181.87, y: 58.4, z: -785.06}
+  m_LocalPosition: {x: 184.21, y: 58.4, z: -782.87}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
