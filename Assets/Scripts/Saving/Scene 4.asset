@@ -12,5 +12,5 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f4b35963a69be7e4c89a46271a57b079, type: 3}
   m_Name: Scene 4
   m_EditorClassIdentifier: Assembly-CSharp::SceneDataScrub
-  uniqueName: fisherman island
-  sceneIndex: 3
+  uniqueName: lighthouse isle
+  sceneIndex: 4

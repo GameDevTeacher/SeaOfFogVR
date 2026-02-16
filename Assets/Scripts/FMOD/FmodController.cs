@@ -93,7 +93,7 @@ public class FmodController : MonoBehaviour
             RuntimeManager.StudioSystem.setParameterByName("The Fishermen", paramvalue);
         }
 
-        public void UpdateTheLightHouseReturn(int paramvalue)
+        public void UpdateLighthouseReturn(int paramvalue)
         {
             /*  0 = Village
             1 = Church
