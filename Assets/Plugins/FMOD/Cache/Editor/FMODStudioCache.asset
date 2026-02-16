@@ -15,7 +15,7 @@ MonoBehaviour:
   Path: Assets/Audio_FMOD/Banks/FmodV6/Master.bank
   Name: Master
   StudioPath: bank:/Master
-  lastModified: 639066649843529135
+  lastModified: 639066656518132184
   FileSizes: []
   Exists: 1
 --- !u!114 &-8625617858540333463
@@ -844,7 +844,7 @@ MonoBehaviour:
   Path: Assets/Audio_FMOD/Banks/FmodV6/Music.bank
   Name: Music
   StudioPath: bank:/Music
-  lastModified: 639066649845886109
+  lastModified: 639066656518882819
   FileSizes: []
   Exists: 1
 --- !u!114 &-552826317800127449
@@ -953,7 +953,7 @@ MonoBehaviour:
   StringsBanks:
   - {fileID: 7388485704120699758}
   cacheVersion: 131858
-  cacheTime: 639066649846439817
+  cacheTime: 639066656519198267
   SerializableEventsDict:
   - key: event:/Ambience/Sea Waves
     index: 0
@@ -1121,7 +1121,7 @@ MonoBehaviour:
   Path: Assets/Audio_FMOD/Banks/FmodV6/Ambience.bank
   Name: Ambience
   StudioPath: bank:/Ambience
-  lastModified: 639066649841299437
+  lastModified: 639066656517302450
   FileSizes: []
   Exists: 1
 --- !u!114 &1300058051616212618
@@ -1166,7 +1166,7 @@ MonoBehaviour:
   Path: Assets/Audio_FMOD/Banks/FmodV6/Voicelines.bank
   Name: Voicelines
   StudioPath: bank:/Voicelines
-  lastModified: 639066649846439817
+  lastModified: 639066656519198267
   FileSizes: []
   Exists: 1
 --- !u!114 &2318844895867384705
@@ -1724,7 +1724,7 @@ MonoBehaviour:
   Path: Assets/Audio_FMOD/Banks/FmodV6/Master.strings.bank
   Name: Master.strings
   StudioPath: bank:/Master.strings
-  lastModified: 639066649843733842
+  lastModified: 639066656518142173
   FileSizes:
   - Name: 
     Value: 3826
