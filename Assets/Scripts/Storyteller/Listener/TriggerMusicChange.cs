@@ -2,6 +2,7 @@ using UnityEngine;
 
 public class TriggerMusicChange : MonoBehaviour
 {
+    
     [Header("To change music and ambience")]
     [SerializeField] private bool _onFishManIsle;
     [SerializeField] private bool _onLightHouseReturn;
@@ -9,14 +10,14 @@ public class TriggerMusicChange : MonoBehaviour
     [SerializeField] private int _fishmanIsleSections;
     [SerializeField] private int _lightHouseReturnSections;
     
-    [SerializeField] private int _ambienceSectionChange;
+    [SerializeField] private int _sectionChange;
 
     private void OnTriggerEnter(Collider other) 
     {   
         
-        Debug.Log(other + "Entered Trigger " + _ambienceSectionChange);
+        Debug.Log(other + "Entered Trigger " + _sectionChange);
 
-        FmodController.current.UpdateSection(_ambienceSectionChange);
+        FmodController.current.UpdateSection(_sectionChange);
         if (_onFishManIsle)
         {
             /*  0 = Village

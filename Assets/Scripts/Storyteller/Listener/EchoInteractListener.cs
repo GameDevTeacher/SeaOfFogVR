@@ -4,5 +4,13 @@ using UnityEngine;
 
 public class EchoInteractListener : MonoBehaviour
 {
-    public void PlayEcho(string filepath) => FmodController.current.UpdateEchoTrigger(filepath); 
+    public bool triggered;
+    public void PlayEcho(string filepath)
+    {
+        if (!triggered)
+        {
+            triggered = true;
+            FmodController.current.UpdateEchoTrigger(filepath);
+        }
+    }
 }
