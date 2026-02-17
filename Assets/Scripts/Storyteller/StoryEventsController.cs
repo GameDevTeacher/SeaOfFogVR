@@ -4,7 +4,10 @@ using UnityEngine;
 public class StoryEventsController : MonoBehaviour
 {
   public static StoryEventsController current;
- 
+
+
+  [Header("StoryEventsCleared")]
+  public bool caveEntered;
   private void Awake()
   {
     if (current == null)
