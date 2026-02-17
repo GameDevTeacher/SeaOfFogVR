@@ -10,8 +10,6 @@ public class FmodController : MonoBehaviour
     public static FmodController current;
     
     
-    
-    
     private void Awake()
     {
         if (current == null)
@@ -38,7 +36,6 @@ public class FmodController : MonoBehaviour
     }
 
     #region BOAT SFX AND AMBIENCE
-
         private bool _oarInWater;
         
         public void OarSplash(GameObject target)
@@ -62,8 +59,9 @@ public class FmodController : MonoBehaviour
     #endregion
 
     #region  SECTION CHANGES
-
-        //private float _CurrentSection;
+        
+        public int RowSection = 2; //2 is the first row
+    
         private EventInstance _ambienceInstance;
         [SerializeField] private bool _ambienceIsPlaying;
         
@@ -87,7 +85,8 @@ public class FmodController : MonoBehaviour
             }
             
         }
-
+        
+        public void UpdateBoatSection() => UpdateSection(RowSection);
         public void UpdateFishmanIsle(int paramvalue)
         {
         /*  0 = Intro (loop)
