@@ -1,4 +1,5 @@
 using System;
+using System.Collections;
 using FMOD.Studio;
 using FMODUnity;
 using UnityEngine;
@@ -59,7 +60,7 @@ public class FmodController : MonoBehaviour
     #endregion
 
     #region  SECTION CHANGES
-        
+    
         public int RowSection = 2; //2 is the first row
     
         private EventInstance _ambienceInstance;
@@ -101,12 +102,30 @@ public class FmodController : MonoBehaviour
             1 = Church
             2 = Cave   */
             RuntimeManager.StudioSystem.setParameterByName("The LightHouse (Return)", paramvalue);
+            if (paramvalue == 2)
+            {
+                StartCoroutine(waitAndStartStorm());
+            }
+        }
+
+        private EventInstance theStormInstance;
+        private IEnumerator waitAndStartStorm()
+        {
+            theStormInstance = RuntimeManager.CreateInstance("Event:/Ambience/Storm");
+            yield return new WaitForSeconds(6);
+            theStormInstance.start();
         }
         
 
-        public void stopAmbience()
+        public void stopMusic()
         {
             _ambienceInstance.stop(STOP_MODE.ALLOWFADEOUT);
+            
+        }
+
+        public void startMusic()
+        {
+            _ambienceInstance.start();
         }
         
         
