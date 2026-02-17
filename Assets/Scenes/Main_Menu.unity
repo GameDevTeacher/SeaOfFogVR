@@ -310,6 +310,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: NewLever
       objectReference: {fileID: 0}
+    - target: {fileID: 8570505191059168254, guid: cc0b872288bc4ea44a558ada9f2f7256, type: 3}
+      propertyPath: m_text
+      value: Hovedlyd
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -495,7 +499,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5356022779645674267, guid: 6764d243951ff7b46850f6a2b073411b, type: 3}
       propertyPath: m_LocalPosition.z
-      value: -745.98
+      value: -746.882
       objectReference: {fileID: 0}
     - target: {fileID: 5356022779645674267, guid: 6764d243951ff7b46850f6a2b073411b, type: 3}
       propertyPath: m_LocalRotation.w
@@ -677,7 +681,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8570505191059168254, guid: cc0b872288bc4ea44a558ada9f2f7256, type: 3}
       propertyPath: m_text
-      value: Music
+      value: Musikk
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -1236,7 +1240,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8570505191059168254, guid: cc0b872288bc4ea44a558ada9f2f7256, type: 3}
       propertyPath: m_text
-      value: Ambience
+      value: Stemning
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -1779,7 +1783,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8570505191059168254, guid: cc0b872288bc4ea44a558ada9f2f7256, type: 3}
       propertyPath: m_text
-      value: Voice
+      value: Stemmer
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
