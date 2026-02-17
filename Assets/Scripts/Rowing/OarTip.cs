@@ -28,6 +28,7 @@ public class OarTip : MonoBehaviour
         {
             _touchingWater = true;
             
+            //Audio
             FmodController.current.OarSplash(gameObject);
         }
         
@@ -38,6 +39,8 @@ public class OarTip : MonoBehaviour
         if(other.gameObject.layer == LayerMask.NameToLayer("Water"))
         {
             _touchingWater = false;
+            
+            //Audio
             FmodController.current.OarSplash(gameObject);
         }
     }
