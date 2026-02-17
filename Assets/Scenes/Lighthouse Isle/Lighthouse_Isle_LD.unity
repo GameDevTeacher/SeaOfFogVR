@@ -213,6 +213,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Volumetric_Fog
       objectReference: {fileID: 0}
+    - target: {fileID: 1124168354501139011, guid: d77dc4b4326f95e4bbc71e7dd846ec7d, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 1737291209561136216, guid: d77dc4b4326f95e4bbc71e7dd846ec7d, type: 3}
       propertyPath: m_LocalScale.x
       value: 5
