@@ -6,6 +6,7 @@ public class TriggerMusicChange : MonoBehaviour
     #region VARIABLES
 
     [Header("To change music and ambience")]
+    
         [SerializeField] private bool _onFishManIsle;
         [SerializeField] private bool _onLightHouseReturn;
         [Header("The section to play")]
@@ -30,23 +31,26 @@ public class TriggerMusicChange : MonoBehaviour
     
     //private void Start() => FmodController.current.UpdateSection(0);
     private void OnTriggerEnter(Collider other) 
-    {   
-        
-        Debug.Log(other + "Entered Trigger " + _sectionChange);
+    {
+        #region MUSIC
 
-        FmodController.current.UpdateSection(_sectionChange);
+                Debug.Log(other + "Entered Trigger " + _sectionChange);
         
-        if (_onFishManIsle)
-        {
-            /*  0 = Village 1 = Church 2 = Cave   */
-            FmodController.current.UpdateFishmanIsle(_fishmanIsleSections);
-        }
+                FmodController.current.UpdateSection(_sectionChange);
+                
+                if (_onFishManIsle)
+                {
+                    /*  0 = Village 1 = Church 2 = Cave   */
+                    FmodController.current.UpdateFishmanIsle(_fishmanIsleSections);
+                }
+        
+                if (_onLightHouseReturn)
+                {
+                    /*  0 = Intro (loop) 1 = Find the body (loop) 2 = End (no loop)   */
+                    FmodController.current.UpdateLighthouseReturn(_lightHouseReturnSections);
+                }
 
-        if (_onLightHouseReturn)
-        {
-            /*  0 = Intro (loop) 1 = Find the body (loop) 2 = End (no loop)   */
-            FmodController.current.UpdateLighthouseReturn(_lightHouseReturnSections);
-        }
+        #endregion
         
     }
 
