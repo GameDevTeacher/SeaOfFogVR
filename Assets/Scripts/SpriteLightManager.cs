@@ -15,10 +15,12 @@ public class SpriteLightManager : MonoBehaviour
         if (instance == null) instance = this;
         else Destroy(gameObject);
         
-        GameObject[] allLights = GameObject.FindGameObjectsWithTag("Light");
-            
+       /* GameObject[] allLights = GameObject.FindGameObjectsWithTag("Light");
+       
+    
         lights.AddRange(allLights);
-        lights.Reverse();
+        lights.Reverse();*/
+        
         FadeInLight();
     }
 
