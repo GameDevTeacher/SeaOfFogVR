@@ -1,39 +1,9 @@
 fileFormatVersion: 2
-guid: 6f0db89e87949d04ab161102fc983608
+guid: bc99ab86861d2e646a1c59fc655d25d8
 ModelImporter:
   serializedVersion: 24200
   internalIDToNameTable: []
-  externalObjects:
-  - first:
-      type: UnityEngine:Material
-      assembly: UnityEngine.CoreModule
-      name: Lighthouse_glass_texture_01
-    second: {fileID: 2100000, guid: 7374a608f2bd86f4d8888c5ead926c6e, type: 2}
-  - first:
-      type: UnityEngine:Material
-      assembly: UnityEngine.CoreModule
-      name: Lighthouse_texture_01
-    second: {fileID: 2100000, guid: f12021a63fa8d554a877a30dc7d7ac83, type: 2}
-  - first:
-      type: UnityEngine:Material
-      assembly: UnityEngine.CoreModule
-      name: Lighthouse_texture_02
-    second: {fileID: 2100000, guid: bc06e1392c244ee4ab02e709de250437, type: 2}
-  - first:
-      type: UnityEngine:Material
-      assembly: UnityEngine.CoreModule
-      name: Lighthouse_texture_03
-    second: {fileID: 2100000, guid: 0d1f4dda5d2fee241b48f48c5eb6805b, type: 2}
-  - first:
-      type: UnityEngine:Material
-      assembly: UnityEngine.CoreModule
-      name: Lighthouse_texture_04
-    second: {fileID: 2100000, guid: 42e73d4dcc76b0b4e8605e2cbe15c98a, type: 2}
-  - first:
-      type: UnityEngine:Material
-      assembly: UnityEngine.CoreModule
-      name: Lighthouse_texture_05
-    second: {fileID: 2100000, guid: d69e71fe5c26b304fa73a6c1de5f44ee, type: 2}
+  externalObjects: {}
   materials:
     materialImportMode: 2
     materialName: 0
