@@ -4181,7 +4181,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7157511603502386218, guid: 6764d243951ff7b46850f6a2b073411b, type: 3}
       propertyPath: _sectionChange
-      value: 8
+      value: 7
       objectReference: {fileID: 0}
     - target: {fileID: 7157511603502386218, guid: 6764d243951ff7b46850f6a2b073411b, type: 3}
       propertyPath: _onLightHouseReturn
@@ -5506,7 +5506,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7157511603502386218, guid: 6764d243951ff7b46850f6a2b073411b, type: 3}
       propertyPath: _sectionChange
-      value: 8
+      value: 7
       objectReference: {fileID: 0}
     - target: {fileID: 7157511603502386218, guid: 6764d243951ff7b46850f6a2b073411b, type: 3}
       propertyPath: _onLightHouseReturn
@@ -6115,7 +6115,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7157511603502386218, guid: 6764d243951ff7b46850f6a2b073411b, type: 3}
       propertyPath: _sectionChange
-      value: 8
+      value: 7
       objectReference: {fileID: 0}
     - target: {fileID: 7157511603502386218, guid: 6764d243951ff7b46850f6a2b073411b, type: 3}
       propertyPath: _onLightHouseReturn
