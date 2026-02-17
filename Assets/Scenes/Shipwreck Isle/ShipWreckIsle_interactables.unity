@@ -147,6 +147,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::TriggerBox
   id: 0
+  _collider: {fileID: 2036119640304762278}
 --- !u!1001 &594828261
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -235,6 +236,11 @@ GameObject:
   m_CorrespondingSourceObject: {fileID: 6550212931726491064, guid: f82c6179f25539b4ab299393361ff06a, type: 3}
   m_PrefabInstance: {fileID: 594828261}
   m_PrefabAsset: {fileID: 0}
+--- !u!65 &594828263 stripped
+BoxCollider:
+  m_CorrespondingSourceObject: {fileID: 8608338200079837148, guid: f82c6179f25539b4ab299393361ff06a, type: 3}
+  m_PrefabInstance: {fileID: 594828261}
+  m_PrefabAsset: {fileID: 0}
 --- !u!114 &594828269
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -263,6 +269,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::TriggerBox
   id: 2
+  _collider: {fileID: 594828263}
 --- !u!1001 &1066229887
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -364,6 +371,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::TriggerBox
   id: 6
+  _collider: {fileID: 1066229891}
 --- !u!114 &1066229890
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -379,6 +387,11 @@ MonoBehaviour:
   _enterEchoPath: event:/Echos/GravediggerEcho1ShipwreckGraves01
   _exitEchoPath: 
   _triggered: 0
+--- !u!65 &1066229891 stripped
+BoxCollider:
+  m_CorrespondingSourceObject: {fileID: 8608338200079837148, guid: f82c6179f25539b4ab299393361ff06a, type: 3}
+  m_PrefabInstance: {fileID: 1066229887}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &1577742354
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -495,6 +508,12 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::TriggerBox
   id: 5
+  _collider: {fileID: 1577742358}
+--- !u!65 &1577742358 stripped
+BoxCollider:
+  m_CorrespondingSourceObject: {fileID: 8608338200079837148, guid: f82c6179f25539b4ab299393361ff06a, type: 3}
+  m_PrefabInstance: {fileID: 1577742354}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &1656098533
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -583,6 +602,11 @@ GameObject:
   m_CorrespondingSourceObject: {fileID: 6550212931726491064, guid: f82c6179f25539b4ab299393361ff06a, type: 3}
   m_PrefabInstance: {fileID: 1656098533}
   m_PrefabAsset: {fileID: 0}
+--- !u!65 &1656098535 stripped
+BoxCollider:
+  m_CorrespondingSourceObject: {fileID: 8608338200079837148, guid: f82c6179f25539b4ab299393361ff06a, type: 3}
+  m_PrefabInstance: {fileID: 1656098533}
+  m_PrefabAsset: {fileID: 0}
 --- !u!114 &1656098541
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -611,6 +635,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::TriggerBox
   id: 3
+  _collider: {fileID: 1656098535}
 --- !u!1001 &1737344775
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -703,6 +728,11 @@ GameObject:
   m_CorrespondingSourceObject: {fileID: 6550212931726491064, guid: f82c6179f25539b4ab299393361ff06a, type: 3}
   m_PrefabInstance: {fileID: 1737344775}
   m_PrefabAsset: {fileID: 0}
+--- !u!65 &1737344777 stripped
+BoxCollider:
+  m_CorrespondingSourceObject: {fileID: 8608338200079837148, guid: f82c6179f25539b4ab299393361ff06a, type: 3}
+  m_PrefabInstance: {fileID: 1737344775}
+  m_PrefabAsset: {fileID: 0}
 --- !u!114 &1737344783
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -731,6 +761,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::TriggerBox
   id: 1
+  _collider: {fileID: 1737344777}
 --- !u!114 &1564192418482690615
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -747,7 +778,11 @@ MonoBehaviour:
   _onLightHouseReturn: 0
   _fishmanIsleSections: 0
   _lightHouseReturnSections: 0
-  _ambienceSectionChange: 0
+  _sectionChange: 3
+  _changSectionOnExit: 0
+  _Ex_fishmanIsleSections: 0
+  _Ex_lightHouseReturnSections: 0
+  _Ex_sectionChange: 0
 --- !u!65 &2036119640304762278
 BoxCollider:
   m_ObjectHideFlags: 0
