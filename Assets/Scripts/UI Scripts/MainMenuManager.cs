@@ -1,3 +1,4 @@
+using UI_Scripts;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
@@ -11,28 +12,31 @@ public class MainMenuManager : MonoBehaviour
     [SerializeField] private Animator animator;
     [SerializeField] private AnimationClip clip;
     [SerializeField] private float fadeOutSpeed;
-    public bool shouldCameraFade = false;
+    private SceneLoadTrigger _sceneLoader;
+    private PlayerPositionManager _playerPositionManager;
     
     
     private VRNoPeeking _noPeekingInstance;
 
     private void Start()
     {
-        shouldCameraFade = false;
         _noPeekingInstance = VRNoPeeking.Instance;
-    }
-
-    private void Update()
-    {
-        if (shouldCameraFade)
-        {
-            _noPeekingInstance.CameraFadeOut(1f, fadeOutSpeed);
-        }
+        _sceneLoader = GetComponent<SceneLoadTrigger>();
+        _playerPositionManager = GetComponent<PlayerPositionManager>();
     }
     
-    public void StartGame()
+    public async void StartGame()
     {
-        animator.Play(clip.name); 
-        shouldCameraFade = true; 
+        animator.Play(clip.name);
+        OutOfBounds.Instance.enabled = false;
+        await Awaitable.WaitForSecondsAsync(1);
+        _noPeekingInstance.CameraFadeOut(fadeOutSpeed);
+        await Awaitable.WaitForSecondsAsync(1);
+        _sceneLoader.LoadScenes();
+        _playerPositionManager.TeleportGame();
+        _sceneLoader.UnloadScenes();
+        await Awaitable.WaitForSecondsAsync(1);
+        _noPeekingInstance.CameraFadeIn();
+        OutOfBounds.Instance.enabled = true;
     }
 }

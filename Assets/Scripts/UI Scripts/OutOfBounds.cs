@@ -8,6 +8,7 @@ namespace UI_Scripts
     public class OutOfBounds : MonoBehaviour
     {
         public static OutOfBounds Instance;
+        public bool resetTriggered;
         
         [Header("Ray Stuff")]
         [SerializeField] private Vector3 rayDirection = Vector3.down;
@@ -23,7 +24,7 @@ namespace UI_Scripts
         [Header("Out of Bounds Effect")]
         [SerializeField] private VRNoPeeking vrNoPeeking;
         
-        [Header("fuck this shit")]
+        [Header("multi-scene teleporter area stuff")]
         [SerializeField] private List<TeleportationArea> teleportationAreas;
         private GameObject[] _teleportationAreasGameObjects;
 
@@ -31,26 +32,29 @@ namespace UI_Scripts
         {
             if (Instance == null) Instance = this;
             else Destroy(this);
+            resetTriggered = false;
             
             SaveLastPlayerPosition();
 
             _teleportationAreasGameObjects = GameObject.FindGameObjectsWithTag("Teleport");
 
+            //multi-scene teleport area fixer thinger
             foreach (var area in _teleportationAreasGameObjects)
             {
                 teleportationAreas.Add(area.gameObject.GetComponent<TeleportationArea>());
             }
-            
             for (int i = 0; i < teleportationAreas.Count; i++)
             {
                 teleportationAreas[i].teleporting.AddListener(arg0 => {SaveLastPlayerPosition();});
             }
+                
         }
 
         private void Update()
         {
-            if (!IsTouchingGround())
+            if (!IsTouchingGround() && !resetTriggered)
             {
+                resetTriggered = true;
                 ResetPosition();
             }
         }
@@ -74,13 +78,16 @@ namespace UI_Scripts
 
         private IEnumerator ResetPlayerPosition()
         {
-            vrNoPeeking.CameraFadeOut(1f, vrNoPeeking.defaultFadeOutSpeed);
+            print("Reset Position Coroutine");
+            vrNoPeeking.CameraFadeOut(vrNoPeeking.defaultFadeOutSpeed);
             
-            yield return new WaitForSeconds(secondsUntilReset);
+            yield return new WaitForSeconds(1);
             
-            vrNoPeeking.CameraFadeIn(0f);
+            vrNoPeeking.CameraFadeIn();
             playerTransform.position = lastPlayerPosition;
             playerTransform.rotation = lastPlayerRotation;
+            
+            resetTriggered = false;
         } 
 
         private void OnDrawGizmos()
