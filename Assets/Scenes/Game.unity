@@ -1077,7 +1077,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3911219869199166746, guid: c5fd8d5e2a6f8694f9916402273abf8a, type: 3}
       propertyPath: m_IsActive
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 6774017620822948805, guid: c5fd8d5e2a6f8694f9916402273abf8a, type: 3}
       propertyPath: m_PropertySheet.m_Vector3f.m_Array.Array.size
@@ -1125,7 +1125,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8488375552880832734, guid: c5fd8d5e2a6f8694f9916402273abf8a, type: 3}
       propertyPath: m_Enabled
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 8811603301562150012, guid: c5fd8d5e2a6f8694f9916402273abf8a, type: 3}
       propertyPath: m_LocalScale.x
@@ -1372,7 +1372,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3911219869199166746, guid: c5fd8d5e2a6f8694f9916402273abf8a, type: 3}
       propertyPath: m_IsActive
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 6774017620822948805, guid: c5fd8d5e2a6f8694f9916402273abf8a, type: 3}
       propertyPath: m_PropertySheet.m_Vector3f.m_Array.Array.size
@@ -1420,7 +1420,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8488375552880832734, guid: c5fd8d5e2a6f8694f9916402273abf8a, type: 3}
       propertyPath: m_Enabled
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 8811603301562150012, guid: c5fd8d5e2a6f8694f9916402273abf8a, type: 3}
       propertyPath: m_LocalScale.x
@@ -1548,7 +1548,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1031195923019432889, guid: f6336ac4ac8b4d34bc5072418cdc62a0, type: 3}
       propertyPath: m_IsActive
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 1717954561962503725, guid: f6336ac4ac8b4d34bc5072418cdc62a0, type: 3}
       propertyPath: m_Name
