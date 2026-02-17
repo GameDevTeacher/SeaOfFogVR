@@ -31,6 +31,7 @@ public class BoatSaving : MonoBehaviour
         }
         catch (Exception e)
         {
+            print(e.Message);
             throw; // TODO handle exception
         }
     }

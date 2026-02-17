@@ -3,6 +3,7 @@ using System.Collections;
 using Unity.Jobs;
 using Unity.VisualScripting;
 using UnityEngine;
+using UnityEngine.VFX;
 
 public class SpriteLight : MonoBehaviour
 {
@@ -12,16 +13,20 @@ public class SpriteLight : MonoBehaviour
     [SerializeField] private SphereCollider _collider;
     private Light _light;
     private float _lightIntensityDefault;
+    private VisualEffect _visualEffect;
 
     private void Awake()
     {
         _material = GetComponent<Renderer>().material;
-        _material.color = new Color(_material.color.r,_material.color.g,_material.color.b,0);
         _collider = GetComponent<SphereCollider>();
-        _collider.enabled = false;
         _light = gameObject.GetComponentInChildren<Light>();
+        _visualEffect = gameObject.GetComponentInChildren<VisualEffect>();
+        _material.color = new Color(_material.color.r,_material.color.g,_material.color.b,0);
+        _collider.enabled = false;
         _lightIntensityDefault = _light.intensity;
         _light.intensity = 0;
+        _visualEffect.Stop();
+        _visualEffect.enabled = false;
     }
 
     private void OnTriggerEnter(Collider other)
@@ -58,10 +63,13 @@ public class SpriteLight : MonoBehaviour
             _material.color += new Color(0, 0, 0, 0.1f);
             yield return new WaitForSeconds(fadeOutTime);
         }
+        _visualEffect.enabled = true;
+        _visualEffect.Play();
     }
 
     private IEnumerator FadeOut()
     {
+        _visualEffect.Stop();
         while (_material.color.a > 0.1f)
         {
             _material.color -= new Color(0, 0, 0, 0.1f);
@@ -75,6 +83,6 @@ public class SpriteLight : MonoBehaviour
     private void OnDrawGizmos()
     {
         Gizmos.color = Color.green;
-        Gizmos.DrawWireSphere(transform.position, _collider.radius/2);
+        Gizmos.DrawWireSphere(transform.position, _collider.radius);
     }
 }

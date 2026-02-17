@@ -11,9 +11,7 @@ public class LeverManager : MonoBehaviour
     {
         Master,
         Ambience,
-        Echo,
         Music,
-        Sfx,
         Voice,
         Reverb
     }
@@ -70,14 +68,8 @@ public class LeverManager : MonoBehaviour
             case VolumeType.Ambience:
                 _fmodController.ambienceVolume = FunTimes(volume);
                 break;
-            case VolumeType.Echo:
-                _fmodController.EchoVolume = FunTimes(volume);
-                break;
             case VolumeType.Music:
                 _fmodController.musicVolume = FunTimes(volume);
-                break;
-            case VolumeType.Sfx:
-                _fmodController.sfxVolume = FunTimes(volume);
                 break;
             case VolumeType.Voice:
                 _fmodController.voicelinesVolume = FunTimes(volume);

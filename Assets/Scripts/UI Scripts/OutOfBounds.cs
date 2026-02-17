@@ -14,7 +14,8 @@ namespace UI_Scripts
         
         [Header("Player Stuff")]
         [SerializeField] private Transform playerTransform;
-        [SerializeField] private Vector3 lastPlayerPosition;
+        public Vector3 lastPlayerPosition;
+        public Quaternion lastPlayerRotation;
         [SerializeField] private float secondsUntilReset;
         
         [Header("Out of Bounds Effect")]
@@ -26,7 +27,7 @@ namespace UI_Scripts
 
         private void Start()
         {
-            lastPlayerPosition = new Vector3(playerTransform.position.x, playerTransform.position.y, playerTransform.position.z);
+            SaveLastPlayerPosition();
 
             _teleportationAreasGameObjects = GameObject.FindGameObjectsWithTag("Teleport");
 
@@ -45,7 +46,7 @@ namespace UI_Scripts
         {
             if (!IsTouchingGround())
             {
-                StartCoroutine(ResetPlayerPosition());
+                ResetPosition();
             }
         }
 
@@ -56,18 +57,24 @@ namespace UI_Scripts
 
         public void SaveLastPlayerPosition()
         {
-            lastPlayerPosition = new Vector3(playerTransform.position.x, playerTransform.position.y, playerTransform.position.z);
+            lastPlayerPosition = playerTransform.position;
+            lastPlayerRotation = playerTransform.rotation;
+        }
+
+        public void ResetPosition()
+        {
+            StartCoroutine(ResetPlayerPosition());
         }
 
         private IEnumerator ResetPlayerPosition()
         {
             vrNoPeeking.CameraFadeOut(1f, vrNoPeeking.defaultFadeOutSpeed);
             
-            
             yield return new WaitForSeconds(secondsUntilReset);
             
             vrNoPeeking.CameraFadeIn(0f);
-            playerTransform.position = new Vector3(lastPlayerPosition.x, lastPlayerPosition.y, lastPlayerPosition.z);
+            playerTransform.position = lastPlayerPosition;
+            playerTransform.rotation = lastPlayerRotation;
         } 
 
         private void OnDrawGizmos()

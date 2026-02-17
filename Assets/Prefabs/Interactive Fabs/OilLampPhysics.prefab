@@ -417,6 +417,37 @@ BoxCollider:
   serializedVersion: 3
   m_Size: {x: 2.4452417, y: 3.5774052, z: 1.6557779}
   m_Center: {x: 8.221743e-15, y: 0.5286454, z: 4.349431e-15}
+--- !u!1 &1040995626553566492
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 3143375347327009203}
+  m_Layer: 0
+  m_Name: Endpoint
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &3143375347327009203
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1040995626553566492}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 9.48, y: -3.75, z: -0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 3674874147433729165}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1191041927691493840
 GameObject:
   m_ObjectHideFlags: 0
@@ -779,6 +810,37 @@ Transform:
   m_Children: []
   m_Father: {fileID: 4724415905055144357}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &1503298099591601207
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 6131495249426598818}
+  m_Layer: 0
+  m_Name: StartPoint
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &6131495249426598818
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1503298099591601207}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0.91, y: -3.576, z: 0.077}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 3674874147433729165}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1544435228336628848
 GameObject:
   m_ObjectHideFlags: 0
@@ -868,8 +930,8 @@ HingeJoint:
   m_ExtendedLimits: 0
   m_UseAcceleration: 0
   m_Limits:
-    min: -126.5
-    max: 135.2
+    min: -148.6
+    max: 201.6
     bounciness: 0
     bounceMinVelocity: 0.2
     contactDistance: 0
@@ -1037,6 +1099,7 @@ GameObject:
   m_Component:
   - component: {fileID: 3674874147433729165}
   - component: {fileID: 1533302098453463693}
+  - component: {fileID: 193333829300675837}
   m_Layer: 0
   m_Name: OilLampPhysics
   m_TagString: Untagged
@@ -1060,6 +1123,8 @@ Transform:
   - {fileID: 7732239782280671891}
   - {fileID: 8668837909725324987}
   - {fileID: 8399682072446541044}
+  - {fileID: 6131495249426598818}
+  - {fileID: 3143375347327009203}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!95 &1533302098453463693
@@ -1084,6 +1149,23 @@ Animator:
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorStateOnDisable: 0
   m_WriteDefaultValuesOnDisable: 0
+--- !u!114 &193333829300675837
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2528149159447155174}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f1cb566debc9730439bbbda5468525b3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::LanternEchoInteract
+  startPoint: {fileID: 6131495249426598818}
+  endPoint: {fileID: 3143375347327009203}
+  radius: 0.2
+  maxDistance: 3
+  visualizeRenderer: {fileID: 0}
 --- !u!1 &3207594597818462651
 GameObject:
   m_ObjectHideFlags: 0
