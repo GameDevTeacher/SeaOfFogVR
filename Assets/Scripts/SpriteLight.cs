@@ -22,7 +22,8 @@ public class SpriteLight : MonoBehaviour
         _light = gameObject.GetComponentInChildren<Light>();
         _visualEffect = gameObject.GetComponentInChildren<VisualEffect>();
         _material.color = new Color(_material.color.r,_material.color.g,_material.color.b,0);
-        _collider.enabled = false;
+        if (!gameObject.CompareTag("Light")) return;
+         _collider.enabled = false;
         _lightIntensityDefault = _light.intensity;
         _light.intensity = 0;
         _visualEffect.Stop();
@@ -77,6 +78,7 @@ public class SpriteLight : MonoBehaviour
             yield return new WaitForSeconds(fadeOutTime);
         }
         gameObject.SetActive(false);
+        if (!gameObject.CompareTag("Light")) yield break;
         SpriteLightManager.instance.UpdateSpriteScript();
     }
 
