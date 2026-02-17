@@ -107,10 +107,10 @@ MonoBehaviour:
   categories: []
   uiBounds:
     serializedVersion: 2
-    x: 477
-    y: -1153
-    width: 669
-    height: 2913
+    x: 476
+    y: -1152
+    width: 668
+    height: 2890
 --- !u!114 &114350483966674976
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -911,7 +911,7 @@ MonoBehaviour:
       m_Type:
         m_SerializableType: System.Single, mscorlib, Version=4.0.0.0, Culture=neutral,
           PublicKeyToken=b77a5c561934e089
-      m_SerializableObject: 2.5
+      m_SerializableObject: 12.5
     m_Space: -1
   m_Property:
     name: A
@@ -945,7 +945,7 @@ MonoBehaviour:
       m_Type:
         m_SerializableType: System.Single, mscorlib, Version=4.0.0.0, Culture=neutral,
           PublicKeyToken=b77a5c561934e089
-      m_SerializableObject: 3
+      m_SerializableObject: 13
     m_Space: -1
   m_Property:
     name: B
@@ -3031,6 +3031,7 @@ MonoBehaviour:
   - {fileID: 8926484042661614747}
   - {fileID: 8926484042661614748}
   - {fileID: 8926484042661614749}
+  - {fileID: 8926484042661614923}
   - {fileID: 8926484042661614750}
   m_OutputSlots: []
   m_Label: Render Quad
@@ -3064,7 +3065,7 @@ MonoBehaviour:
   revertSorting: 0
   indirectDraw: 0
   computeCulling: 0
-  frustumCulling: 0
+  frustumCulling: 1
   castShadows: 0
   useExposureWeight: 0
   enableRayTracing: 0
@@ -3378,7 +3379,8 @@ MonoBehaviour:
     - outputSlot: {fileID: 8926484042661614900}
       inputSlot: {fileID: 8926484042661614698}
     position: {x: 498.52893, y: 877.3162}
-    expandedSlots: []
+    expandedSlots:
+    - {fileID: 8926484042661614900}
     expanded: 1
     supecollapsed: 0
 --- !u!114 &8926484042661614900
@@ -4006,4 +4008,38 @@ MonoBehaviour:
       m_SerializableType: System.Single, mscorlib, Version=4.0.0.0, Culture=neutral,
         PublicKeyToken=b77a5c561934e089
   m_Direction: 1
+  m_LinkedSlots: []
+--- !u!114 &8926484042661614923
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f780aa281814f9842a7c076d436932e7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Unity.VisualEffectGraph.Editor::UnityEditor.VFX.VFXSlotFloat
+  m_UIIgnoredErrors: []
+  m_Parent: {fileID: 0}
+  m_Children: []
+  m_UIPosition: {x: 0, y: 0}
+  m_UICollapsed: 1
+  m_UISuperCollapsed: 0
+  m_MasterSlot: {fileID: 8926484042661614923}
+  m_MasterData:
+    m_Owner: {fileID: 8926484042661614746}
+    m_Value:
+      m_Type:
+        m_SerializableType: System.Single, mscorlib, Version=4.0.0.0, Culture=neutral,
+          PublicKeyToken=b77a5c561934e089
+      m_SerializableObject: 1
+    m_Space: -1
+  m_Property:
+    name: radiusScale
+    m_serializedType:
+      m_SerializableType: System.Single, mscorlib, Version=4.0.0.0, Culture=neutral,
+        PublicKeyToken=b77a5c561934e089
+  m_Direction: 0
   m_LinkedSlots: []
