@@ -343,9 +343,21 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 5618222094439337305, guid: 8499ea4b1b28fbf4eb2e42bdbed0dcdd, type: 3}
+      propertyPath: m_Size.x
+      value: 11
+      objectReference: {fileID: 0}
+    - target: {fileID: 5618222094439337305, guid: 8499ea4b1b28fbf4eb2e42bdbed0dcdd, type: 3}
+      propertyPath: m_Size.z
+      value: 11
+      objectReference: {fileID: 0}
+    - target: {fileID: 6227853872702935883, guid: 8499ea4b1b28fbf4eb2e42bdbed0dcdd, type: 3}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 6399713478632351045, guid: 8499ea4b1b28fbf4eb2e42bdbed0dcdd, type: 3}
       propertyPath: m_Name
-      value: EchoAreaTriggerObj (2)
+      value: AwakeningDock02
       objectReference: {fileID: 0}
     - target: {fileID: 7474001343790960281, guid: 8499ea4b1b28fbf4eb2e42bdbed0dcdd, type: 3}
       propertyPath: m_LocalPosition.x
@@ -357,7 +369,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7474001343790960281, guid: 8499ea4b1b28fbf4eb2e42bdbed0dcdd, type: 3}
       propertyPath: m_LocalPosition.z
-      value: -716.43274
+      value: -723.68
       objectReference: {fileID: 0}
     - target: {fileID: 7474001343790960281, guid: 8499ea4b1b28fbf4eb2e42bdbed0dcdd, type: 3}
       propertyPath: m_LocalRotation.w
@@ -386,6 +398,10 @@ PrefabInstance:
     - target: {fileID: 7474001343790960281, guid: 8499ea4b1b28fbf4eb2e42bdbed0dcdd, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 9001018780716002233, guid: 8499ea4b1b28fbf4eb2e42bdbed0dcdd, type: 3}
+      propertyPath: _enterEchoPath
+      value: event:/Voicelines/The Awakening/AwakeningDock01
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -734,11 +750,11 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 6227853872702935883, guid: 8499ea4b1b28fbf4eb2e42bdbed0dcdd, type: 3}
       propertyPath: m_Enabled
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 6399713478632351045, guid: 8499ea4b1b28fbf4eb2e42bdbed0dcdd, type: 3}
       propertyPath: m_Name
-      value: EchoAreaTriggerObj
+      value: AwakeningIslandTalk02
       objectReference: {fileID: 0}
     - target: {fileID: 7474001343790960281, guid: 8499ea4b1b28fbf4eb2e42bdbed0dcdd, type: 3}
       propertyPath: m_LocalScale.x
@@ -791,6 +807,10 @@ PrefabInstance:
     - target: {fileID: 7474001343790960281, guid: 8499ea4b1b28fbf4eb2e42bdbed0dcdd, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 9001018780716002233, guid: 8499ea4b1b28fbf4eb2e42bdbed0dcdd, type: 3}
+      propertyPath: _enterEchoPath
+      value: event:/Voicelines/The Awakening/AwakeningIslandTalk02
       objectReference: {fileID: 0}
     m_RemovedComponents:
     - {fileID: 6692160611266237215, guid: 8499ea4b1b28fbf4eb2e42bdbed0dcdd, type: 3}
@@ -1037,11 +1057,11 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 6227853872702935883, guid: 8499ea4b1b28fbf4eb2e42bdbed0dcdd, type: 3}
       propertyPath: m_Enabled
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 6399713478632351045, guid: 8499ea4b1b28fbf4eb2e42bdbed0dcdd, type: 3}
       propertyPath: m_Name
-      value: EchoAreaTriggerObj (1)
+      value: AwakeningDock01
       objectReference: {fileID: 0}
     - target: {fileID: 7474001343790960281, guid: 8499ea4b1b28fbf4eb2e42bdbed0dcdd, type: 3}
       propertyPath: m_LocalScale.x
@@ -1095,6 +1115,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 9001018780716002233, guid: 8499ea4b1b28fbf4eb2e42bdbed0dcdd, type: 3}
+      propertyPath: _enterEchoPath
+      value: event:/Voicelines/The Awakening/AwakeningDock01
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -1108,17 +1132,21 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 2332489727014927153, guid: 6764d243951ff7b46850f6a2b073411b, type: 3}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 5356022779645674267, guid: 6764d243951ff7b46850f6a2b073411b, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 163.65305
+      value: 183.43
       objectReference: {fileID: 0}
     - target: {fileID: 5356022779645674267, guid: 6764d243951ff7b46850f6a2b073411b, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 76.18
+      value: 66.87
       objectReference: {fileID: 0}
     - target: {fileID: 5356022779645674267, guid: 6764d243951ff7b46850f6a2b073411b, type: 3}
       propertyPath: m_LocalPosition.z
-      value: -770.5
+      value: -763.46
       objectReference: {fileID: 0}
     - target: {fileID: 5356022779645674267, guid: 6764d243951ff7b46850f6a2b073411b, type: 3}
       propertyPath: m_LocalRotation.w
@@ -1151,6 +1179,10 @@ PrefabInstance:
     - target: {fileID: 5874171132525280099, guid: 6764d243951ff7b46850f6a2b073411b, type: 3}
       propertyPath: m_Name
       value: MusicTriggerObj Variant
+      objectReference: {fileID: 0}
+    - target: {fileID: 7157511603502386218, guid: 6764d243951ff7b46850f6a2b073411b, type: 3}
+      propertyPath: _sectionChange
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 7683271052058012603, guid: 6764d243951ff7b46850f6a2b073411b, type: 3}
       propertyPath: m_Size.x
