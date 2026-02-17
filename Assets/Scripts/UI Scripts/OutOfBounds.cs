@@ -7,6 +7,8 @@ namespace UI_Scripts
 {
     public class OutOfBounds : MonoBehaviour
     {
+        public static OutOfBounds Instance;
+        
         [Header("Ray Stuff")]
         [SerializeField] private Vector3 rayDirection = Vector3.down;
         [SerializeField] private float rayDistance;
@@ -27,6 +29,9 @@ namespace UI_Scripts
 
         private void Start()
         {
+            if (Instance == null) Instance = this;
+            else Destroy(this);
+            
             SaveLastPlayerPosition();
 
             _teleportationAreasGameObjects = GameObject.FindGameObjectsWithTag("Teleport");
@@ -63,6 +68,7 @@ namespace UI_Scripts
 
         public void ResetPosition()
         {
+            Debug.Log("Reset Position");
             StartCoroutine(ResetPlayerPosition());
         }
 
