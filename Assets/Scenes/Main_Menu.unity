@@ -149,7 +149,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::PlayerPositionManager
   menuTeleportTarget: {fileID: 1977574776}
-  gameTeleportTarget: {fileID: 564019248}
+  gameTeleportTarget: {fileID: 641221290}
   player: {fileID: 0}
 --- !u!4 &56304993
 Transform:
@@ -506,37 +506,6 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 6764d243951ff7b46850f6a2b073411b, type: 3}
---- !u!1 &564019247
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 564019248}
-  m_Layer: 0
-  m_Name: GamePosition
-  m_TagString: Untagged
-  m_Icon: {fileID: 5132851093641282708, guid: 0000000000000000d000000000000000, type: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &564019248
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 564019247}
-  serializedVersion: 2
-  m_LocalRotation: {x: 0.00007593302, y: 0.9998854, z: -0.008399339, w: 0.012597615}
-  m_LocalPosition: {x: 184.213, y: 67.533, z: -755.781}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 0}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &628842935
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -610,6 +579,37 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: c1d368e41ebe17c4895510d85a50f079, type: 3}
+--- !u!1 &641221289
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 641221290}
+  m_Layer: 0
+  m_Name: GamePosition
+  m_TagString: Untagged
+  m_Icon: {fileID: 5132851093641282708, guid: 0000000000000000d000000000000000, type: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &641221290
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 641221289}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 1, z: 0, w: 0}
+  m_LocalPosition: {x: 184.08, y: 67.533, z: -755.781}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 180, z: 0}
 --- !u!1 &665516937
 GameObject:
   m_ObjectHideFlags: 0
@@ -2156,7 +2156,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2826530821632658511, guid: a99f793c2bd8d224e898d1111fdd806b, type: 3}
       propertyPath: m_SelectEntered.m_PersistentCalls.m_Calls.Array.size
-      value: 3
+      value: 4
       objectReference: {fileID: 0}
     - target: {fileID: 2826530821632658511, guid: a99f793c2bd8d224e898d1111fdd806b, type: 3}
       propertyPath: m_SelectEntered.m_PersistentCalls.m_Calls.Array.data[0].m_Mode
@@ -2167,7 +2167,15 @@ PrefabInstance:
       value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 2826530821632658511, guid: a99f793c2bd8d224e898d1111fdd806b, type: 3}
+      propertyPath: m_SelectEntered.m_PersistentCalls.m_Calls.Array.data[3].m_Mode
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2826530821632658511, guid: a99f793c2bd8d224e898d1111fdd806b, type: 3}
       propertyPath: m_SelectEntered.m_PersistentCalls.m_Calls.Array.data[2].m_Target
+      value: 
+      objectReference: {fileID: 56304992}
+    - target: {fileID: 2826530821632658511, guid: a99f793c2bd8d224e898d1111fdd806b, type: 3}
+      propertyPath: m_SelectEntered.m_PersistentCalls.m_Calls.Array.data[3].m_Target
       value: 
       objectReference: {fileID: 1761530680}
     - target: {fileID: 2826530821632658511, guid: a99f793c2bd8d224e898d1111fdd806b, type: 3}
@@ -2175,15 +2183,31 @@ PrefabInstance:
       value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 2826530821632658511, guid: a99f793c2bd8d224e898d1111fdd806b, type: 3}
+      propertyPath: m_SelectEntered.m_PersistentCalls.m_Calls.Array.data[3].m_CallState
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 2826530821632658511, guid: a99f793c2bd8d224e898d1111fdd806b, type: 3}
       propertyPath: m_SelectEntered.m_PersistentCalls.m_Calls.Array.data[2].m_MethodName
+      value: TeleportGame
+      objectReference: {fileID: 0}
+    - target: {fileID: 2826530821632658511, guid: a99f793c2bd8d224e898d1111fdd806b, type: 3}
+      propertyPath: m_SelectEntered.m_PersistentCalls.m_Calls.Array.data[3].m_MethodName
       value: UnloadScenes
       objectReference: {fileID: 0}
     - target: {fileID: 2826530821632658511, guid: a99f793c2bd8d224e898d1111fdd806b, type: 3}
       propertyPath: m_SelectEntered.m_PersistentCalls.m_Calls.Array.data[2].m_TargetAssemblyTypeName
+      value: PlayerPositionManager, Assembly-CSharp
+      objectReference: {fileID: 0}
+    - target: {fileID: 2826530821632658511, guid: a99f793c2bd8d224e898d1111fdd806b, type: 3}
+      propertyPath: m_SelectEntered.m_PersistentCalls.m_Calls.Array.data[3].m_TargetAssemblyTypeName
       value: SceneLoadTrigger, Assembly-CSharp
       objectReference: {fileID: 0}
     - target: {fileID: 2826530821632658511, guid: a99f793c2bd8d224e898d1111fdd806b, type: 3}
       propertyPath: m_SelectEntered.m_PersistentCalls.m_Calls.Array.data[2].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: UnityEngine.Object, UnityEngine
+      objectReference: {fileID: 0}
+    - target: {fileID: 2826530821632658511, guid: a99f793c2bd8d224e898d1111fdd806b, type: 3}
+      propertyPath: m_SelectEntered.m_PersistentCalls.m_Calls.Array.data[3].m_Arguments.m_ObjectArgumentAssemblyTypeName
       value: UnityEngine.Object, UnityEngine
       objectReference: {fileID: 0}
     - target: {fileID: 4640072700536757485, guid: a99f793c2bd8d224e898d1111fdd806b, type: 3}
@@ -2682,7 +2706,7 @@ SceneRoots:
   - {fileID: 628842935}
   - {fileID: 56304993}
   - {fileID: 1977574776}
-  - {fileID: 564019248}
+  - {fileID: 641221290}
   - {fileID: 1088945872}
   - {fileID: 472404957}
   - {fileID: 1994499610}
