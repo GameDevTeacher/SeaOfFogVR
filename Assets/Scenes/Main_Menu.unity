@@ -119,53 +119,6 @@ NavMeshSettings:
     debug:
       m_Flags: 0
   m_NavMeshData: {fileID: 0}
---- !u!1 &56304991
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 56304993}
-  - component: {fileID: 56304992}
-  m_Layer: 0
-  m_Name: PlayerPositionManager
-  m_TagString: Untagged
-  m_Icon: {fileID: 5721338939258241955, guid: 0000000000000000d000000000000000, type: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!114 &56304992
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 56304991}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: cc8c95e3471bcb24f9451cb09724a73a, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::PlayerPositionManager
-  menuTeleportTarget: {fileID: 1977574776}
-  gameTeleportTarget: {fileID: 641221290}
-  player: {fileID: 0}
---- !u!4 &56304993
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 56304991}
-  serializedVersion: 2
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 182.22397, y: 81.90699, z: -749.3703}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 0}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &224586455
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -506,6 +459,11 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 6764d243951ff7b46850f6a2b073411b, type: 3}
+--- !u!1 &529569060 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 4640072700536757485, guid: a99f793c2bd8d224e898d1111fdd806b, type: 3}
+  m_PrefabInstance: {fileID: 1761530679}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &628842935
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -2156,7 +2114,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2826530821632658511, guid: a99f793c2bd8d224e898d1111fdd806b, type: 3}
       propertyPath: m_SelectEntered.m_PersistentCalls.m_Calls.Array.size
-      value: 4
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 2826530821632658511, guid: a99f793c2bd8d224e898d1111fdd806b, type: 3}
       propertyPath: m_SelectEntered.m_PersistentCalls.m_Calls.Array.data[0].m_Mode
@@ -2173,7 +2131,7 @@ PrefabInstance:
     - target: {fileID: 2826530821632658511, guid: a99f793c2bd8d224e898d1111fdd806b, type: 3}
       propertyPath: m_SelectEntered.m_PersistentCalls.m_Calls.Array.data[2].m_Target
       value: 
-      objectReference: {fileID: 56304992}
+      objectReference: {fileID: 1761530680}
     - target: {fileID: 2826530821632658511, guid: a99f793c2bd8d224e898d1111fdd806b, type: 3}
       propertyPath: m_SelectEntered.m_PersistentCalls.m_Calls.Array.data[3].m_Target
       value: 
@@ -2187,8 +2145,12 @@ PrefabInstance:
       value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 2826530821632658511, guid: a99f793c2bd8d224e898d1111fdd806b, type: 3}
+      propertyPath: m_SelectEntered.m_PersistentCalls.m_Calls.Array.data[1].m_MethodName
+      value: UnloadScenes
+      objectReference: {fileID: 0}
+    - target: {fileID: 2826530821632658511, guid: a99f793c2bd8d224e898d1111fdd806b, type: 3}
       propertyPath: m_SelectEntered.m_PersistentCalls.m_Calls.Array.data[2].m_MethodName
-      value: TeleportGame
+      value: UnloadScenes
       objectReference: {fileID: 0}
     - target: {fileID: 2826530821632658511, guid: a99f793c2bd8d224e898d1111fdd806b, type: 3}
       propertyPath: m_SelectEntered.m_PersistentCalls.m_Calls.Array.data[3].m_MethodName
@@ -2196,7 +2158,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2826530821632658511, guid: a99f793c2bd8d224e898d1111fdd806b, type: 3}
       propertyPath: m_SelectEntered.m_PersistentCalls.m_Calls.Array.data[2].m_TargetAssemblyTypeName
-      value: PlayerPositionManager, Assembly-CSharp
+      value: SceneLoadTrigger, Assembly-CSharp
       objectReference: {fileID: 0}
     - target: {fileID: 2826530821632658511, guid: a99f793c2bd8d224e898d1111fdd806b, type: 3}
       propertyPath: m_SelectEntered.m_PersistentCalls.m_Calls.Array.data[3].m_TargetAssemblyTypeName
@@ -2216,7 +2178,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6207887674429820339, guid: a99f793c2bd8d224e898d1111fdd806b, type: 3}
       propertyPath: _scenesToLoad.Array.size
-      value: 3
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 6207887674429820339, guid: a99f793c2bd8d224e898d1111fdd806b, type: 3}
       propertyPath: _scenesToUnload.Array.size
@@ -2228,7 +2190,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6207887674429820339, guid: a99f793c2bd8d224e898d1111fdd806b, type: 3}
       propertyPath: _scenesToLoad.Array.data[1]._sceneName
-      value: Lighthouse_Isle_LD
+      value: Lighthouse_Isle_Lighting
       objectReference: {fileID: 0}
     - target: {fileID: 6207887674429820339, guid: a99f793c2bd8d224e898d1111fdd806b, type: 3}
       propertyPath: _scenesToLoad.Array.data[2]._sceneName
@@ -2241,7 +2203,7 @@ PrefabInstance:
     - target: {fileID: 6207887674429820339, guid: a99f793c2bd8d224e898d1111fdd806b, type: 3}
       propertyPath: _scenesToLoad.Array.data[1]._sceneAsset
       value: 
-      objectReference: {fileID: 102900000, guid: f987e2bb9dca0a540a839634887af120, type: 3}
+      objectReference: {fileID: 102900000, guid: b48673e7b75c0c54e800a94e01557a8c, type: 3}
     - target: {fileID: 6207887674429820339, guid: a99f793c2bd8d224e898d1111fdd806b, type: 3}
       propertyPath: _scenesToLoad.Array.data[2]._sceneAsset
       value: 
@@ -2325,19 +2287,37 @@ PrefabInstance:
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 4640072700536757485, guid: a99f793c2bd8d224e898d1111fdd806b, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1761530681}
   m_SourcePrefab: {fileID: 100100000, guid: a99f793c2bd8d224e898d1111fdd806b, type: 3}
 --- !u!114 &1761530680 stripped
 MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 6207887674429820339, guid: a99f793c2bd8d224e898d1111fdd806b, type: 3}
   m_PrefabInstance: {fileID: 1761530679}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
+  m_GameObject: {fileID: 529569060}
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 595968373d7de2442b834a0c014aaa01, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::SceneLoadTrigger
+--- !u!114 &1761530681
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 529569060}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: cc8c95e3471bcb24f9451cb09724a73a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::PlayerPositionManager
+  menuTeleportTarget: {fileID: 1977574776}
+  gameTeleportTarget: {fileID: 641221290}
+  player: {fileID: 0}
 --- !u!1001 &1890284541
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -2551,7 +2531,7 @@ Transform:
   m_GameObject: {fileID: 1977574775}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 184.54398, y: 81.90699, z: -745.1203}
+  m_LocalPosition: {x: 184.54398, y: 81.90699, z: -745.125}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -2704,7 +2684,6 @@ SceneRoots:
   m_ObjectHideFlags: 0
   m_Roots:
   - {fileID: 628842935}
-  - {fileID: 56304993}
   - {fileID: 1977574776}
   - {fileID: 641221290}
   - {fileID: 1088945872}
