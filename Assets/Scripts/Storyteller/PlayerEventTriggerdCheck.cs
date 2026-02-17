@@ -4,7 +4,7 @@ using UnityEngine;
 public class HasPlayerEnteredCave : MonoBehaviour
 {
     public SphereCollider _collider;
-    private void onTriggerEnter(Collider other)
+    private void OnTriggerEnter(Collider other)
     {
         StoryEventsController.current.caveEntered = true;
     }

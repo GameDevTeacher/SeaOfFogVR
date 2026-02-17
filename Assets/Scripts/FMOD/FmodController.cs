@@ -9,7 +9,7 @@ public class FmodController : MonoBehaviour
 {
     public static FmodController current;
     
-    [SerializeField] private EventReference TBD_Test;
+    
     
     
     private void Awake()
@@ -65,7 +65,7 @@ public class FmodController : MonoBehaviour
 
         //private float _CurrentSection;
         private EventInstance _ambienceInstance;
-        private bool _ambienceIsPlaying;
+        [SerializeField] private bool _ambienceIsPlaying;
         
 
         public void UpdateSection(int paramvalue)
@@ -82,6 +82,8 @@ public class FmodController : MonoBehaviour
                 Debug.Log("_ambienceinstance should be started");
                 _ambienceInstance.start();
                 RuntimeManager.StudioSystem.setParameterByName("Section", paramvalue);
+                
+                _ambienceIsPlaying = true;
             }
             
         }
@@ -117,9 +119,7 @@ public class FmodController : MonoBehaviour
 
         private Bus masterBus;
         private Bus ambienceBus;
-        private Bus echoBus;
         private Bus musicBus;
-        private Bus sfxBus;
         private Bus voicelinesBus;
         private Bus reverbBus;
         [Header("Volume mixer")] 

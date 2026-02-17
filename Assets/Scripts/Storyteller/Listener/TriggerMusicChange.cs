@@ -50,7 +50,7 @@ public class TriggerMusicChange : MonoBehaviour
         
     }
 
-    private void onTriggerExit(Collider other)
+    private void OnTriggerExit(Collider other)
     {
         Debug.Log(other + "Exited Trigger " + _Ex_sectionChange);
         if (_changSectionOnExit)

@@ -11,7 +11,7 @@ public class CaveExitEchoes : MonoBehaviour
         if (StoryEventsController.current.caveEntered && triggerEnter && !triggered)
         {
             FmodController.current.UpdateEchoTrigger(echoPath);
-            triggerEnter = true;
+            triggered = true;
         }
     }
     private void OnTriggerExit(Collider other)
@@ -19,7 +19,7 @@ public class CaveExitEchoes : MonoBehaviour
         if (StoryEventsController.current.caveEntered && triggerEnter && !triggered)
         {
             FmodController.current.UpdateEchoTrigger(echoPath);
-            triggerEnter = true;
+            triggered = true;
         }
     }
 }
