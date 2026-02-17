@@ -4,7 +4,6 @@ public class LanternEchoInteract : MonoBehaviour
 {
     [Header("Casting")] 
     [SerializeField] private Transform startPoint;
-    [SerializeField] private Transform endPoint;
     [SerializeField] private float radius;
     [SerializeField] private float maxDistance;
     
@@ -18,11 +17,11 @@ public class LanternEchoInteract : MonoBehaviour
     {
         RaycastHit hit;
         
-        if (Physics.CapsuleCast(startPoint.position, endPoint.position, radius, transform.forward, out hit,
-                maxDistance))
+        if (Physics.SphereCast(startPoint.position, radius, Vector3.right, out hit, maxDistance))
         {
             if (hit.collider.CompareTag("Echo"))
             {
+                print("I see you.");
                 _currentTarget = hit.collider.transform;
                 _currentTarget.TryGetComponent(out EchoHighlight echoHighlight);
                     _echoHighlightTarget = echoHighlight;
@@ -50,7 +49,6 @@ public class LanternEchoInteract : MonoBehaviour
     {
         Gizmos.color = Color.aquamarine;
         Gizmos.DrawWireSphere(startPoint.position, radius);
-        Gizmos.DrawWireSphere(endPoint.position, radius);
     }
     
 }

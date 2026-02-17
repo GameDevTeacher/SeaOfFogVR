@@ -126,9 +126,9 @@ public class FmodController : MonoBehaviour
         [Range(-80f, 10f)] public float masterVolume;
         
         [Range(-80f, 10f)] public float ambienceVolume;
-        [Range(-80f, 10f)] public float EchoVolume;
+       // [Range(-80f, 10f)] public float EchoVolume;
         [Range(-80f, 10f)] public float musicVolume;
-        [Range(-80f, 10f)] public float sfxVolume;
+        //[Range(-80f, 10f)] public float sfxVolume;
         [Range(-80f, 10f)] public float voicelinesVolume;
         [Range(-80f, 10f)] public float reverbVolume;
 
@@ -137,9 +137,9 @@ public class FmodController : MonoBehaviour
             
             masterBus = RuntimeManager.GetBus("bus:/");
             ambienceBus = RuntimeManager.GetBus("bus:/Ambience");
-            echoBus = RuntimeManager.GetBus("bus:/Echo Bus");
+           // echoBus = RuntimeManager.GetBus("bus:/Echo Bus");
             musicBus = RuntimeManager.GetBus("bus:/Music");
-            sfxBus = RuntimeManager.GetBus("bus:/SFX");
+           // sfxBus = RuntimeManager.GetBus("bus:/SFX");
             voicelinesBus = RuntimeManager.GetBus("bus:/Voicelines");
             reverbBus = RuntimeManager.GetBus("bus:/Reverb");
         }
@@ -148,9 +148,9 @@ public class FmodController : MonoBehaviour
         {
             masterBus.setVolume(DecibelToLinear(masterVolume));
             ambienceBus.setVolume(DecibelToLinear(ambienceVolume));
-            echoBus.setVolume(DecibelToLinear(EchoVolume));
+          //  echoBus.setVolume(DecibelToLinear(EchoVolume));
             musicBus.setVolume(DecibelToLinear(musicVolume));
-            sfxBus.setVolume(DecibelToLinear(sfxVolume));
+           // sfxBus.setVolume(DecibelToLinear(sfxVolume));
             voicelinesBus.setVolume(DecibelToLinear(voicelinesVolume));
             reverbBus.setVolume(DecibelToLinear(reverbVolume));
             
