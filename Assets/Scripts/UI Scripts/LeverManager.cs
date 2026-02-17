@@ -40,12 +40,53 @@ public class LeverManager : MonoBehaviour
         
         leverTransform.eulerAngles = new Vector3(0, leverTransform.eulerAngles.y, 0);
         
-        if (lever.useLimits)
+        
+        print(name + volumeType);
+        #region lever Positioner
+        float volValue = 0f;
+        switch (volumeType)
         {
-            var value = Mathf.Clamp(lever.angle, minLimit, maxLimit);
-            volume = NewScaleRegulator(value);
-            SpecifyVolume(volumeType);
+            case VolumeType.Master:
+                _fmodController.masterVolume = PlayerPrefs.GetFloat(volumeType.ToString(), volume)*90-80;
+                volValue = (_fmodController.masterVolume +80)/90;
+                break;
+            case VolumeType.Ambience:
+                _fmodController.ambienceVolume = PlayerPrefs.GetFloat(volumeType.ToString(), volume)*90-80;
+                volValue = (_fmodController.ambienceVolume +80)/90;
+                break;
+            case VolumeType.Music:
+                _fmodController.musicVolume = PlayerPrefs.GetFloat(volumeType.ToString(), volume)*90-80;
+                volValue = (_fmodController.musicVolume +80)/90;
+                break;
+            case VolumeType.Voice:
+                _fmodController.voicelinesVolume =  PlayerPrefs.GetFloat(volumeType.ToString(), volume)*90-80;
+                volValue = (_fmodController.voicelinesVolume +80)/90;
+                break;
+            case VolumeType.Reverb:
+                _fmodController.reverbVolume = PlayerPrefs.GetFloat(volumeType.ToString(), volume)*90-80;
+                volValue = (_fmodController.reverbVolume +80)/90;
+                break;
         }
+        volValue = (volValue * (Mathf.Abs(minLimit)+maxLimit)-(Mathf.Abs(minLimit)+maxLimit)/2)*-1; //traslates the previous value to get a rotational value based on the clamp limits
+        if (float.IsNaN(volValue))
+        {
+            volValue = 0.5f;
+            Debug.LogWarning(name + "NaN, setting: " + volValue);
+        }
+        print($"leverRotation {volValue}");
+        leverTransform.localRotation = Quaternion.Euler(volValue, leverTransform.eulerAngles.y, leverTransform.eulerAngles.z);
+        print("please work :(" + leverTransform.localRotation.eulerAngles);
+        #endregion
+        
+        
+        
+        // if (lever.useLimits)
+        // {
+        //     var value = Mathf.Clamp(lever.angle, minLimit, maxLimit);
+        //     volume = NewScaleRegulator(value);
+        //     SpecifyVolume(volumeType);
+        // }
+        leverRigidbody.angularVelocity = Vector3.zero;
     }
 
     private void Update()
@@ -60,6 +101,7 @@ public class LeverManager : MonoBehaviour
 
     private void SpecifyVolume(VolumeType volType)
     {
+        PlayerPrefs.SetFloat(volumeType.ToString(), volume*-1+1);
         switch (volType)
         {
             case VolumeType.Master:
@@ -90,4 +132,5 @@ public class LeverManager : MonoBehaviour
         // Take the value from the new scale regulator and translate that into values the funtimes can understand
         return (_volumeMin - _volumeMax) * value + _volumeMax;
     }
+    
 }
