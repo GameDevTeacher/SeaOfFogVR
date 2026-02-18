@@ -92,8 +92,14 @@ public class FmodController : MonoBehaviour
         {
             if (currentSection < RowSection)
             {
-                UpdateSection(RowSection);
-                print("rowSection triggered");
+                if(RowSection != currentSection)
+                {
+                    UpdateSection(RowSection); print("rowSection triggered");
+                }
+                else if (RowSection == currentSection)
+                {
+                    print("it is already playing");
+                }
             }
         }
         public void UpdateFishmanIsle(int paramvalue)
