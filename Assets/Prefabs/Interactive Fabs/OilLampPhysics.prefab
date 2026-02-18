@@ -1102,7 +1102,7 @@ GameObject:
   - component: {fileID: 193333829300675837}
   m_Layer: 0
   m_Name: OilLampPhysics
-  m_TagString: Untagged
+  m_TagString: Lantern
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1162,7 +1162,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::LanternEchoInteract
   startPoint: {fileID: 6131495249426598818}
-  endPoint: {fileID: 3143375347327009203}
   radius: 0.2
   maxDistance: 3
   visualizeRenderer: {fileID: 0}
