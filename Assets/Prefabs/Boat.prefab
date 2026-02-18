@@ -130,6 +130,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::Teleporter
   teleportDestination: {fileID: 8385720092384224881}
   newParent: {fileID: 0}
+  lantern: {fileID: 0}
   boatLantern: {fileID: 0}
   sittingYOffset: 0.86
   teleportationObjectName: Teleportation
@@ -305,8 +306,8 @@ Rigidbody:
   m_GameObject: {fileID: 6605162330169613736}
   serializedVersion: 5
   m_Mass: 1.5
-  m_LinearDamping: 0.1
-  m_AngularDamping: 10
+  m_LinearDamping: 1
+  m_AngularDamping: 15
   m_CenterOfMass: {x: 0, y: 0, z: 0}
   m_InertiaTensor: {x: 1, y: 1, z: 1}
   m_InertiaRotation: {x: 0, y: 0, z: 0, w: 1}
@@ -535,6 +536,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::Teleporter
   teleportDestination: {fileID: 2659178968637617369}
   newParent: {fileID: 0}
+  lantern: {fileID: 0}
   boatLantern: {fileID: 0}
   sittingYOffset: 0.86
   teleportationObjectName: Teleportation
@@ -842,6 +844,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::Teleporter
   teleportDestination: {fileID: 7855083763857708496}
   newParent: {fileID: 6605162330169613736}
+  lantern: {fileID: 0}
   boatLantern: {fileID: 0}
   sittingYOffset: 0.89
   teleportationObjectName: Teleportation

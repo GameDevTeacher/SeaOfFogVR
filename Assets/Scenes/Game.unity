@@ -1353,11 +1353,65 @@ PrefabInstance:
       propertyPath: m_Name
       value: Boat
       objectReference: {fileID: 0}
+    - target: {fileID: 7176914949790449831, guid: 7edde8e80082e924d84ad620c5a0d545, type: 3}
+      propertyPath: _radius
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 7176914949790449831, guid: 7edde8e80082e924d84ad620c5a0d545, type: 3}
+      propertyPath: lantern
+      value: 
+      objectReference: {fileID: 1823350688}
+    - target: {fileID: 7176914949790449831, guid: 7edde8e80082e924d84ad620c5a0d545, type: 3}
+      propertyPath: _disembarkBoatLayer.m_Bits
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7463195357409803102, guid: 7edde8e80082e924d84ad620c5a0d545, type: 3}
+      propertyPath: _radius
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 7463195357409803102, guid: 7edde8e80082e924d84ad620c5a0d545, type: 3}
+      propertyPath: lantern
+      value: 
+      objectReference: {fileID: 1823350688}
+    - target: {fileID: 7463195357409803102, guid: 7edde8e80082e924d84ad620c5a0d545, type: 3}
+      propertyPath: _disembarkBoatLayer.m_Bits
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7642238516968800876, guid: 7edde8e80082e924d84ad620c5a0d545, type: 3}
+      propertyPath: _radius
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 7642238516968800876, guid: 7edde8e80082e924d84ad620c5a0d545, type: 3}
+      propertyPath: lantern
+      value: 
+      objectReference: {fileID: 1823350688}
+    - target: {fileID: 7642238516968800876, guid: 7edde8e80082e924d84ad620c5a0d545, type: 3}
+      propertyPath: lHandCollider
+      value: 
+      objectReference: {fileID: 1356094774}
+    - target: {fileID: 7642238516968800876, guid: 7edde8e80082e924d84ad620c5a0d545, type: 3}
+      propertyPath: rHandCollider
+      value: 
+      objectReference: {fileID: 1356094773}
+    - target: {fileID: 7642238516968800876, guid: 7edde8e80082e924d84ad620c5a0d545, type: 3}
+      propertyPath: _disembarkBoatLayer.m_Bits
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 7edde8e80082e924d84ad620c5a0d545, type: 3}
+--- !u!65 &1356094773 stripped
+BoxCollider:
+  m_CorrespondingSourceObject: {fileID: 3556001949980636565, guid: 7edde8e80082e924d84ad620c5a0d545, type: 3}
+  m_PrefabInstance: {fileID: 1356094772}
+  m_PrefabAsset: {fileID: 0}
+--- !u!65 &1356094774 stripped
+BoxCollider:
+  m_CorrespondingSourceObject: {fileID: 4743955778707981673, guid: 7edde8e80082e924d84ad620c5a0d545, type: 3}
+  m_PrefabInstance: {fileID: 1356094772}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &1739503854
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1660,6 +1714,11 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: f6336ac4ac8b4d34bc5072418cdc62a0, type: 3}
+--- !u!1 &1823350688 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 6788387329367311403, guid: f6336ac4ac8b4d34bc5072418cdc62a0, type: 3}
+  m_PrefabInstance: {fileID: 1823350687}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1970491896
 GameObject:
   m_ObjectHideFlags: 0
