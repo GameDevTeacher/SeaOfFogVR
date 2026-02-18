@@ -7,6 +7,7 @@ public class Teleporter : MonoBehaviour, IInteractable
     public Transform teleportDestination;
     private GameObject player;
     private GameObject parent;
+    public GameObject newParent;
     private float defaultYOffset = 1.56f;
     public float sittingYOffset = 0.86f;
     public string teleportationObjectName = "Teleportation";
@@ -15,7 +16,12 @@ public class Teleporter : MonoBehaviour, IInteractable
     private GameObject teleportation;
     private XROrigin _xrOrigin;
 
+    private Collider _boatCollider;
+    [SerializeField] private Collider lHandCollider;
+    [SerializeField] private Collider rHandCollider;
 
+    [SerializeField] private LayerMask _disembarkBoatLayer;
+    [SerializeField] private float _radius;
     
     void Start()
     {
@@ -25,8 +31,41 @@ public class Teleporter : MonoBehaviour, IInteractable
         teleportation = GameObject.Find(teleportationObjectName);
         defaultYOffset = _xrOrigin.CameraYOffset;
         if (player == null) Debug.LogError("Player not found");
+        _boatCollider = GetComponent<Collider>();
     }
-    
+
+    public void UpdateDisembark()
+    {
+        Collider[] hit =  Physics.OverlapSphere(transform.position, _radius, LayerMask.GetMask("Default"));
+
+        foreach (Collider col in hit)
+        {
+            if (col.gameObject.CompareTag("Disembark"))
+            {
+                Interact();
+                RemoveParent();
+                TriggerStanding();
+                _boatCollider.enabled = true;
+                lHandCollider.enabled = false;
+                rHandCollider.enabled = false;
+            }
+            else
+            {
+                //idk some kind of indicator that the player cant get off
+            }
+        }
+     
+    }
+
+    public void EmbarkBoat()
+    {
+        Interact();
+        SetParent(newParent.transform);
+        TriggerSitting();
+        _boatCollider.enabled = false;
+        lHandCollider.enabled = true;
+        rHandCollider.enabled = true;
+    }
 
     public void Interact()
     {
