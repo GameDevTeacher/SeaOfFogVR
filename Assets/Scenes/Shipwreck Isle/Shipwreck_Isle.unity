@@ -12720,7 +12720,7 @@ GameObject:
   - component: {fileID: 1554734146}
   m_Layer: 0
   m_Name: Disembark
-  m_TagString: Untagged
+  m_TagString: Disembark
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0

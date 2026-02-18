@@ -58,11 +58,11 @@ namespace UI_Scripts
         private void Update()
         {
             if (outOfBoundsDisabled) return;
-            if (!IsTouchingGround() && !resetTriggered)
-            {
-                resetTriggered = true;
-                ResetPosition();
-            }
+            // if (!IsTouchingGround() && !resetTriggered)
+            // {
+            //     resetTriggered = true;
+            //     ResetPosition();
+            // }
         }
 
         private bool IsTouchingGround()

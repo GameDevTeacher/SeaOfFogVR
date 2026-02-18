@@ -3113,6 +3113,59 @@ Transform:
   m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: 79995326786493e408f501a0cda42daf, type: 3}
   m_PrefabInstance: {fileID: 285785573}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &286161984
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 286161985}
+  - component: {fileID: 286161986}
+  m_Layer: 0
+  m_Name: Disembark
+  m_TagString: Disembark
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &286161985
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 286161984}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0.000000022351742, y: 0.00000008940697, z: -0.97236955, w: 0.23344716}
+  m_LocalPosition: {x: 5.494, y: -1.707, z: 0.341}
+  m_LocalScale: {x: 0.22087997, y: 0.22088, z: 0.22088003}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 1356938874}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!135 &286161986
+SphereCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 286161984}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Radius: 1
+  m_Center: {x: 0, y: 0, z: 0}
 --- !u!1001 &287390893
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -16024,7 +16077,10 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
-    m_AddedGameObjects: []
+    m_AddedGameObjects:
+    - targetCorrespondingSourceObject: {fileID: -8679921383154817045, guid: 293e8c5b781d9984a8d1fd222a9c806a, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 286161985}
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 293e8c5b781d9984a8d1fd222a9c806a, type: 3}
 --- !u!4 &1356938874 stripped
