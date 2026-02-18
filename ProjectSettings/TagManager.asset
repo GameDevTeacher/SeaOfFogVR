@@ -9,6 +9,7 @@ TagManager:
   - Teleport
   - Echo
   - Light
+  - Disembark
   layers:
   - Default
   - TransparentFX
