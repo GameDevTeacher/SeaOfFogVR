@@ -46,6 +46,7 @@ public class Teleporter : MonoBehaviour, IInteractable
         {
             if (col.gameObject.CompareTag("Disembark"))
             {
+                teleportDestination = col.gameObject.transform;
                 Interact();
                 RemoveParent();
                 TriggerStanding();
