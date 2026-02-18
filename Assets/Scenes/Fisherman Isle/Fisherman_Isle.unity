@@ -2407,6 +2407,139 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 6764d243951ff7b46850f6a2b073411b, type: 3}
+--- !u!1001 &231285053
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 3252034653302868109, guid: 7ac0d6c7335ab6842a93b8f6831f7915, type: 3}
+      propertyPath: _scenesToLoad.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3252034653302868109, guid: 7ac0d6c7335ab6842a93b8f6831f7915, type: 3}
+      propertyPath: _scenesToUnload.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3252034653302868109, guid: 7ac0d6c7335ab6842a93b8f6831f7915, type: 3}
+      propertyPath: _scenesToLoad.Array.data[0]._sceneName
+      value: Lighthouse_Isle_Return
+      objectReference: {fileID: 0}
+    - target: {fileID: 3252034653302868109, guid: 7ac0d6c7335ab6842a93b8f6831f7915, type: 3}
+      propertyPath: _scenesToLoad.Array.data[1]._sceneName
+      value: Lighthouse_Isle_Return_Lighting
+      objectReference: {fileID: 0}
+    - target: {fileID: 3252034653302868109, guid: 7ac0d6c7335ab6842a93b8f6831f7915, type: 3}
+      propertyPath: _scenesToLoad.Array.data[2]._sceneName
+      value: Fisherman_Isle_LD
+      objectReference: {fileID: 0}
+    - target: {fileID: 3252034653302868109, guid: 7ac0d6c7335ab6842a93b8f6831f7915, type: 3}
+      propertyPath: _scenesToLoad.Array.data[3]._sceneName
+      value: Fisherman_Isle_Lighting
+      objectReference: {fileID: 0}
+    - target: {fileID: 3252034653302868109, guid: 7ac0d6c7335ab6842a93b8f6831f7915, type: 3}
+      propertyPath: _scenesToLoad.Array.data[0]._sceneAsset
+      value: 
+      objectReference: {fileID: 102900000, guid: 6701605425210dd4587797febccca2ce, type: 3}
+    - target: {fileID: 3252034653302868109, guid: 7ac0d6c7335ab6842a93b8f6831f7915, type: 3}
+      propertyPath: _scenesToLoad.Array.data[1]._sceneAsset
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 3252034653302868109, guid: 7ac0d6c7335ab6842a93b8f6831f7915, type: 3}
+      propertyPath: _scenesToLoad.Array.data[2]._sceneAsset
+      value: 
+      objectReference: {fileID: 102900000, guid: 520dc6d54d199fa4aa8e7884fe457cbf, type: 3}
+    - target: {fileID: 3252034653302868109, guid: 7ac0d6c7335ab6842a93b8f6831f7915, type: 3}
+      propertyPath: _scenesToLoad.Array.data[3]._sceneAsset
+      value: 
+      objectReference: {fileID: 102900000, guid: cca05a6f84cdcf84d832e0fd42c8b872, type: 3}
+    - target: {fileID: 3252034653302868109, guid: 7ac0d6c7335ab6842a93b8f6831f7915, type: 3}
+      propertyPath: _scenesToUnload.Array.data[0]._sceneName
+      value: Shipwreck_Isle
+      objectReference: {fileID: 0}
+    - target: {fileID: 3252034653302868109, guid: 7ac0d6c7335ab6842a93b8f6831f7915, type: 3}
+      propertyPath: _scenesToUnload.Array.data[1]._sceneName
+      value: Lighthouse_Isle_LD
+      objectReference: {fileID: 0}
+    - target: {fileID: 3252034653302868109, guid: 7ac0d6c7335ab6842a93b8f6831f7915, type: 3}
+      propertyPath: _scenesToUnload.Array.data[2]._sceneName
+      value: Lighthouse_Isle_Lighting
+      objectReference: {fileID: 0}
+    - target: {fileID: 3252034653302868109, guid: 7ac0d6c7335ab6842a93b8f6831f7915, type: 3}
+      propertyPath: _scenesToUnload.Array.data[0]._sceneAsset
+      value: 
+      objectReference: {fileID: 102900000, guid: 33960d1e45d9f9c4b9208f9596b970ac, type: 3}
+    - target: {fileID: 3252034653302868109, guid: 7ac0d6c7335ab6842a93b8f6831f7915, type: 3}
+      propertyPath: _scenesToUnload.Array.data[1]._sceneAsset
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 3252034653302868109, guid: 7ac0d6c7335ab6842a93b8f6831f7915, type: 3}
+      propertyPath: _scenesToUnload.Array.data[2]._sceneAsset
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 6489293943016512910, guid: 7ac0d6c7335ab6842a93b8f6831f7915, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 448.74323
+      objectReference: {fileID: 0}
+    - target: {fileID: 6489293943016512910, guid: 7ac0d6c7335ab6842a93b8f6831f7915, type: 3}
+      propertyPath: m_LocalScale.y
+      value: 185.5771
+      objectReference: {fileID: 0}
+    - target: {fileID: 6489293943016512910, guid: 7ac0d6c7335ab6842a93b8f6831f7915, type: 3}
+      propertyPath: m_LocalScale.z
+      value: 5.28
+      objectReference: {fileID: 0}
+    - target: {fileID: 6489293943016512910, guid: 7ac0d6c7335ab6842a93b8f6831f7915, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -121.1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6489293943016512910, guid: 7ac0d6c7335ab6842a93b8f6831f7915, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 27.3
+      objectReference: {fileID: 0}
+    - target: {fileID: 6489293943016512910, guid: 7ac0d6c7335ab6842a93b8f6831f7915, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -206.6
+      objectReference: {fileID: 0}
+    - target: {fileID: 6489293943016512910, guid: 7ac0d6c7335ab6842a93b8f6831f7915, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 0.71429193
+      objectReference: {fileID: 0}
+    - target: {fileID: 6489293943016512910, guid: 7ac0d6c7335ab6842a93b8f6831f7915, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6489293943016512910, guid: 7ac0d6c7335ab6842a93b8f6831f7915, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0.6998479
+      objectReference: {fileID: 0}
+    - target: {fileID: 6489293943016512910, guid: 7ac0d6c7335ab6842a93b8f6831f7915, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6489293943016512910, guid: 7ac0d6c7335ab6842a93b8f6831f7915, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6489293943016512910, guid: 7ac0d6c7335ab6842a93b8f6831f7915, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 88.83
+      objectReference: {fileID: 0}
+    - target: {fileID: 6489293943016512910, guid: 7ac0d6c7335ab6842a93b8f6831f7915, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 9127633749512020370, guid: 7ac0d6c7335ab6842a93b8f6831f7915, type: 3}
+      propertyPath: m_Name
+      value: LighthouseReturnLoader
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 7ac0d6c7335ab6842a93b8f6831f7915, type: 3}
 --- !u!1 &238012516
 GameObject:
   m_ObjectHideFlags: 0
@@ -25021,6 +25154,7 @@ PrefabInstance:
 SceneRoots:
   m_ObjectHideFlags: 0
   m_Roots:
+  - {fileID: 231285053}
   - {fileID: 906274172}
   - {fileID: 526008346}
   - {fileID: 717234599}

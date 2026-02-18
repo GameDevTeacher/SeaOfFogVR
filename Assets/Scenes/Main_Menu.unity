@@ -3425,7 +3425,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6207887674429820339, guid: a99f793c2bd8d224e898d1111fdd806b, type: 3}
       propertyPath: _scenesToLoad.Array.size
-      value: 1
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 6207887674429820339, guid: a99f793c2bd8d224e898d1111fdd806b, type: 3}
       propertyPath: _scenesToUnload.Array.size
@@ -3437,7 +3437,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6207887674429820339, guid: a99f793c2bd8d224e898d1111fdd806b, type: 3}
       propertyPath: _scenesToLoad.Array.data[1]._sceneName
-      value: Lighthouse_Isle_Lighting
+      value: Shipwreck_Isle
       objectReference: {fileID: 0}
     - target: {fileID: 6207887674429820339, guid: a99f793c2bd8d224e898d1111fdd806b, type: 3}
       propertyPath: _scenesToLoad.Array.data[2]._sceneName
@@ -3450,7 +3450,7 @@ PrefabInstance:
     - target: {fileID: 6207887674429820339, guid: a99f793c2bd8d224e898d1111fdd806b, type: 3}
       propertyPath: _scenesToLoad.Array.data[1]._sceneAsset
       value: 
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 102900000, guid: 33960d1e45d9f9c4b9208f9596b970ac, type: 3}
     - target: {fileID: 6207887674429820339, guid: a99f793c2bd8d224e898d1111fdd806b, type: 3}
       propertyPath: _scenesToLoad.Array.data[2]._sceneAsset
       value: 
