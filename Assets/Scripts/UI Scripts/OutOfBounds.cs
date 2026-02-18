@@ -82,10 +82,9 @@ namespace UI_Scripts
             vrNoPeeking.CameraFadeOut(vrNoPeeking.defaultFadeOutSpeed);
             
             yield return new WaitForSeconds(1);
-            
-            vrNoPeeking.CameraFadeIn();
             playerTransform.position = lastPlayerPosition;
             playerTransform.rotation = lastPlayerRotation;
+            vrNoPeeking.CameraFadeIn();
             
             resetTriggered = false;
         } 

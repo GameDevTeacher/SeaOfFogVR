@@ -914,9 +914,17 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Teleporter
   teleportDestination: {fileID: 726368637}
+  newParent: {fileID: 0}
+  boatLantern: {fileID: 0}
   sittingYOffset: 0
   teleportationObjectName: Teleportation
   locomotionObjectName: locomotion
+  lHandCollider: {fileID: 0}
+  rHandCollider: {fileID: 0}
+  _disembarkBoatLayer:
+    serializedVersion: 2
+    m_Bits: 0
+  _radius: 0
 --- !u!1 &405393416
 GameObject:
   m_ObjectHideFlags: 0
@@ -1486,9 +1494,17 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Teleporter
   teleportDestination: {fileID: 1100674622}
+  newParent: {fileID: 0}
+  boatLantern: {fileID: 0}
   sittingYOffset: 0
   teleportationObjectName: Teleportation
   locomotionObjectName: locomotion
+  lHandCollider: {fileID: 0}
+  rHandCollider: {fileID: 0}
+  _disembarkBoatLayer:
+    serializedVersion: 2
+    m_Bits: 0
+  _radius: 0
 --- !u!1001 &533740040
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -2417,9 +2433,17 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: '::'
   teleportDestination: {fileID: 726368637}
+  newParent: {fileID: 0}
+  boatLantern: {fileID: 0}
   sittingYOffset: 0.86
   teleportationObjectName: Teleportation
   locomotionObjectName: locomotion
+  lHandCollider: {fileID: 0}
+  rHandCollider: {fileID: 0}
+  _disembarkBoatLayer:
+    serializedVersion: 2
+    m_Bits: 0
+  _radius: 0
 --- !u!114 &858792879
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -4100,9 +4124,17 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Teleporter
   teleportDestination: {fileID: 1213119617}
+  newParent: {fileID: 0}
+  boatLantern: {fileID: 0}
   sittingYOffset: 0
   teleportationObjectName: Teleportation
   locomotionObjectName: locomotion
+  lHandCollider: {fileID: 0}
+  rHandCollider: {fileID: 0}
+  _disembarkBoatLayer:
+    serializedVersion: 2
+    m_Bits: 0
+  _radius: 0
 --- !u!65 &1229819713
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -10643,6 +10675,10 @@ PrefabInstance:
       propertyPath: m_InteractionManager
       value: 
       objectReference: {fileID: 215671348}
+    - target: {fileID: 6788387329367311403, guid: f6336ac4ac8b4d34bc5072418cdc62a0, type: 3}
+      propertyPath: m_TagString
+      value: Lantern
+      objectReference: {fileID: 0}
     - target: {fileID: 8335317739472707436, guid: f6336ac4ac8b4d34bc5072418cdc62a0, type: 3}
       propertyPath: m_FontData.m_Font
       value: 

@@ -10,6 +10,7 @@ TagManager:
   - Echo
   - Light
   - Disembark
+  - Lantern
   layers:
   - Default
   - TransparentFX
