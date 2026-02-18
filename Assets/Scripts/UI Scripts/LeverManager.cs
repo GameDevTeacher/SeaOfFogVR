@@ -41,7 +41,6 @@ public class LeverManager : MonoBehaviour
         leverTransform.eulerAngles = new Vector3(0, leverTransform.eulerAngles.y, 0);
         
         
-        print(name + volumeType);
         #region lever Positioner
         float volValue = 0f;
         switch (volumeType)
@@ -73,9 +72,7 @@ public class LeverManager : MonoBehaviour
             volValue = 0.5f;
             Debug.LogWarning(name + "NaN, setting: " + volValue);
         }
-        print($"leverRotation {volValue}");
         leverTransform.localRotation = Quaternion.Euler(volValue, leverTransform.eulerAngles.y, leverTransform.eulerAngles.z);
-        print("please work :(" + leverTransform.localRotation.eulerAngles);
         #endregion
         
         

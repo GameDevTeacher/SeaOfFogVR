@@ -9,6 +9,7 @@ namespace UI_Scripts
     {
         public static OutOfBounds Instance;
         public bool resetTriggered;
+        public bool outOfBoundsDisabled;
         
         [Header("Ray Stuff")]
         [SerializeField] private Vector3 rayDirection = Vector3.down;
@@ -28,7 +29,7 @@ namespace UI_Scripts
         [SerializeField] private List<TeleportationArea> teleportationAreas;
         private GameObject[] _teleportationAreasGameObjects;
 
-        private void Start()
+        private async void Start()
         {
             if (Instance == null) Instance = this;
             else Destroy(this);
@@ -47,11 +48,16 @@ namespace UI_Scripts
             {
                 teleportationAreas[i].teleporting.AddListener(arg0 => {SaveLastPlayerPosition();});
             }
-                
+            
+            outOfBoundsDisabled = true;
+            await Awaitable.WaitForSecondsAsync(0.5f);
+            outOfBoundsDisabled = false;
+
         }
 
         private void Update()
         {
+            if (outOfBoundsDisabled) return;
             if (!IsTouchingGround() && !resetTriggered)
             {
                 resetTriggered = true;
