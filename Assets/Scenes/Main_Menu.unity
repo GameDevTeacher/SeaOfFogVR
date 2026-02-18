@@ -3413,11 +3413,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6207887674429820339, guid: a99f793c2bd8d224e898d1111fdd806b, type: 3}
       propertyPath: _scenesToLoad.Array.size
-      value: 2
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 6207887674429820339, guid: a99f793c2bd8d224e898d1111fdd806b, type: 3}
       propertyPath: _scenesToUnload.Array.size
-      value: 2
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 6207887674429820339, guid: a99f793c2bd8d224e898d1111fdd806b, type: 3}
       propertyPath: _scenesToLoad.Array.data[0]._sceneName
@@ -3438,7 +3438,7 @@ PrefabInstance:
     - target: {fileID: 6207887674429820339, guid: a99f793c2bd8d224e898d1111fdd806b, type: 3}
       propertyPath: _scenesToLoad.Array.data[1]._sceneAsset
       value: 
-      objectReference: {fileID: 102900000, guid: b48673e7b75c0c54e800a94e01557a8c, type: 3}
+      objectReference: {fileID: 0}
     - target: {fileID: 6207887674429820339, guid: a99f793c2bd8d224e898d1111fdd806b, type: 3}
       propertyPath: _scenesToLoad.Array.data[2]._sceneAsset
       value: 
@@ -3458,7 +3458,7 @@ PrefabInstance:
     - target: {fileID: 6207887674429820339, guid: a99f793c2bd8d224e898d1111fdd806b, type: 3}
       propertyPath: _scenesToUnload.Array.data[1]._sceneAsset
       value: 
-      objectReference: {fileID: 102900000, guid: bd5e9e5d382c79f4e8baa6a5764b1a6d, type: 3}
+      objectReference: {fileID: 0}
     - target: {fileID: 6244053145819437799, guid: a99f793c2bd8d224e898d1111fdd806b, type: 3}
       propertyPath: m_LocalScale.x
       value: 0.5
