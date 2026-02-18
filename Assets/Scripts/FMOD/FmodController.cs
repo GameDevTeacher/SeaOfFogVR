@@ -3,6 +3,7 @@ using System.Collections;
 using FMOD.Studio;
 using FMODUnity;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 using Debug = UnityEngine.Debug;
 using STOP_MODE = FMOD.Studio.STOP_MODE;
 
@@ -112,8 +113,11 @@ public class FmodController : MonoBehaviour
         private IEnumerator waitAndStartStorm()
         {
             theStormInstance = RuntimeManager.CreateInstance("Event:/Ambience/Storm");
-            yield return new WaitForSeconds(6);
+            yield return new WaitForSeconds(8);
             theStormInstance.start();
+            yield return new WaitForSeconds(4);
+            theStormInstance.stop(STOP_MODE.ALLOWFADEOUT);
+            SceneManager.LoadScene("Credits");
         }
         
 
