@@ -2,6 +2,7 @@ using System;
 using UI_Scripts;
 using UnityEngine;
 using UnityEngine.InputSystem;
+using UnityEngine.SceneManagement;
 using UnityEngine.XR.Interaction.Toolkit.Inputs;
 
 public class PauseManager : MonoBehaviour
@@ -46,6 +47,11 @@ public class PauseManager : MonoBehaviour
         transform.position = _outOfBounds.lastPlayerPosition;
         transform.rotation = _outOfBounds.lastPlayerRotation;
         TogglePause();
+    }
+
+    public void MainMenu()
+    {
+        SceneManager.LoadScene(0);
     }
     
 
