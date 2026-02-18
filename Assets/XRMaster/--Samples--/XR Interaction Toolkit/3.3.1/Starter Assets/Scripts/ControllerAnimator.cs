@@ -1,3 +1,4 @@
+using System;
 using UnityEngine.XR.Interaction.Toolkit.Inputs.Readers;
 
 namespace UnityEngine.XR.Interaction.Toolkit.Samples.StarterAssets
@@ -37,6 +38,18 @@ namespace UnityEngine.XR.Interaction.Toolkit.Samples.StarterAssets
 
         [SerializeField]
         XRInputValueReader<float> m_GripInput = new XRInputValueReader<float>("Grip");
+        
+        //ADDING HAND MESH 
+        [Header("HandMesh")]
+        [SerializeField] private Mesh[] _meshes;
+
+        private MeshFilter _currentMesh;
+
+        private void Start()
+        {
+            _currentMesh = GetComponent<MeshFilter>();
+            
+        }
 
         void OnEnable()
         {
@@ -61,6 +74,7 @@ namespace UnityEngine.XR.Interaction.Toolkit.Samples.StarterAssets
 
         void Update()
         {
+            
             if (m_StickInput != null)
             {
                 var stickVal = m_StickInput.ReadValue();
@@ -78,6 +92,18 @@ namespace UnityEngine.XR.Interaction.Toolkit.Samples.StarterAssets
                 var gripVal = m_GripInput.ReadValue();
                 var currentPos = m_GripTransform.localPosition;
                 m_GripTransform.localPosition = new Vector3(Mathf.Lerp(m_GripRightRange.x, m_GripRightRange.y, gripVal), currentPos.y, currentPos.z);
+                if (m_GripInput.ReadValue() > 0)
+                {
+                    _currentMesh.mesh = _meshes[1];
+                }
+                else if (m_GripInput.ReadValue() < 1)
+                {
+                    _currentMesh.mesh = _meshes[0];
+                }
+            }
+            else
+            {
+                
             }
         }
     }
