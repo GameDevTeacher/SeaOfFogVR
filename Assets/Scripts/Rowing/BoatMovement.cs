@@ -22,10 +22,10 @@ public class BoatMovement : MonoBehaviour
         _oarVectors.Clear();
         foreach (var oar in _oarScripts)
         {
-            _oarVectors.Add(oar.OarVector.normalized);
+            _oarVectors.Add(oar.OarVector);
         }
-
-        _rb.AddForceAtPosition(_oarVectors[0]*_sensitivity, _oarAnchors[0].position, ForceMode.Force);
-        _rb.AddForceAtPosition(_oarVectors[1]*_sensitivity, _oarAnchors[1].position, ForceMode.Force);
+        
+        _rb.AddForceAtPosition(_oarVectors[0]*_sensitivity * _sensitivity, _oarAnchors[0].position, ForceMode.Force);
+        _rb.AddForceAtPosition(_oarVectors[1]*_sensitivity * _sensitivity, _oarAnchors[1].position, ForceMode.Force);
     }
 }
