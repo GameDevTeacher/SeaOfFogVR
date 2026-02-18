@@ -117,7 +117,8 @@ public class FmodController : MonoBehaviour
             theStormInstance.start();
             yield return new WaitForSeconds(4);
             theStormInstance.stop(STOP_MODE.ALLOWFADEOUT);
-            SceneManager.LoadScene("Credits");
+            SceneManager.LoadScene("Game");
+            SceneManager.LoadScene("Credits", LoadSceneMode.Additive);
         }
         
 
