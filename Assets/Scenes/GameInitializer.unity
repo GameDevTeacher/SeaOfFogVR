@@ -153,8 +153,6 @@ MonoBehaviour:
     _sceneName: Game
   - _sceneAsset: {fileID: 102900000, guid: 8151ec7370dd8574e8e309f9d52eeeae, type: 3}
     _sceneName: Main_Menu
-  - _sceneAsset: {fileID: 102900000, guid: bd5e9e5d382c79f4e8baa6a5764b1a6d, type: 3}
-    _sceneName: Main_Light
   _scenesToUnload:
   - _sceneAsset: {fileID: 102900000, guid: 25ecc53e1cc06aa4f94f377d4d3ea9bc, type: 3}
     _sceneName: GameInitializer
