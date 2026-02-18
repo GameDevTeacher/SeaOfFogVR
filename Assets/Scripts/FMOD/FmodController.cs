@@ -63,7 +63,7 @@ public class FmodController : MonoBehaviour
     #region  SECTION CHANGES
     
         public int RowSection = 2; //2 is the first row
-    
+        public int currentSection;
         private EventInstance _ambienceInstance;
         [SerializeField] private bool _ambienceIsPlaying;
         
@@ -85,10 +85,17 @@ public class FmodController : MonoBehaviour
                 
                 _ambienceIsPlaying = true;
             }
-            
+            currentSection = paramvalue;
         }
         
-        public void UpdateBoatSection() => UpdateSection(RowSection);
+        public void UpdateBoatSection()
+        {
+            if (currentSection < RowSection)
+            {
+                UpdateSection(RowSection);
+                print("rowSection triggered");
+            }
+        }
         public void UpdateFishmanIsle(int paramvalue)
         {
         /*  0 = Intro (loop)
