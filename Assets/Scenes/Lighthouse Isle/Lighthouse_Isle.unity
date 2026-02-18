@@ -304,6 +304,11 @@ Transform:
   m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: 4dcc29a0fdf123c479ef4c44dda29bea, type: 3}
   m_PrefabInstance: {fileID: 58213670}
   m_PrefabAsset: {fileID: 0}
+--- !u!65 &79119687 stripped
+BoxCollider:
+  m_CorrespondingSourceObject: {fileID: 5618222094439337305, guid: 8499ea4b1b28fbf4eb2e42bdbed0dcdd, type: 3}
+  m_PrefabInstance: {fileID: 418339830}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &89141080
 GameObject:
   m_ObjectHideFlags: 0
@@ -1860,6 +1865,14 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 4532386906666647410, guid: 8499ea4b1b28fbf4eb2e42bdbed0dcdd, type: 3}
+      propertyPath: id
+      value: 23
+      objectReference: {fileID: 0}
+    - target: {fileID: 4532386906666647410, guid: 8499ea4b1b28fbf4eb2e42bdbed0dcdd, type: 3}
+      propertyPath: _collider
+      value: 
+      objectReference: {fileID: 79119687}
     - target: {fileID: 6227853872702935883, guid: 8499ea4b1b28fbf4eb2e42bdbed0dcdd, type: 3}
       propertyPath: m_Enabled
       value: 0
@@ -3803,6 +3816,11 @@ Transform:
   - {fileID: 1969221905}
   m_Father: {fileID: 234967706}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!65 &973063758 stripped
+BoxCollider:
+  m_CorrespondingSourceObject: {fileID: 5618222094439337305, guid: 8499ea4b1b28fbf4eb2e42bdbed0dcdd, type: 3}
+  m_PrefabInstance: {fileID: 2093030841}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &999408351
 GameObject:
   m_ObjectHideFlags: 0
@@ -4880,6 +4898,11 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::LighthouseLookAtMe
   NextIsland: {x: 572.6, y: 0.19999981, z: -483.7}
+--- !u!65 &1296505079 stripped
+BoxCollider:
+  m_CorrespondingSourceObject: {fileID: 5618222094439337305, guid: 8499ea4b1b28fbf4eb2e42bdbed0dcdd, type: 3}
+  m_PrefabInstance: {fileID: 1992367152}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &1317900665
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -8230,6 +8253,14 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 4532386906666647410, guid: 8499ea4b1b28fbf4eb2e42bdbed0dcdd, type: 3}
+      propertyPath: id
+      value: 1234
+      objectReference: {fileID: 0}
+    - target: {fileID: 4532386906666647410, guid: 8499ea4b1b28fbf4eb2e42bdbed0dcdd, type: 3}
+      propertyPath: _collider
+      value: 
+      objectReference: {fileID: 1296505079}
     - target: {fileID: 5618222094439337305, guid: 8499ea4b1b28fbf4eb2e42bdbed0dcdd, type: 3}
       propertyPath: m_Size.x
       value: 11
@@ -8442,6 +8473,14 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 4532386906666647410, guid: 8499ea4b1b28fbf4eb2e42bdbed0dcdd, type: 3}
+      propertyPath: id
+      value: 12
+      objectReference: {fileID: 0}
+    - target: {fileID: 4532386906666647410, guid: 8499ea4b1b28fbf4eb2e42bdbed0dcdd, type: 3}
+      propertyPath: _collider
+      value: 
+      objectReference: {fileID: 973063758}
     - target: {fileID: 6227853872702935883, guid: 8499ea4b1b28fbf4eb2e42bdbed0dcdd, type: 3}
       propertyPath: m_Enabled
       value: 0
