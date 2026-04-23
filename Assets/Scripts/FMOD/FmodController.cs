@@ -29,7 +29,8 @@ public class FmodController : MonoBehaviour
     {
         StartVolumeMixer();
         UpdateSection(0);
-        
+        _ambienceInstance = RuntimeManager.CreateInstance("Event:/Game/Havtåke");
+        _ambienceInstance.start();
     }
 
     private void Update()
@@ -72,19 +73,19 @@ public class FmodController : MonoBehaviour
         {
             // parameter value = the section of music to be played See Havtåke VR/AudioSpace/FMOD
             _ambienceInstance = RuntimeManager.CreateInstance("Event:/Game/Havtåke");
-            if (_ambienceIsPlaying)
-            {
-                RuntimeManager.StudioSystem.setParameterByName("Section", paramvalue);
-                Debug.Log("Section parameter changed");
-            }
-            else if (!_ambienceIsPlaying)
+            
+            
+            RuntimeManager.StudioSystem.setParameterByName("Section", paramvalue);
+            Debug.Log("Section parameter changed");
+            
+            /*else if (!_ambienceIsPlaying)
             {
                 Debug.Log("_ambienceinstance should be started");
                 _ambienceInstance.start();
                 RuntimeManager.StudioSystem.setParameterByName("Section", paramvalue);
                 
                 _ambienceIsPlaying = true;
-            }
+            }*/
             currentSection = paramvalue;
         }
         
@@ -100,6 +101,7 @@ public class FmodController : MonoBehaviour
                 {
                     print("it is already playing");
                 }
+                
             }
         }
         public void UpdateFishmanIsle(int paramvalue)

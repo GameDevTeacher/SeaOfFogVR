@@ -32,26 +32,22 @@ public class TriggerMusicChange : MonoBehaviour
     //private void Start() => FmodController.current.UpdateSection(0);
     private void OnTriggerEnter(Collider other) 
     {
-        #region MUSIC
 
-                Debug.Log(other + "Entered Trigger " + _sectionChange);
-        
-                FmodController.current.UpdateSection(_sectionChange);
-                
-                if (_onFishManIsle)
-                {
-                    /*  0 = Village 1 = Church 2 = Cave   */
-                    FmodController.current.UpdateFishmanIsle(_fishmanIsleSections);
-                }
-        
-                if (_onLightHouseReturn)
-                {
-                    /*  0 = Intro (loop) 1 = Find the body (loop) 2 = End (no loop)   */
-                    FmodController.current.UpdateLighthouseReturn(_lightHouseReturnSections);
-                }
+        Debug.Log(other + "Entered Trigger " + _sectionChange);
 
-        #endregion
+        FmodController.current.UpdateSection(_sectionChange);
         
+        if (_onFishManIsle)
+        {
+            /*  0 = Village 1 = Church 2 = Cave   */
+            FmodController.current.UpdateFishmanIsle(_fishmanIsleSections);
+        }
+
+        if (_onLightHouseReturn)
+        {
+            /*  0 = Intro (loop) 1 = Find the body (loop) 2 = End (no loop)   */
+            FmodController.current.UpdateLighthouseReturn(_lightHouseReturnSections);
+        }
     }
 
     private void OnTriggerExit(Collider other)

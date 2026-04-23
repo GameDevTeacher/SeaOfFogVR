@@ -80,6 +80,10 @@ public class Teleporter : MonoBehaviour, IInteractable
         {
             boatLantern.SetActive(true);
         }
+        
+        
+        FmodController.current.UpdateBoatSection();
+        Debug.Log("EmbarkBoat " + FmodController.current.RowSection);
     }
 
     public void Interact()

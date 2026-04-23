@@ -9,13 +9,11 @@ public class RowCountCheck : MonoBehaviour
     {
         if (triggered)
         {
+            //Sets it so that the next rowtrigger will automaticaly be
+            //the subsequent row without changing anything in the inspector.
             FmodController.current.RowSection =  NextRowSection;
         }
     }
 
-    private void OnDrawGizmos()
-    {
-        Gizmos.color = Color.red;
-        Gizmos.DrawWireSphere(GetComponent<SphereCollider>().bounds.center, GetComponent<SphereCollider>().radius);
-    }
+        
 }
