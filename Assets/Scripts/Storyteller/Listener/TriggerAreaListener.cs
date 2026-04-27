@@ -1,5 +1,5 @@
 using UnityEngine;
-
+using FMODUnity;
 public class TriggerAreaListener : MonoBehaviour
 {
     [SerializeField] private string _enterEchoPath;
@@ -27,7 +27,8 @@ public class TriggerAreaListener : MonoBehaviour
         GetComponent<MeshRenderer>().material.color = Color.green;
         if (_enterEchoPath == null) return;
         
-        FmodController.current.UpdateEchoTrigger(_enterEchoPath); 
+        //FmodController.current.UpdateEchoTrigger(_enterEchoPath); 
+        RuntimeManager.PlayOneShot(_enterEchoPath);
         Debug.Log("Entered Trigger");
     }
 
@@ -37,7 +38,8 @@ public class TriggerAreaListener : MonoBehaviour
         _triggered = true;
         GetComponent<MeshRenderer>().material.color = Color.dodgerBlue;
         if (_exitEchoPath == null) return;
-        FmodController.current.UpdateEchoTrigger(_exitEchoPath); 
+        //FmodController.current.UpdateEchoTrigger(_exitEchoPath); 
+        RuntimeManager.PlayOneShot(_exitEchoPath);
         Debug.Log("Exited Trigger");
     }
 }
