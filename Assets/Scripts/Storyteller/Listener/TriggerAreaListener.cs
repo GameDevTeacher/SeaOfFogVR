@@ -8,14 +8,21 @@ public class TriggerAreaListener : MonoBehaviour
     
     void Start()
     {
-        StoryEventsController.current.onTriggerEntered += TriggerEntered;
-        StoryEventsController.current.onTriggerExited += TriggerExited;
+        //StoryEventsController.current.onTriggerEntered += TriggerEntered;
+        //StoryEventsController.current.onTriggerExited += TriggerExited;
         
     }
-
-    private void TriggerEntered(int id)
+    private void OnTriggerEnter(Collider other)
     {
-        if ((id != GetComponent<TriggerBox>().ID) || _triggered) return;
+        TriggerEntered();
+    }
+    private void OnTriggerExit(Collider other)
+    { 
+        TriggerExited();
+    }
+    private void TriggerEntered()
+    {
+        if ( _triggered) return;
         _triggered = true;
         GetComponent<MeshRenderer>().material.color = Color.green;
         if (_enterEchoPath == null) return;
@@ -24,9 +31,9 @@ public class TriggerAreaListener : MonoBehaviour
         Debug.Log("Entered Trigger");
     }
 
-    private void TriggerExited(int id)
+    private void TriggerExited()
     {
-        if ((id != GetComponent<TriggerBox>().ID) || _triggered) return;
+        if ( _triggered) return;
         _triggered = true;
         GetComponent<MeshRenderer>().material.color = Color.dodgerBlue;
         if (_exitEchoPath == null) return;
