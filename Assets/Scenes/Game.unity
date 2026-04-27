@@ -976,7 +976,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7176914949790449831, guid: 7edde8e80082e924d84ad620c5a0d545, type: 3}
       propertyPath: _radius
-      value: 3
+      value: 10
       objectReference: {fileID: 0}
     - target: {fileID: 7176914949790449831, guid: 7edde8e80082e924d84ad620c5a0d545, type: 3}
       propertyPath: lantern
