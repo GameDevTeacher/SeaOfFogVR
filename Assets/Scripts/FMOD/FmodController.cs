@@ -212,7 +212,10 @@ public class FmodController : MonoBehaviour
         
             public void UpdateEchoTrigger(string filepath)
             {
-                RuntimeManager.PlayOneShot(filepath);
+                //RuntimeManager.PlayOneShot(filepath);
+                _echoInstance = RuntimeManager.CreateInstance(filepath);
+                StartCoroutine(WaitAndStopEcho());
+                
             }
 
             public void Update3DEchoTrigger(string filepath, GameObject gameobject)
@@ -220,7 +223,12 @@ public class FmodController : MonoBehaviour
                 RuntimeManager.PlayOneShotAttached(filepath, gameobject);
             }
 
-            
+            IEnumerator WaitAndStopEcho()
+            {
+                print ("Waiting for echo to finish");
+                yield return new WaitForSeconds(10);
+                _echoInstance.stop(STOP_MODE.ALLOWFADEOUT);
+            }
 
     #endregion
 }
