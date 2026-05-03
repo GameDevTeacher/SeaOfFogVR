@@ -458,6 +458,10 @@ PrefabInstance:
       value: Docks01 (1)
       objectReference: {fileID: 0}
     - target: {fileID: 919132149155446097, guid: 043843a904b1f604eba57b87af256871, type: 3}
+      propertyPath: m_TagString
+      value: Disembark
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 043843a904b1f604eba57b87af256871, type: 3}
       propertyPath: m_StaticEditorFlags
       value: 2147483647
       objectReference: {fileID: 0}
@@ -5792,6 +5796,10 @@ PrefabInstance:
     - target: {fileID: 919132149155446097, guid: a8333fdb9e393ad4789335899f2ca8d1, type: 3}
       propertyPath: m_Name
       value: Island01_lighthouse01
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: a8333fdb9e393ad4789335899f2ca8d1, type: 3}
+      propertyPath: m_TagString
+      value: Disembark
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []

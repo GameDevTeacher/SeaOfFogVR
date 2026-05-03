@@ -9,12 +9,13 @@ TagManager:
   - Teleport
   - Echo
   - Light
-  - disembark
+  - Disembark
+  - Lantern
   layers:
   - Default
   - TransparentFX
   - Ignore Raycast
-  - 
+  - Disembark
   - Water
   - UI
   - Boat

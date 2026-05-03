@@ -44,8 +44,7 @@ public class Teleporter : MonoBehaviour, IInteractable
 
         foreach (Collider col in hit)
         {
-            if (col.gameObject.CompareTag("Disembark"))
-            {
+            
                 teleportDestination = col.gameObject.transform;
                 Interact();
                 RemoveParent();
@@ -58,11 +57,8 @@ public class Teleporter : MonoBehaviour, IInteractable
                 {
                     boatLantern.SetActive(false);
                 }
-            }
-            else
-            {
-                //idk some kind of indicator that the player cant get off
-            }
+            
+           
         }
      
     }
