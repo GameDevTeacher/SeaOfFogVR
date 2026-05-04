@@ -193,8 +193,6 @@ public class FmodController : MonoBehaviour
             reverbBus.setVolume(DecibelToLinear(reverbVolume));
             
         }
-
-        
         
         private float DecibelToLinear(float dB)
         {
@@ -212,9 +210,9 @@ public class FmodController : MonoBehaviour
         
             public void UpdateEchoTrigger(string filepath)
             {
-                //RuntimeManager.PlayOneShot(filepath);
-                _echoInstance = RuntimeManager.CreateInstance(filepath);
-                StartCoroutine(WaitAndStopEcho());
+                RuntimeManager.PlayOneShot(filepath);
+                //_echoInstance = RuntimeManager.CreateInstance(filepath);
+                //StartCoroutine(WaitAndStopEcho());
                 
             }
 
