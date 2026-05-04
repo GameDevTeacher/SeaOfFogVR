@@ -185,12 +185,12 @@ public class FmodController : MonoBehaviour
         private void UpdateVolumeMixer()
         {
             masterBus.setVolume(DecibelToLinear(masterVolume));
-            ambienceBus.setVolume(DecibelToLinear(ambienceVolume));
+            ambienceBus.setVolume(DecibelToLinear(masterVolume));
           //  echoBus.setVolume(DecibelToLinear(EchoVolume));
-            musicBus.setVolume(DecibelToLinear(musicVolume));
+            musicBus.setVolume(DecibelToLinear(masterVolume));
            // sfxBus.setVolume(DecibelToLinear(sfxVolume));
-            voicelinesBus.setVolume(DecibelToLinear(voicelinesVolume));
-            reverbBus.setVolume(DecibelToLinear(reverbVolume));
+            voicelinesBus.setVolume(DecibelToLinear(masterVolume));
+            reverbBus.setVolume(DecibelToLinear(masterVolume));
             
         }
         
