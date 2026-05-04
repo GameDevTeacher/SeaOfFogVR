@@ -18,9 +18,14 @@ public class Teleporter : MonoBehaviour, IInteractable
     private GameObject locomotion;
     private GameObject teleportation;
     private XROrigin _xrOrigin;
-
-    private Collider _boatCollider;
+    
+    
+    //Just making sure the fields are the same across all instances of the script
+    private static Collider _boatCollider;
+    [SerializeField] private Collider boatCollider;
+    private static Collider _lHandCollider;
     [SerializeField] private Collider lHandCollider;
+    private static Collider _rHandCollider;
     [SerializeField] private Collider rHandCollider;
 
     [SerializeField] private LayerMask _disembarkBoatLayer;
@@ -34,7 +39,10 @@ public class Teleporter : MonoBehaviour, IInteractable
         teleportation = GameObject.Find(teleportationObjectName);
         defaultYOffset = _xrOrigin.CameraYOffset;
         if (player == null) Debug.LogError("Player not found");
-        _boatCollider = GetComponent<Collider>();
+        if (_boatCollider == null && boatCollider != null) _boatCollider = boatCollider;
+        if(_lHandCollider == null && lHandCollider != null) _lHandCollider = lHandCollider;
+        if (_rHandCollider == null && rHandCollider != null) _rHandCollider = rHandCollider;
+        //_boatCollider = GetComponent<Collider>();
         //lantern =  GameObject.FindWithTag("Lantern"); //TODO: FIND LANTERN, THIS SHIT DONT WORK
     }
 
@@ -45,13 +53,13 @@ public class Teleporter : MonoBehaviour, IInteractable
         foreach (Collider col in hit)
         {
             
-                teleportDestination = col.gameObject.transform;
+                teleportDestination.position = col.gameObject.transform.position;
                 Interact();
                 RemoveParent();
                 TriggerStanding();
                 _boatCollider.enabled = true;
-                lHandCollider.enabled = false;
-                rHandCollider.enabled = false;
+                _lHandCollider.enabled = false;
+                _rHandCollider.enabled = false;
                 lantern.SetActive(true);
                 if (boatLantern != null)
                 {
@@ -68,9 +76,9 @@ public class Teleporter : MonoBehaviour, IInteractable
         Interact();
         SetParent(newParent.transform);
         TriggerSitting();
-        _boatCollider.enabled = false;
-        lHandCollider.enabled = true;
-        rHandCollider.enabled = true;
+                    _boatCollider.enabled = false;
+        _lHandCollider.enabled = true;
+        _rHandCollider.enabled = true;
         lantern.SetActive(false);
         if (boatLantern != null)
         {

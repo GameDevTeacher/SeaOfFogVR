@@ -135,6 +135,7 @@ MonoBehaviour:
   sittingYOffset: 0.86
   teleportationObjectName: Teleportation
   locomotionObjectName: locomotion
+  boatCollider: {fileID: 0}
   lHandCollider: {fileID: 0}
   rHandCollider: {fileID: 0}
   _disembarkBoatLayer:
@@ -541,6 +542,7 @@ MonoBehaviour:
   sittingYOffset: 0.86
   teleportationObjectName: Teleportation
   locomotionObjectName: locomotion
+  boatCollider: {fileID: 0}
   lHandCollider: {fileID: 4743955778707981673}
   rHandCollider: {fileID: 3556001949980636565}
   _disembarkBoatLayer:
@@ -849,6 +851,7 @@ MonoBehaviour:
   sittingYOffset: 0.89
   teleportationObjectName: Teleportation
   locomotionObjectName: locomotion
+  boatCollider: {fileID: 5154398803338226880}
   lHandCollider: {fileID: 4743955778707981673}
   rHandCollider: {fileID: 3556001949980636565}
   _disembarkBoatLayer:
